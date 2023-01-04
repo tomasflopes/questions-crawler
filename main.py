@@ -33,12 +33,12 @@ def get_options(opts):
     return [option.strip() for option in options]
 
 
-possible_question_delimiters = [
+POSSIBLE_QUESTION_DELIMITERS = [
     "... ", "… ", ". o ", "? ", ": ", ". ", ".", "...", "…", ". o"]
 
 
 def separate_question(line):
-    for delimiter in possible_question_delimiters:
+    for delimiter in POSSIBLE_QUESTION_DELIMITERS:
         if (len(line.split(delimiter)) == 2):
             return line.split(delimiter)[0].strip(), get_options(line.split(delimiter)[1])
 
@@ -48,16 +48,13 @@ def separate_question(line):
 def extract_questions(text, key):
     cur_questions = []
     print("Extracting questions from " + key + " ...")
-    print(text)
 
-    # split the line into words
     words = text.split(" ")
     current_question_words = []
     question_number = 1
 
     for word in words:
         if word == str(question_number) + ".":
-            # append a string with all the questions_words separated by a space
             line = " ".join(current_question_words)
 
             question, options = separate_question(line)
