@@ -5,6 +5,7 @@ import os
 from PyPDF2 import PdfReader
 
 BASE_PATH = "prcmp"
+FILE_NAME = "prcmp.json"
 
 questions = {
     "2021melhoria": [],
@@ -13,6 +14,10 @@ questions = {
     "2022normal": [],
     "2022recurso": [],
 }
+
+POSSIBLE_QUESTION_DELIMITERS = [
+    "... ", "… ", ". o ", "? ", ": ", ". ", ".", "...", "…", ". o"]
+POSSIBLE_OPTIONS_DELIMITERS = [". o", " o "]
 
 print()
 
@@ -24,23 +29,23 @@ def get_options(opts):
         third, forth = rest.split("(d)")
         return [first[3:].strip(), second.strip(), third.strip(), forth.strip()]
 
-    if len(opts.split(". o")) == 4:
-        options = opts[1:].split(". o")
-    elif len(opts.split(" o ")) == 4:
-        options = opts[1:].split(" o ")
-    else:
-        return []
-    return [option.strip() for option in options]
+    for delimiter in POSSIBLE_OPTIONS_DELIMITERS:
+        if len(opts.split(delimiter)) == 4:
+            options = opts.split(delimiter)
+            return [option.strip() for option in options]
+    return []
 
 
-POSSIBLE_QUESTION_DELIMITERS = [
-    "... ", "… ", ". o ", "? ", ": ", ". ", ".", "...", "…", ". o"]
+def remove_question_number(question):
+    index = question.find(". ")
+    return question[index+1:].strip()
 
 
 def separate_question(line):
     for delimiter in POSSIBLE_QUESTION_DELIMITERS:
-        if (len(line.split(delimiter)) == 2):
-            return line.split(delimiter)[0].strip(), get_options(line.split(delimiter)[1])
+        if len(line.split(delimiter)) == 2:
+            question = remove_question_number(line.split(delimiter)[0].strip())
+            return question, get_options(line.split(delimiter)[1])
 
     return line, []  # if no delimiter is found return the whole line
 
@@ -60,7 +65,7 @@ def extract_questions(text, key):
             question, options = separate_question(line)
 
             cur_questions.append(
-                {"question": question, "options": options, "correct": ""})
+                {"question_number": question_number-1, "question": question, "options": options, "correct": ""})
             current_question_words = []
             question_number += 1
 
@@ -90,4 +95,6 @@ for file in os.listdir(BASE_PATH):
 
 # Pretty Print JSON
 json_formatted_str = json.dumps(questions, indent=4, ensure_ascii=False)
+file = open(FILE_NAME, "w")
+file.write(json_formatted_str)
 print(json_formatted_str)
