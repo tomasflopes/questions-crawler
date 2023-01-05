@@ -31,7 +31,7 @@ def get_options(opts):
 
     for delimiter in POSSIBLE_OPTIONS_DELIMITERS:
         if len(opts.split(delimiter)) == 4:
-            options = opts.split(delimiter)
+            options = opts[1:].split(delimiter)
             return [option.strip() for option in options]
     return []
 
@@ -97,4 +97,5 @@ for file in os.listdir(BASE_PATH):
 json_formatted_str = json.dumps(questions, indent=4, ensure_ascii=False)
 file = open(FILE_NAME, "w")
 file.write(json_formatted_str)
+
 print(json_formatted_str)
