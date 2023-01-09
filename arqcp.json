@@ -1,0 +1,2187 @@
+{
+  "2021recurso_versao_a": [
+    {
+      "question_number": 1,
+      "question": "Em C, se tivermos um char com representação binária de 10011010, o cast para um short resulta no valor 1111111110011010",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 2,
+      "question": "Em C, considere “int x=0x01234567;” com o endereço de x em 0x100. Logo, o valor presente no byte 0x101 é 0x23",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 3,
+      "question": "Em C, considere “short x=0x1234;”. O resultado da operação “x && 0x0F0F” é 0x0204",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 4,
+      "question": "Em C, a avaliação de expressões com variáveis com e sem sinal interpreta todas as variáveis como sendo valores com sinal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 5,
+      "question": "vec”. Então, ptr + 4 avança para vec[2]",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, quando a soma de duas variáveis “unsigned char u,v;” é igual ou superior a 28 o valor obtido é equivalente a u + v – 28 ... xo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 7,
+      "question": ")” permite-nos reservar na heap os bytes suficientes para armazenar a string “arqcp”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 8,
+      "question": "” seguido de “subq $8,%rsp”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 9,
+      "question": "Em x86-64, se atribuirmos valores com sinal aos registos a somar, o resultado será incorreto se a flag de carry estiver ativa após a soma",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 10,
+      "question": "entre %rax e %rcx colocando o quociente em %rax e o resto em %rdx",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 11,
+      "question": "Em x86-64, ao contrário das operações de deslocamento de bits, as rotações nunca perdem os bits da informação original",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 12,
+      "question": ",%rax” pode ser usada para multiplicar por sete o valor presente em %rax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 13,
+      "question": "Em x86-64, é possível obter o mesmo resultado com “imull $-8,%eax” e “shll $3,%eax; notl %eax; incl %eax”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 14,
+      "question": "Em x86-64, admita que o valor de %rsp é 0x1008. A execução da instrução ret coloca o valor de %rsp em 0x1000",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 15,
+      "question": ",(%rcx)”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 16,
+      "question": "Em x86-64, de acordo com a convenção de salvaguarda e restauro de registos estudada nas aulas, %r10 é um registo caller saved",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 17,
+      "question": "Em x86-64, o endereço inicial de uma struct alinhada depende das restrições de alinhamento dos seus campos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 18,
+      "question": "Em x86-64, o espaço ocupado por uma union é sempre o mesmo, independentemente da ordem dos seus campos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 19,
+      "question": "Em x86-64, a stack é usada para suportar o retorno do valor de saída de uma função, tal como acontece com o controlo de fluxo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 20,
+      "question": "for(i=0;i<M;i++)sum+=m[j][i];” exibe boa localidade espacial e temporal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2021normal_versao_a": [
+    {
+      "question_number": 1,
+      "question": "Em C, considere “unsigned char x=-1; short y=10;”. À variável “short z=x+y;” é atribuído o valor 265",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 2,
+      "question": "Em C, os tipos de dados com sinal usam mais um bit para armazenar se o valor é positivo ou negativo do que os seus equivalentes sem sinal . ox",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 3,
+      "question": "x;” é atribuído um valor interpretado como negativo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 4,
+      "question": "termina a avaliação da expressão logo que encontre uma condição que seja avaliada como verdade",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 5,
+      "question": "Em C, admita “short v[]={0xAABB,0xCCDD}; int x=*(int*)v;”. Então, no inteiro x fica armazenado o valor 0xCCDDAABB . xo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, “x>>2” aplica um deslocamento aritmético para a direita se x for do tipo unsigned int e um lógico se x for do tipo int",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 7,
+      "question": "malloc(20) ”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 9,
+      "question": "Em x86-64, o valor final de %rbx após a instrução “cmovg %rax,%rbx” depende do valor dos bits do registo RFLAGS",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 10,
+      "question": "Em x86-64, “testl $1,%ecx” seguido de “jz xpto” permite saltar para a etiqueta xpto se o valor de %ecx for 1",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 11,
+      "question": "Em x86-64, a stack nunca é usada para passar parâmetros a uma função",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 12,
+      "question": ",%rax” pode ser usada para multiplicar por cinco o valor presente em %rax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 13,
+      "question": "Em x86-64, é possível usar “shll $3, %eax” seguido de “notl %eax” para multiplicar por -8 o valor de %eax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 14,
+      "question": "Em x86-64, admita que o valor de %rsp é 0x1008. A execução da instrução call coloca o valor de %rsp em 0x1000",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 15,
+      "question": "Em x86-64, qualquer instrução que altere os 4 bytes menos significativos de um registo coloca a zero os 4 bytes mais significativos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 16,
+      "question": "Em x86-64, de acordo com a convenção de salvaguarda e restauro de registos estudada nas aulas, %r12 é um registo callee saved",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 17,
+      "question": "O sistema operativo executa periodicamente uma desfragmentação da heap para melhorar o desempenho dos programas em C",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 18,
+      "question": "A fragmentação interna dos blocos reservados na heap é consequência das regras de alinhamento e overhead da gestão dos blocos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 19,
+      "question": "Na hierarquia de memória à medida que nos afastamos do CPU, a capacidade de armazenamento aumenta, mas diminui a performance",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 20,
+      "question": "for(j=0;j<M;j++)sum+=m[j][i];” exibe boa localidade espacial e temporal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    }
+  ],
+  "2020normal_versao_a": [
+    {
+      "question_number": 1,
+      "question": "Em C, admita a variável “short x=-1;”. A atribuição “unsigned int y=x;” primeiro altera o sinal de x e depois o tamanho",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 2,
+      "question": "é alocado na heap",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 3,
+      "question": "” é verdadeira",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 4,
+      "question": "mas não com calloc()",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 5,
+      "question": "Em C, as operações aritméticas com tipos inteiros seguem as regras da aritmética modular, como consequência do seu número finito de bits ... xo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, para que o tamanho de uma union seja o menor possível, devemos declarar os seus campos por ordem decrescente de tamanho",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 7,
+      "question": "Em C, admita as variáveis “char str[30];” e “int* ptr=str;”. Logo, “ptr=ptr+2;” avança para o nono elemento de str",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "O compilador é o programa que recebe como input código escrito numa linguagem de alto nível como o C e o traduz para Assembly",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 9,
+      "question": "Em IA32, a instrução “call func” não altera o estado atual da stack, apenas o valor do registo %eip com o endereço da etiqueta func",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 10,
+      "question": "Em IA32, a instrução “idivw %cx” assume que o dividendo se encontra em %eax, deixando o quociente em %ax e o resto em %dx",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 11,
+      "question": "Em IA32, a instrução adc só permite adicionar aos seus operandos o valor da flag de carry quando aplicada a valores com sinal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 12,
+      "question": "Em IA32, “testl $-1,%ecx” seguido de “jz xpto” permite saltar para a etiqueta xpto se o valor de %ecx for zero.",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 13,
+      "question": ",%eax” coloca a[4] em %eax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 14,
+      "question": ", %eax” para ler um valor de 4 bytes da memória e colocá-lo em %eax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 15,
+      "question": ",%eax” seguido de “subl $4,%esp”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 16,
+      "question": "Admita a matriz dinâmica “int **m”, com 10 elmentos por linha. Em IA32, acedemos a  m[2][3] avançando 92 bytes a partir de m",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 17,
+      "question": "for(j=0;j<M;j++)sum+=m[i][j];” exibe boa localidade espacial mas não temporal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 18,
+      "question": "consiga redimensionar um bloco existente para um tamanho menor",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "Na hierarquia de memória, à medida que nos afastamos do CPU abdicamos da performance em favor do custo por byte",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 20,
+      "question": "Uma das otimizações efetuadas pelos compiladores de C é substituição da invocação de uma função pelo seu código",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2020recurso_versao_a": [
+    {
+      "question_number": 1,
+      "question": "” é avaliada em um se x for par",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 2,
+      "question": "x;” armazena em y um valor diferente de x",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 3,
+      "question": "< sizeof(b))” é verdadeira",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 4,
+      "question": "Em C, um bloco de memória alocado com malloc durante a execução de uma função é automaticamente libertado no fim desta",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 5,
+      "question": "Em C, admita as variáveis “int x,y;”. A comparação “x < y” pode ter um resultado diferente da comparação “x - y < 0”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "&x”. Logo, “*(ptr+1)” equivale ao valor 0x4567",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 7,
+      "question": "Em C, admita a variável “char x=-128;”. A atribuição “char y=-x;” armazena o valor 128 em y",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 8,
+      "question": "O tamanho efetivo de um bloco de memória reservado com malloc pode ser maior do que o número de bytes passados por parâmetro",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 9,
+      "question": "Em IA32, a instrução “cmpl %eax,%ebx” armazena o resultado da comparação em %ebx e nos bits do registo EFLAGS",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 10,
+      "question": "Em IA32, as operações de multiplicação e divisão de inteiros exigem instruções distintas para valores com e sem sinal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 11,
+      "question": "",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 12,
+      "question": "Em IA32, “subl $12,%esp” permite remover da stack os três parâmetros inteiros de uma função invocada na linha anterior com call .. ox",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 13,
+      "question": ",%ax” coloca a[4] em %ax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 14,
+      "question": "Em IA32, é possível usar “shll $3, %eax” seguido de “negl %eax” para multiplicar por -8 o valor de %eax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 15,
+      "question": ",%eax”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 16,
+      "question": "for(i=0;i<M;i++)sum+=m[j][i];” exibe boa localidade espacial",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 17,
+      "question": "O sistema operativo executa periodicamente uma desfragmentação da heap para melhorar o desempenho dos programas em C",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 18,
+      "question": "A fragmentação externa dos blocos reservados na heap é consequência das regras de alinhamento e overhead da gestão dos blocos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "Na hierarquia de memória, à medida que nos afastamos do CPU temos maior performance e menor custo por byte",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 20,
+      "question": "Uma das otimizações efetuadas pelos compiladores de C é a alocação de variáveis locais aos registos disponíveis da arquitetura",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2019recurso_versao_a": [
+    {
+      "question_number": 1,
+      "question": "&x;”.  “printf(“%hhX”,*p);” imprime o valor “AB”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 2,
+      "question": "x;”. Logo, “int z = (int)y;” atribui o valor 0xCFC7 a z",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 3,
+      "question": ";” atribui o valor 0x34 a y",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 4,
+      "question": "Em C, usamos memória dinâmica porque a heap é uma zona de memória com um tempo de acesso menor do que a stack",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 5,
+      "question": "x*2;” será sempre positivo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, o maior valor positivo que é possível armazenar na variável “char x;” é 28 - 1",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 7,
+      "question": "ptr + 7 avança 14 bytes na memória",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "O compilador é o programa que recebe como input código escrito numa linguagem de alto nível como o C e o traduz para Assembly",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 9,
+      "question": ",%eax” para multiplicar por 50 o valor presente em %eax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 10,
+      "question": "Em IA32, reservamos espaço para as variáveis locais de uma função somando o número de bytes necessários ao valor atual de %esp",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 11,
+      "question": "Em IA32, é possível retornar de um bloco de código com a instrução ret quando a sua invocação/salto foi efetuada com a instrução jmp ... ox",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 12,
+      "question": "Em IA32, são usados registos para suportar a passagem do valor de retorno de uma função invocada à função invocadora.",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 13,
+      "question": ",%eax” coloca a[4] em %eax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 14,
+      "question": ",%eax” seguido de “addl $4, %esp”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 15,
+      "question": "De acordo com a convenção usada em Linux/IA32, a responsabilidade da salvaguarda e restauro de %ebp é apenas da função invocadora",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 16,
+      "question": "O tamanho de uma union é o menor possível se declararmos os seus campos por ordem decrescente de tamanho do tipo de dados",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 17,
+      "question": "O tempo de acesso a um setor num disco é dominado pelo tempo de pesquisa e latência de rotação da cabeça de leitura",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 18,
+      "question": "Na hierarquia de memória à medida que nos afastamos do processador a capacidade de armazenamento aumenta e diminui a performance",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 19,
+      "question": "A localidade espacial indica a probabilidade de acesso a dados e instruções em endereços próximos daqueles acedidos recentemente",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 20,
+      "question": "Uma das otimizações efetuadas pelos compiladores é a substituição da invocação de uma função pelo seu código",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2019normal_versao_a": [
+    {
+      "question_number": 1,
+      "question": "x | 0x0;” é -1",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 2,
+      "question": "Em C, qualquer que seja o valor atribuído à variável “int y;”, a atribuição “int x = -y;” é equivalente a “int x = ~y + 1;”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 3,
+      "question": "& 0xFF;” atribui um valor ímpar a y",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 4,
+      "question": "Em C, a função realloc permite-nos redimensionar em tempo de execução blocos de memória reservados na stack",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 5,
+      "question": "Em C, admita a variável “short x;” à qual é atribuída um valor negativo. Logo, “short y = x*2;” será sempre menor do que zero",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, o maior valor positivo que é possível armazenar na variável “unsigned short x;” é 216 - 1",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 7,
+      "question": "malloc(20);” é declarado numa função. É correto terminar a função com “return ptr;”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "O Assembler é o programa que recebe como input código escrito numa linguagem de alto nível como o C e o traduz para Assembly",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 9,
+      "question": ",%eax” multiplica por 5 o valor presente em %eax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 10,
+      "question": "Em IA32, a instrução “idivb %cl” assume que o dividendo se encontra em %ax, deixando o quociente em %al e o resto em %ah",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 11,
+      "question": "Em IA32, se pretendermos dividir valores inteiros sem sinal podemos usar as instruções div ou idiv obtendo sempre o mesmo resultado .. ox",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 12,
+      "question": "Em IA32, “shrl %eax” seguido de “jnc xpto” permite saltar para a linha xpto se o valor presente em %eax for par.",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 13,
+      "question": ",%ax” coloca a[4] em %ax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 14,
+      "question": "Em IA32, admita que o valor de %esp é 0x1004. A execução da instrução “call func” coloca o valor de %esp em 0x1008",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 15,
+      "question": "De acordo com a convenção usada em Linux/IA32, a responsabilidade da salvaguarda e restauro de %ebp é apenas da função invocadora",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 16,
+      "question": "for(i=0;i<M;i++)sum+=m[i][j];” terá a melhor performance",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 17,
+      "question": "O tempo de acesso a um setor num disco é dominado pelo tempo de pesquisa e latência de rotação da cabeça de leitura",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 18,
+      "question": "Na hierarquia de memória à medida que nos afastamos do processador, a capacidade de armazenamento aumenta bem como a performance . ox",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "Diz-se que um bloco de código possui boa localidade espacial quando não existem intervalos de alinhamento entre as variáveis usadas",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 20,
+      "question": "A invocação de funções introduz overhead e limita as possibilidades de otimização dos programas por parte do compilador",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2018normal_versao_a": [
+    {
+      "question_number": 1,
+      "question": "x >> 1;” é 127",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 2,
+      "question": "Em C, a operação u << k tem sempre como resultado u * 2k, para valores inteiros de u com ou sem sinal e 0 < k <= 31",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 3,
+      "question": "Em C, admita a variável “unsigned int x=0x12345678;” cujo endereço é 0x100. Logo, o valor presente no byte 0x102 é 0x34",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 4,
+      "question": "Em C, a função malloc permite-nos reservar blocos de memória na stack em tempo de execução que podem ser depois redimensionados",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 5,
+      "question": "Em C, quando a soma aritmética de duas variáveis u e v do tipo int é superior a 231 o valor obtido é equivalente a u + v - 231",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "-1)>>k”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 7,
+      "question": "vec”. Então, ptr + 4 avança para vec[2]",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "Em C, é correto retornar como valor de saída de uma função o endereço de um bloco de memória reservado na heap dentro da função",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 9,
+      "question": ",(%ebx)”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 10,
+      "question": ",%eax” seguido de “addl $4,%esp”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 11,
+      "question": "Em Assembly, as operações de multiplicação e divisão de inteiros têm instruções diferentes para valores com e sem sinal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 12,
+      "question": "A adição de dois bytes com sinal com valores $127 e $10 deixa as flags do registo EFLAGS com os valores ZF=0, SF=1, CF=0, OF=1.. ... xo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 13,
+      "question": "Em IA32, a stack é usada para suportar o retorno do valor de saída de uma função, tal como acontece com o controlo de fluxo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 14,
+      "question": "Em IA32, admita que o valor de %esp é 0x1004. A execução da instrução “call func” coloca o valor de %esp em 0x1000",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 15,
+      "question": "De acordo com a convenção usada em Linux/IA32, a responsabilidade da salvaguarda e restauro de %edx é da função invocadora",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 16,
+      "question": "Admita a matriz global int m[10][3]. Em Assembly, acedemos ao valor de m[3][1] avançando 40 bytes a partir de m",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 17,
+      "question": "ocupa 24 bytes",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 18,
+      "question": "O tamanho de uma estrutura sujeita a alinhamento tem de ser múltiplo da menor restrição de alinhamento dos seus campos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "O tamanho de um bloco reservado na heap pode ser maior do que o número de bytes passados por parâmetro na função malloc",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 20,
+      "question": "A invocação de funções introduz overhead e limita as possibilidades de otimização dos programas por parte do compilador",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2018recurso_versao_a": [],
+  "2017recurso_versao_a": [
+    {
+      "question_number": 1,
+      "question": "Em C, o maior valor que podemos armazenar numa variável do tipo int é 232",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 2,
+      "question": "Admita a variável unsigned int a = 0xFFFFFFFF em C. Então, a variável unsigned int b = a + 1 tem o valor zero",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 3,
+      "question": "Admita a variável short a = 0x0123 e um valor dado por &a de 0x200 em C. Então, o valor presente no byte 0x201 é 0x01",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 4,
+      "question": "Em C, ao truncarmos uma variável do tipo int que armazena um valor positivo para um short podemos ficar com um valor negativo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 5,
+      "question": "termina a avaliação da expressão se encontrar uma condição que seja avaliada como verdade",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, as divisões de inteiros usando deslocamentos podem exigir a alteração do dividendo para que o arredondamento seja correto",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 7,
+      "question": "ptr + 8 aponta para o quinto elemento",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "Admita que declara a variável int x como variável global em C. Logo, os 4 bytes são reservados na stack",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 9,
+      "question": "malloc(20)",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 10,
+      "question": ",%eax seguido de addl $4, %esp",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 11,
+      "question": ",%eax pode ser usada para multiplicar por 5 o valor em %eax",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 12,
+      "question": ",%ax coloca em %ax o oitavo elemento.",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 13,
+      "question": "Em IA32, a stack é usada para suportar a passagem do valor de retorno de uma função invocada à função invocadora",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 14,
+      "question": "Admita que o valor de %esp é 0x1004. A execução da instrução ret coloca o valor de %esp em 0x1000",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 15,
+      "question": "Em IA32, reservamos espaço para as variáveis locais de uma função subtraindo o número de bytes necessários ao valor atual de %ebp",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 16,
+      "question": "Admita a matriz global int m[4][5]. Em Assembly, acedemos ao endereço de m[i] calculando m + i*20",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 17,
+      "question": "ocupa 16 bytes",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 18,
+      "question": "O tamanho de uma estrutura é garantidamente menor se indicarmos os seus campos por ordem decrescente do seu tamanho",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "A fragmentação interna dos blocos reservados na heap é originada pelas regras de alinhamento e overhead da gestão dos blocos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 20,
+      "question": "A possibilidade de existirem diversas referências para a mesma posição de memória em C dificulta a otimização efetuada pelo compilador ... xo   [2v] Grupo II – Responda numa folha A4 separada que deve assinar e entregar no final do exame.   No seguinte excerto de código em C foram omitidos os valores das constantes M e N: #define M      /* Número mistério 1 */ #define N      /* Número mistério 2 */  int arith(int x, int y) {   int result = 0;   result = x*M + y/N;    return result; }  Admita agora que a função foi compilada para valores específicos de M e N. O compilador otimizou a multiplicação e divisão pelas constantes M e N usando deslocamentos, tal como estudado nas aulas. O código seguinte em C é uma tradução do código Assembly gerado:   int optarith(int x, int y) {   int t = x;   x <<= 5;   x -= t;   if (y < 0) y += 7;   y >>= 3;    return x+y; }  Quais os valores de M e N? Justifique a sua resposta  A primeira metade da função mostra-nos que M = 31; x*M é calculado como (x<<5) – x.  A segunda metade mostra-nos que N = 8; y/N é calculado como y>>3. Como y pode ser negativo (é um int), a divisão através de deslocamentos para a direita exige que se altere, nesses casos, o dividendo para x + (1<<k) - 1 de modo a que o arredondamento seja corretamente efetuado na direção do zero e não de menos infinito.                [5v] Grupo III – Responda numa folha A4 separada que deve assinar e entregar no final do exame.   Considere as seguintes declarações:  typedef struct {     short x;     int y; } structA;       typedef struct {     structA a;     structA *b;      int x;     char c;     int y;     char e[3];     short z; } structB;   [1.5v] a) Indique o alinhamento dos campos de uma estrutura do tipo structB. Indique claramente, para cada campo, o seu endereço, bem como as partes alocadas mas não usadas para satisfazer as restrições de alinhamento. Indique o tamanho total da estrutura. Admita que a estrutura está colocada a partir do endereço 0x100.  typedef struct {     structA a;  0x100 : 8 bytes      structA *b;  0x108 : 4 byte     int x;   0x10C : 4 bytes     char c;   0x110 : 1 byte     [gap]   0x111 : 3 bytes      int y;   0x114 : 4 bytes     char e[3];  0x118 : 3 bytes     [gap]    0x11B : 1 byte     short z;   0x11C : 2 bytes     [gap]    0x11E : 2 bytes } structB;  Tamanho da estrutura: 32 bytes  [1.5v] b) Se definirmos os campos da estrutura structB por outra ordem é possível reduzir o número de bytes necessários para o seu armazenamento? Justifique a sua resposta. Indique, em caso afirmativo, qual a ordem dos campos que garante o menor tamanho, o novo endereço de cada campo e das partes alocadas mas não usadas, bem como o novo tamanho total da estrutura.  Sim, ordenando os seus campos por ordem decrescente de tamanho.  typedef struct {     structA a;  0x100 : 8 bytes      structA *b;  0x108 : 4 byte     int x;   0x10C : 4 bytes     int y;   0x110 : 4 bytes     short z;   0x114 : 2 bytes     char e[3];  0x116 : 3 bytes     char c;   0x119 : 1 byte     [gap]   0x11A : 2 bytes  } structB;  Tamanho da estrutura: 28 bytes   [2v] c) Considere as seguintes funções em C, respeitando as declarações iniciais das estruturas:   short fun1(structB *s){   return s->a.x; }  short* fun2(structB *s){   return &s->z; } short fun3(structB *s){   return s->z; }  short fun4(structB *s){   return s->b->x; } Indique a que funções (fun1, fun2, fun3 ou fun4) correspondem os seguintes excertos de código em Assembly.  Escreva as funções completas na folha A4._fun2_:   pushl   %ebp   movl    %esp,%ebp   movl    8(%ebp),%eax   addl    $28,%eax   popl    %ebp   ret  _fun4_:   pushl   %ebp   movl    %esp,%ebp   movl    8(%ebp),%eax   movl    8(%eax),%eax   movswl  (%eax),%eax   popl    %ebp   ret    _fun3_:   pushl   %ebp   movl    %esp,%ebp   movl    8(%ebp),%eax   movswl  28(%eax),%eax   popl    %ebp   ret _fun1_:   pushl   %ebp   movl    %esp,%ebp   movl    8(%ebp),%eax   movswl  (%eax),%eax   popl    %ebp   ret [2v] Grupo IV – Responda numa folha A4 separada que deve assinar e entregar no final do exame.   Admita a seguinte função em C que recebe como primeiro parâmetro o endereço de uma string str e como segundo parâmetro o endereço de um inteiro hash no qual a função armazena o resultado.  void calcHash(char *str, int *hash){  int i, j;       *hash = 0;  for(i = 0; i < strlen(str); i++){    j = strlen(str) / 2;    *hash += secret(str,i) * 32 + j);  }  }   int secret(char *str, int pos){   return str[pos] % 26; }    Apresente uma segunda versão da função calcHash em C com a mesma funcionalidade, mas melhor desempenho. Admita que o compilador que é usado não efetua nenhuma otimização. Indique claramente cada uma das otimizações usadas sob a forma de comentário no código.   void calcHash(char *str, int *hash){   int i, j, length, tmp;     /* accumulate results in local variable */      tmp = 0;     /* code motion and strength reduction*/   length = strlen(str);   j = length >> 1;     for(i = 0; i < length; i++){     /* removing unnecessary procedure calls */     tmp += ((str[i] % 26) << 5) + j;   }      /* Eliminating unneeded memory references */    *hash = tmp; }  [3v] Grupo V – Responda numa folha A4 separada que deve assinar e entregar no final do exame.   fun:     pushl %ebp   movl %esp,%ebp   movl 16(%ebp),%ecx   movl 12(%ebp),%eax   movl 8(%ebp),%edx   cmpl %ecx,%edx   jl .L1 .L2:    addl %edx,%eax   decl %edx   cmpl %ecx,%edx   jge .L2 .L1:    movl %ebp,%esp   popl %ebp   ret Com base no código Assembly à esquerda, preencha os espaços em branco no código correspondente em C. Apenas pode usar as variáveis x, y, z,i e result nas expressões (não use nomes de registos!) (escreva a função completa na folha A4).  int fun(int x, int y, int z){       int i, result = __y__;    for(i=_x_; _i >= z_; _i--_){     result = _result + i_;   }    return _result_; }",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2017normal_versao_a": [
+    {
+      "question_number": 1,
+      "question": "Admita a variável unsigned char x em C. O valor armazenado em x depois de executar “x = -1; x = x >> 1;” é 127",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 2,
+      "question": "As operações aritméticas de soma e subtracção de inteiros têm uma implementação diferente em hardware para valores com e sem sinal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 3,
+      "question": "Em IA32, uma arquitetura little-endian, considerando o vetor short x[10], o elemento x[1] está num endereço menor que x[0]",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 4,
+      "question": "O vetor “int *vec = (int*)malloc(16);” pode armazenar 16 inteiros tal como se tivesse sido definido como “int vec[16];” . ox",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 5,
+      "question": "Em C, a multiplicação de duas variáveis u e v do tipo int pode resultar num valor menor do que os armazenados em u ou v",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "+ (x<<2) – x” são sempre equivalentes para qualquer valor de unsigned int x",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 7,
+      "question": "ptr + 7 avança 14 bytes na memória",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "Admita que declara a variável int x na função main em C. O compilador pode atribuir x a um registo ou a um endereço na heap",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 9,
+      "question": "Em Assembly, a instrução “imull %edx” duplica o valor do registo usado como argumento",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 10,
+      "question": "” seguido de “addl $-4, %esp”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 11,
+      "question": "A adição de dois bytes com sinal com valores 0xAC e 0x8A deixa as flags do registo EFLAGS com os valores ZF=0, SF=1, CF=1, OF=1",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 12,
+      "question": "Em IA32, a instrução test compara o valor dos seus operandos através de um subtração.",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 13,
+      "question": "Em IA32, a stack é usada para suportar a invocação de funções e o retorno para a função invocadora com call e ret, respetivamente",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 14,
+      "question": "Admita que o valor de %esp é 0x1000. A execução da instrução jmp coloca o valor de %esp em 0xFFC",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 15,
+      "question": "De acordo com a convenção usada em Linux/IA32, a responsabilidade de salvaguarda e restauro de %esi é da função invocada",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 16,
+      "question": "Admita a matriz global short m[10][3]. Em Assembly, acedemos ao valor de m[3][1] avançando 20 bytes a partir de m",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 17,
+      "question": "ocupa 20 bytes",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 18,
+      "question": "O tamanho de uma union sujeita a alinhamento pode ser menor se indicarmos os seus campos por ordem crescente do seu tamanho",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "A fragmentação da heap pode impedir a alocação de um novo bloco mesmo que exista esse número de bytes livres",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 20,
+      "question": "A invocação de funções introduz overhead e limita as possibilidades de otimização dos programas pelo compilador",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2016normal_versao_a": [
+    {
+      "question_number": 1,
+      "question": "Em C, o cast de uma variável do tipo int para uma do tipo unsigned int altera o padrão de bits da variável",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 2,
+      "question": "Em C, numa expressão com variáveis do tipo int com e sem sinal, todas as variáveis são convertidas para valores sem sinal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 3,
+      "question": "Em C, se tivermos um char com representação binária de 10011010, o cast para um short resulta no valor 1111111110011010",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 4,
+      "question": "Admita um inteiro x com valor 0x01234567 e um valor dado por &x de 0x100. Logo, o valor presente no byte 0x101 é 0x45",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 5,
+      "question": "Em C, a adição de duas variáveis do tipo int com valores positivos nunca pode resultar num valor negativo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, a operação u<<k resulta em u*2k, independentemente da variável u ter ou não sinal",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 7,
+      "question": "pode ser usada para escrever o valor de %eax no topo da stack",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "Em Assembly, a instrução cmp não altera os seus parâmetros nem os bits do registo EFLAGS",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 9,
+      "question": "Admita que o endereço de uma variável x está armazenado em %edi. É possível alterar o valor de x executando movl $15,%edi",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 10,
+      "question": ",%eax armazena em %eax o valor antigo de %ebp numa função que inicia com o prólogo estudado",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 11,
+      "question": ",%esi armazena em %esi o endereço do terceiro elemento do vetor.",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 12,
+      "question": "A execução da instrução call não implica a alteração do valor do registo %esp.",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 13,
+      "question": "Não é possível passar o endereço de uma variável local para outra função chamada pela primeira usando a stack",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 14,
+      "question": "Depois de um call de uma função com 3 parâmetros inteiros podemos executar subl $12, %esp para retirar os parâmetros da stack",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 15,
+      "question": "A convenção de salvaguarda de registos indica que o registo %esi deve ser gerido pela função invocada",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 16,
+      "question": "Admita a declaração da matriz int m[4][5]. Em Assembly, o endereço do elemento m[i][j] é dado pela expressão m+20*i+4*j",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 17,
+      "question": "ocupa 8 bytes",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 18,
+      "question": "O espaço ocupado por uma estutura alinhada é sempre o mesmo, independemente da ordem dos seus campos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "O espaço ocupado por uma union é sempre o mesmo, independentemente da ordem dos seus campos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 20,
+      "question": "O compilador não tem qualquer dificuldade em mover a invocação de funções para outro local do programa com vista à sua optimização",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2016recurso_versao_a": [
+    {
+      "question_number": 1,
+      "question": "Em C, o cast de uma variável do tipo int para uma do tipo float altera o padrão de bits da variável",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 2,
+      "question": "Em C, o cast implícito em determinadas situações de variáveis com sinal para valores sem sinal pode levar a bugs no programa",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 3,
+      "question": "Admita um int x com valor 0x01234567 e um valor dado por &x de 0x100. Logo, o valor presente no byte 0x100 é 0x67",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 4,
+      "question": "Em C, se tivermos uma variável x do tipo short com o valor 0x1234, o valor –0x1234 pode ser obtido através de ~x + 1",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 5,
+      "question": "mod 32",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, é garantido que o resultado de uma divisão inteira por 2k, obtida através de u >> k, é correctamente arredondado se u<0",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 7,
+      "question": "ptr + 7 avança 28 bytes na memória",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": ", (%edi) permite copiar um byte para uma nova posição de memória numa única instrução",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 9,
+      "question": "Em Assembly, o resultado das instruções de salto condicional depende do valor dos bits do registo EFLAGS",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 10,
+      "question": "é o equivalente a *ptr = 1 em C",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 11,
+      "question": "Os parâmetros de uma função não podem ser acedidos usando o registo %esp em vez do %ebp como base do endereçamento",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 12,
+      "question": ",%esi armazena em %esi o valor 0xF400.",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 13,
+      "question": "Em IA32 é usada a stack para armazenar o valor de retorno de uma função, à semelhança do que acontece com o seu endereço de retorno",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 14,
+      "question": "Admita que o valor de %esp é 0x100C. A execução da instrução ret coloca o valor de %esp em 0x1010",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 15,
+      "question": "Os registo %eax é local a cada uma das funções, o que dispensa qualquer cuidado no seu uso entre invocações de funções",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 16,
+      "question": "Admita a matriz global short int m[5][3]. Em Assembly, acedemos ao valor de m[3][0] avançando 18 bytes a partir de m",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 17,
+      "question": "Uma estrutura, alinhada de acordo com as regras estudadas, com um vector de 2 char, 1 int e 1 short (por esta ordem) ocupa 12 bytes .. xo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 18,
+      "question": "É sempre possível diminuir o tamanho de um estrutura alinhada alterando a ordem dos seus campos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "É possível redimensionar, com a função realloc, o tamanho um vetor de inteiros vec declarado estaticamente com int vec[10]",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 20,
+      "question": "A possibilidade de existirem diversas referências para a mesma posição de memória dificulta a optimização efectuada pelo compilador",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "2018rescurso_versao_a": [
+    {
+      "question_number": 1,
+      "question": "Em C, o valor de um apontador é o endereço do primeiro byte do bloco de memória para o qual aponta",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 2,
+      "question": "Em C, o tipo de dados do apontador determina o espaço em memória necessário para o armazenar",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 3,
+      "question": "Em C, admita a variável “unsigned char x;”. O maior valor positivo que podemos armazenar em x é 27 - 1",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 4,
+      "question": "Em C, um cast para char de uma variável do tipo unsigned short com um valor positivo pode resultar num valor negativo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 5,
+      "question": "Em C, as operações aritméticas com qualquer tipo de dados para valores inteiros seguem as regras da aritmética modular",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 6,
+      "question": "Em C, admita as variáveis “int x=0xABCD;” e “char *ptr=&x”. Logo, “printf(“%hhX”,*(ptr+1));” imprime o valor 0xCD... ox",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 7,
+      "question": "Em C, “x >> 2” aplica um deslocamento lógico para a direita se x for do tipo unsigned int e um aritmético se x for do tipo int",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 8,
+      "question": "Em C, admita o vetor “short vec[5];”. A função realloc permite alterar o tamanho de vec para armazenar mais elementos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 9,
+      "question": "Em Assembly, qualquer que seja o valor armazenado em %eax, o resultado de “sall $4,%eax” e “shll $4,%eax” é o mesmo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 10,
+      "question": "",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 11,
+      "question": "Em Assembly, reservar 8 bytes para variáveis locais de uma função pode ser conseguido com “addl $8,%esp”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 12,
+      "question": "Em IA32, a stack é usada para suportar o retorno do valor de saída de uma função, tal como acontece com o controlo de fluxo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 13,
+      "question": "Em IA32, a execução da instrução ret não altera o valor de qualquer registo",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 14,
+      "question": "Em IA32, o resultado da instrução “jmp func” depende do valor dos bits do registo EFLAGS",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 15,
+      "question": "De acordo com a convenção usada em Linux/IA32, uma função pode usar %edx sem a necessidade de o salvaguardar e restaurar",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 16,
+      "question": "Admita uma matriz de inteiros alocada na heap dentro de uma função. O seu espaço é automaticamente libertado no fim da função",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 17,
+      "question": "As restrições de alinhamento em memória contribuem para a possível fragmentação interna de um bloco reservado na heap",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 18,
+      "question": "O tamanho de uma estrutura sujeita a alinhamento é sempre o mesmo em IA32 e x86-64, independentemente dos seus campos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    },
+    {
+      "question_number": 19,
+      "question": "O endereço inicial de uma estrutura sujeita a alinhamento depende dos tipos de dados dos seus campos",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 0
+    },
+    {
+      "question_number": 20,
+      "question": "A técnica de otimização de programas que move código para fora de um ciclo é denominada “loop unrolling”",
+      "options": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correct_index": 1
+    }
+  ]
+}
