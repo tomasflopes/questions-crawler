@@ -57,7 +57,7 @@ for exam in json_data:
         # insert question
         sql = "INSERT INTO `questions` (`question`, `image`, `correct_option`, `exam`, `subject_id`, `question_type_id`) VALUES (%s, %s, %s, %s, %s, %s)"
         cursor.execute(sql, (question['question'], '',
-                       question['correct_index'], exam, int(subject_id), 1))
+                       question['correct_index']+1, exam, int(subject_id), 1))
 
         # insert options
         question_id = cursor.lastrowid
