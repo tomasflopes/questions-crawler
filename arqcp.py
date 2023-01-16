@@ -36,16 +36,18 @@ def get_correct_index(line):
 
 
 def remove_question_number(question):
-    number_index = question.find(")")
-    return question[number_index+1:].strip()
+    if question[0].isdigit() and question[1] == ')':
+        return question[2:].strip()
+    if question[0].isdigit() and question[2] == ')':
+        return question[3:].strip()
+    return question
 
 
 def extract_question(line):
     separator_index = line.find("....")
-    question = ""
 
     if separator_index > -1:
-        question = remove_question_number(line[:separator_index].strip())
+        question = remove_question_number(line.split("....")[0].strip())
     else:
         question = line.strip()
 
@@ -61,7 +63,7 @@ def extract_questions(text, key):
     question_number = 1
 
     for word in words:
-        if word == str(question_number) + ")":
+        if word == str(question_number) + ')':
             line = " ".join(current_question_words)
 
             question = extract_question(line)

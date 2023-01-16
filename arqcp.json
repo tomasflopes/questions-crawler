@@ -38,7 +38,7 @@
     },
     {
       "question_number": 5,
-      "question": "vec”. Então, ptr + 4 avança para vec[2]",
+      "question": "Em C, admita um vetor “int vec[10];” e um apontador “short *ptr = (short*)vec”. Então, ptr + 4 avança para vec[2]",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -56,7 +56,7 @@
     },
     {
       "question_number": 7,
-      "question": ")” permite-nos reservar na heap os bytes suficientes para armazenar a string “arqcp”",
+      "question": "Em C, executar “malloc(strlen(\"arqcp\"))” permite-nos reservar na heap os bytes suficientes para armazenar a string “arqcp”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -65,7 +65,7 @@
     },
     {
       "question_number": 8,
-      "question": "” seguido de “subq $8,%rsp”",
+      "question": "Em x86-64, a instrução “popq %rax” é o equivalente a “movq %rax,(%rsp)” seguido de “subq $8,%rsp”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -83,7 +83,7 @@
     },
     {
       "question_number": 10,
-      "question": "entre %rax e %rcx colocando o quociente em %rax e o resto em %rdx",
+      "question": "Em x86-64, “idivq %rcx” efetua a divisão (com sinal) entre %rax e %rcx colocando o quociente em %rax e o resto em %rdx",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -101,7 +101,7 @@
     },
     {
       "question_number": 12,
-      "question": ",%rax” pode ser usada para multiplicar por sete o valor presente em %rax",
+      "question": "Em x86-64, a instrução “leaq (%rax,%rax,6),%rax” pode ser usada para multiplicar por sete o valor presente em %rax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -128,7 +128,7 @@
     },
     {
       "question_number": 15,
-      "question": ",(%rcx)”",
+      "question": "Em x86-64, o equivalente a “*ptr1 = *ptr2”, apontadores do tipo int* em C, pode ser obtido com “movl (%rax),(%rcx)”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -173,7 +173,7 @@
     },
     {
       "question_number": 20,
-      "question": "for(i=0;i<M;i++)sum+=m[j][i];” exibe boa localidade espacial e temporal",
+      "question": "O bloco de código “for(j=0;j<N;j++)for(i=0;i<M;i++)sum+=m[j][i];” exibe boa localidade espacial e temporal",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -202,7 +202,7 @@
     },
     {
       "question_number": 3,
-      "question": "x;” é atribuído um valor interpretado como negativo",
+      "question": "Em C, considere “int x=0xA0B0F0CC; ”. À variável “short y=(short)x;” é atribuído um valor interpretado como negativo",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -211,7 +211,7 @@
     },
     {
       "question_number": 4,
-      "question": "termina a avaliação da expressão logo que encontre uma condição que seja avaliada como verdade",
+      "question": "Em C, o operador lógico || (OR) termina a avaliação da expressão logo que encontre uma condição que seja avaliada como verdade",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -238,7 +238,7 @@
     },
     {
       "question_number": 7,
-      "question": "malloc(20) ”",
+      "question": "Em C, é seguro retornar como valor de saída de uma função o endereço de um vetor “short *vec=(short*)malloc(20) ”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -247,7 +247,7 @@
     },
     {
       "question_number": 8,
-      "question": "”",
+      "question": "Em x86-64, a instrução “pushq %rax” é o equivalente a “subq $8,%rsp” seguido de “movq %rax,(%rsp)”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -283,7 +283,7 @@
     },
     {
       "question_number": 12,
-      "question": ",%rax” pode ser usada para multiplicar por cinco o valor presente em %rax",
+      "question": "Em x86-64, a instrução “leaq (%rax,%rax,4),%rax” pode ser usada para multiplicar por cinco o valor presente em %rax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -355,7 +355,7 @@
     },
     {
       "question_number": 20,
-      "question": "for(j=0;j<M;j++)sum+=m[j][i];” exibe boa localidade espacial e temporal",
+      "question": "O bloco de código “for(i=0;i<N;i++)for(j=0;j<M;j++)sum+=m[j][i];” exibe boa localidade espacial e temporal",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -375,7 +375,7 @@
     },
     {
       "question_number": 2,
-      "question": "é alocado na heap",
+      "question": "Em C, o apontador “int *ptr;” declarado na função main() é alocado na heap",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -384,7 +384,7 @@
     },
     {
       "question_number": 3,
-      "question": "” é verdadeira",
+      "question": "Em C, admita as variáveis “unsigned char a=0;” e “short b=-1;”. A comparação “if (b<a)” é verdadeira",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -393,7 +393,7 @@
     },
     {
       "question_number": 4,
-      "question": "mas não com calloc()",
+      "question": "Em C, a função realloc permite-nos redimensionar blocos de memória reservados com a função malloc() mas não com calloc()",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -474,7 +474,7 @@
     },
     {
       "question_number": 13,
-      "question": ",%eax” coloca a[4] em %eax",
+      "question": "Admita o vetor global “int a[5];” em C. “movl $2,%ecx” seguido de “movl a(,%ecx,8),%eax” coloca a[4] em %eax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -483,7 +483,7 @@
     },
     {
       "question_number": 14,
-      "question": ", %eax” para ler um valor de 4 bytes da memória e colocá-lo em %eax",
+      "question": "Em IA32, é possível usar “leal (%edx,%ecx,4), %eax” para ler um valor de 4 bytes da memória e colocá-lo em %eax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -492,7 +492,7 @@
     },
     {
       "question_number": 15,
-      "question": ",%eax” seguido de “subl $4,%esp”",
+      "question": "Em IA32, a instrução “pushl %eax” é equivalente a “movl (%esp),%eax” seguido de “subl $4,%esp”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -510,7 +510,7 @@
     },
     {
       "question_number": 17,
-      "question": "for(j=0;j<M;j++)sum+=m[i][j];” exibe boa localidade espacial mas não temporal",
+      "question": "O bloco de código “for(i=0;i<N;i++)for(j=0;j<M;j++)sum+=m[i][j];” exibe boa localidade espacial mas não temporal",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -519,7 +519,7 @@
     },
     {
       "question_number": 18,
-      "question": "consiga redimensionar um bloco existente para um tamanho menor",
+      "question": "A fragmentação da heap pode impedir que a função realloc() consiga redimensionar um bloco existente para um tamanho menor",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -548,7 +548,7 @@
   "2020recurso_versao_a": [
     {
       "question_number": 1,
-      "question": "” é avaliada em um se x for par",
+      "question": "Em C, admita a variável “unsigned int x;”. A expressão “!(x&0x1)” é avaliada em um se x for par",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -557,7 +557,7 @@
     },
     {
       "question_number": 2,
-      "question": "x;” armazena em y um valor diferente de x",
+      "question": "Em C, admita a variável “char x=-12;”. A atribuição “short y=(short)x;” armazena em y um valor diferente de x",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -566,7 +566,7 @@
     },
     {
       "question_number": 3,
-      "question": "< sizeof(b))” é verdadeira",
+      "question": "Em C, admita as variáveis “unsigned char *a;” e “int b;”. A comparação “if (sizeof(a) < sizeof(b))” é verdadeira",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -593,7 +593,7 @@
     },
     {
       "question_number": 6,
-      "question": "&x”. Logo, “*(ptr+1)” equivale ao valor 0x4567",
+      "question": "Em C, admita as variáveis “int x=0x01234567;” e “short *ptr=(short*)&x”. Logo, “*(ptr+1)” equivale ao valor 0x4567",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -638,7 +638,7 @@
     },
     {
       "question_number": 11,
-      "question": "",
+      "question": "Em IA32, numa função, após o prólogo estudado nas aulas, o seu endereço de retorno pode ser encontrado em 4(%ebp)",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -656,7 +656,7 @@
     },
     {
       "question_number": 13,
-      "question": ",%ax” coloca a[4] em %ax",
+      "question": "Admita o vetor global “short a[5];” em C. “movl $3,%ecx” seguido de “movw a+2(,%ecx,2),%ax” coloca a[4] em %ax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -674,7 +674,7 @@
     },
     {
       "question_number": 15,
-      "question": ",%eax”",
+      "question": "Em IA32, a instrução “pushl %eax” é equivalente a “subl $4,%esp” seguido de “movl (%esp),%eax”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -683,7 +683,7 @@
     },
     {
       "question_number": 16,
-      "question": "for(i=0;i<M;i++)sum+=m[j][i];” exibe boa localidade espacial",
+      "question": "O bloco de código “for(j=0;j<N;j++)for(i=0;i<M;i++)sum+=m[j][i];” exibe boa localidade espacial",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -730,7 +730,7 @@
   "2019recurso_versao_a": [
     {
       "question_number": 1,
-      "question": "&x;”.  “printf(“%hhX”,*p);” imprime o valor “AB”",
+      "question": "Em C, admita “unsigned short x=0xABFF;” e “char *p=(char)&x;”.  “printf(“%hhX”,*p);” imprime o valor “AB”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -739,7 +739,7 @@
     },
     {
       "question_number": 2,
-      "question": "x;”. Logo, “int z = (int)y;” atribui o valor 0xCFC7 a z",
+      "question": "Em C, admita “int x = 0xCFC7;” e “short y = (short)x;”. Logo, “int z = (int)y;” atribui o valor 0xCFC7 a z",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -748,7 +748,7 @@
     },
     {
       "question_number": 3,
-      "question": ";” atribui o valor 0x34 a y",
+      "question": "Em C, admita “short x = 0x1234;”. Logo, “unsigned short y = (x && 0x00FF);” atribui o valor 0x34 a y",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -766,7 +766,7 @@
     },
     {
       "question_number": 5,
-      "question": "x*2;” será sempre positivo",
+      "question": "Em C, admita a variável “int x;” à qual é atribuída um valor positivo. Logo, “short y=(short)x*2;” será sempre positivo",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -784,7 +784,7 @@
     },
     {
       "question_number": 7,
-      "question": "ptr + 7 avança 14 bytes na memória",
+      "question": "Em C, admita que ptr é uma variável do tipo char*. Então, a expressão (short*)ptr + 7 avança 14 bytes na memória",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -802,7 +802,7 @@
     },
     {
       "question_number": 9,
-      "question": ",%eax” para multiplicar por 50 o valor presente em %eax",
+      "question": "Em IA32, é possível usar a instrução “leal (%eax,%eax,49),%eax” para multiplicar por 50 o valor presente em %eax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -838,7 +838,7 @@
     },
     {
       "question_number": 13,
-      "question": ",%eax” coloca a[4] em %eax",
+      "question": "Admita o vetor global “int a[10];” em C. “movl $2,%ecx” seguido de “movl a(,%ecx,4),%eax” coloca a[4] em %eax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -847,7 +847,7 @@
     },
     {
       "question_number": 14,
-      "question": ",%eax” seguido de “addl $4, %esp”",
+      "question": "Em IA32, podemos substituir “popl %eax” por “movl (%esp),%eax” seguido de “addl $4, %esp”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -912,7 +912,7 @@
   "2019normal_versao_a": [
     {
       "question_number": 1,
-      "question": "x | 0x0;” é -1",
+      "question": "Em C, admita a variável “unsigned short x=0xABFF;”. O valor armazenado em “char y = (char)x | 0x0;” é -1",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -930,7 +930,7 @@
     },
     {
       "question_number": 3,
-      "question": "& 0xFF;” atribui um valor ímpar a y",
+      "question": "Em C, admita as variáveis “unsigned char x,y;”. Se x for par, “y = (x|1) & 0xFF;” atribui um valor ímpar a y",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -966,7 +966,7 @@
     },
     {
       "question_number": 7,
-      "question": "malloc(20);” é declarado numa função. É correto terminar a função com “return ptr;”",
+      "question": "Em C, admita que “int *ptr=(int*)malloc(20);” é declarado numa função. É correto terminar a função com “return ptr;”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -984,7 +984,7 @@
     },
     {
       "question_number": 9,
-      "question": ",%eax” multiplica por 5 o valor presente em %eax",
+      "question": "Em IA32, a instrução “leal (%eax,%eax,4),%eax” multiplica por 5 o valor presente em %eax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1020,7 +1020,7 @@
     },
     {
       "question_number": 13,
-      "question": ",%ax” coloca a[4] em %ax",
+      "question": "Admita o vetor global “short a[10];” em C. “movl $2,%ecx” seguido de “movw a(,%ecx,4),%ax” coloca a[4] em %ax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1047,7 +1047,7 @@
     },
     {
       "question_number": 16,
-      "question": "for(i=0;i<M;i++)sum+=m[i][j];” terá a melhor performance",
+      "question": "Admita que M e N são valores grandes. “for(j=0;j<N;j++)for(i=0;i<M;i++)sum+=m[i][j];” terá a melhor performance",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1094,7 +1094,7 @@
   "2018normal_versao_a": [
     {
       "question_number": 1,
-      "question": "x >> 1;” é 127",
+      "question": "Em C, admita a variável “char x = -1;”. Logo, o valor armazenado em “char y = (unsigned)x >> 1;” é 127",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1139,7 +1139,7 @@
     },
     {
       "question_number": 6,
-      "question": "-1)>>k”",
+      "question": "Em C, a divisão correta de um inteiro negativo x por 2k através de um deslocamento deve ser obtida com “(x+(1<<k)-1)>>k”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1148,7 +1148,7 @@
     },
     {
       "question_number": 7,
-      "question": "vec”. Então, ptr + 4 avança para vec[2]",
+      "question": "Em C, admita um vetor “int vec[10];” e um apontador “short *ptr = (short*)vec”. Então, ptr + 4 avança para vec[2]",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1166,7 +1166,7 @@
     },
     {
       "question_number": 9,
-      "question": ",(%ebx)”",
+      "question": "Em Assembly, o equivalente a “*ptr1 = *ptr2”, apontadores do tipo int* em C, pode ser obtido com “movl (%eax),(%ebx)”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1175,7 +1175,7 @@
     },
     {
       "question_number": 10,
-      "question": ",%eax” seguido de “addl $4,%esp”",
+      "question": "Em Assembly, a instrução “popl %eax” é equivalente a “movl (%esp),%eax” seguido de “addl $4,%esp”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1238,7 +1238,7 @@
     },
     {
       "question_number": 17,
-      "question": "ocupa 24 bytes",
+      "question": "Uma estrutura, alinhada de acordo com as regras estudadas, com 2 char, um vetor de 5 int e 1 short (por esta ordem) ocupa 24 bytes",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1313,7 +1313,7 @@
     },
     {
       "question_number": 5,
-      "question": "termina a avaliação da expressão se encontrar uma condição que seja avaliada como verdade",
+      "question": "Em C, o operador lógico || (OR) termina a avaliação da expressão se encontrar uma condição que seja avaliada como verdade",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1331,7 +1331,7 @@
     },
     {
       "question_number": 7,
-      "question": "ptr + 8 aponta para o quinto elemento",
+      "question": "Admita que int *ptr armazena endereço inicial de um vetor de int. Logo, (short*)ptr + 8 aponta para o quinto elemento",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1349,7 +1349,7 @@
     },
     {
       "question_number": 9,
-      "question": "malloc(20)",
+      "question": "Em C, é possível retornar como valor de saída de uma função o endereço de um vetor short *vec = (short*)malloc(20)",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1358,7 +1358,7 @@
     },
     {
       "question_number": 10,
-      "question": ",%eax seguido de addl $4, %esp",
+      "question": "Em Assembly, a instrução popl %eax é equivalente a executar movl (%esp),%eax seguido de addl $4, %esp",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1367,7 +1367,7 @@
     },
     {
       "question_number": 11,
-      "question": ",%eax pode ser usada para multiplicar por 5 o valor em %eax",
+      "question": "Em Assembly, a instrução leal (%eax,%eax,4),%eax pode ser usada para multiplicar por 5 o valor em %eax",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1376,7 +1376,7 @@
     },
     {
       "question_number": 12,
-      "question": ",%ax coloca em %ax o oitavo elemento.",
+      "question": "Se %ecx for 4 e %esi o endereço inicial de um vetor de short, movw 6(%esi,%ecx,2),%ax coloca em %ax o oitavo elemento.",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1421,7 +1421,7 @@
     },
     {
       "question_number": 17,
-      "question": "ocupa 16 bytes",
+      "question": "Uma estrutura, alinhada de acordo com as regras estudadas, com 1 char, 1 double e um 1 char* (por esta ordem) ocupa 16 bytes",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1504,7 +1504,7 @@
     },
     {
       "question_number": 6,
-      "question": "+ (x<<2) – x” são sempre equivalentes para qualquer valor de unsigned int x",
+      "question": "Em C, as expressões “x * 35” e “(x<<5) + (x<<2) – x” são sempre equivalentes para qualquer valor de unsigned int x",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1513,7 +1513,7 @@
     },
     {
       "question_number": 7,
-      "question": "ptr + 7 avança 14 bytes na memória",
+      "question": "Admita que ptr é uma variável do tipo char*. Então, em C, a expressão (short*)ptr + 7 avança 14 bytes na memória",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1540,7 +1540,7 @@
     },
     {
       "question_number": 10,
-      "question": "” seguido de “addl $-4, %esp”",
+      "question": "Em Assembly, a instrução “pushl %eax” é equivalente a “movl %eax, (%esp)” seguido de “addl $-4, %esp”",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1603,7 +1603,7 @@
     },
     {
       "question_number": 17,
-      "question": "ocupa 20 bytes",
+      "question": "Uma estrutura, alinhada de acordo com as regras estudadas, com 2 int, um vetor de 7 char e 1 short (por esta ordem) ocupa 20 bytes",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1695,7 +1695,7 @@
     },
     {
       "question_number": 7,
-      "question": "pode ser usada para escrever o valor de %eax no topo da stack",
+      "question": "Em Assembly, a instrução movl %eax, (%esp) pode ser usada para escrever o valor de %eax no topo da stack",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1722,7 +1722,7 @@
     },
     {
       "question_number": 10,
-      "question": ",%eax armazena em %eax o valor antigo de %ebp numa função que inicia com o prólogo estudado",
+      "question": "A instrução movl 4(%ebp),%eax armazena em %eax o valor antigo de %ebp numa função que inicia com o prólogo estudado",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1731,7 +1731,7 @@
     },
     {
       "question_number": 11,
-      "question": ",%esi armazena em %esi o endereço do terceiro elemento do vetor.",
+      "question": "Admita que o endereço de um vetor do tipo int está armazenado em %esi e que o valor de %ecx é 2. A instrução leal (%esi,%ecx,4),%esi armazena em %esi o endereço do terceiro elemento do vetor.",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1785,7 +1785,7 @@
     },
     {
       "question_number": 17,
-      "question": "ocupa 8 bytes",
+      "question": "Uma estrutura, alinhada de acordo com as regras estudadas, com um vector de 2 char, 1 int e 1 short (por esta ordem) ocupa 8 bytes",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1859,7 +1859,7 @@
     },
     {
       "question_number": 5,
-      "question": "mod 32",
+      "question": "Em C, a adição de duas variáveis u e v do tipo int tem como resultado (u+v) mod 32",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1877,7 +1877,7 @@
     },
     {
       "question_number": 7,
-      "question": "ptr + 7 avança 28 bytes na memória",
+      "question": "Admita que ptr é uma variável do tipo char*. Então, a expressão (int*)ptr + 7 avança 28 bytes na memória",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1886,7 +1886,7 @@
     },
     {
       "question_number": 8,
-      "question": ", (%edi) permite copiar um byte para uma nova posição de memória numa única instrução",
+      "question": "Em Assembly, a instrução movb (%esi), (%edi) permite copiar um byte para uma nova posição de memória numa única instrução",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1904,7 +1904,7 @@
     },
     {
       "question_number": 10,
-      "question": "é o equivalente a *ptr = 1 em C",
+      "question": "Admita que %edi e  int *ptr armazenam o endereço do inteiro x. Então, movl $1,(%edi) é o equivalente a *ptr = 1 em C",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -1922,7 +1922,7 @@
     },
     {
       "question_number": 12,
-      "question": ",%esi armazena em %esi o valor 0xF400.",
+      "question": "Admita 0xF000 e 0x0100 em %edx e %ecx, respetivamente. leal (%edx,%ecx,4),%esi armazena em %esi o valor 0xF400.",
       "options": [
         "Verdadeiro",
         "Falso"
@@ -2086,7 +2086,7 @@
     },
     {
       "question_number": 10,
-      "question": "",
+      "question": "Em Assembly, depois do prólogo de uma função, o valor antigo de %ebp pode ser encontrado em (%esp)",
       "options": [
         "Verdadeiro",
         "Falso"
