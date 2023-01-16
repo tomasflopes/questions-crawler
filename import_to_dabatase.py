@@ -39,6 +39,19 @@ json_data = json.load(fd)
 
 print("Importing data to database...")
 
+print("Creating subject")
+sql = "INSERT INTO `subjects` (`name`, `year`, `slug`) VALUES (%s, %s, %s)"
+cursor.execute(sql, (subject, '2022', subject))
+
+# get subject id
+sql = "SELECT `id` FROM `subjects` WHERE `name` = %s"
+cursor.execute(sql, (subject))
+subject_id = cursor.fetchone()['id']
+
+print("Creating sample question type")
+sql = "INSERT INTO `question_types` (`name`, `subject_id`) VALUES (%s, %s)"
+cursor.execute(sql, ('sample type', subject_id))
+
 # Iterate over the data and insert values into the table
 for exam in json_data:
     print(exam)

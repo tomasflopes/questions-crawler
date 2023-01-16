@@ -54,6 +54,13 @@ def extract_question(line):
     return remove_question_number(question)
 
 
+def remove_exam_rest(line):
+    line = line.strip()
+    line = line.split('Grupo II')[0]
+
+    return line
+
+
 def extract_questions(text, key):
     cur_questions = []
     print("Extracting questions from " + key + " ...")
@@ -77,6 +84,8 @@ def extract_questions(text, key):
         current_question_words.append(word)
 
     line = " ".join(current_question_words)
+
+    line = remove_exam_rest(line)
 
     question = extract_question(line)
     options = ["Verdadeiro", "Falso"]
