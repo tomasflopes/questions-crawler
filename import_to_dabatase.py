@@ -6,71 +6,51 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Open database connection with .env file properties
+FILE_PATH = "data.json"
+
 db_connection = pymysql.connect(host=os.getenv("DB_HOST"), user=os.getenv("DB_USERNAME"), password=os.getenv(
-    "DB_PASSWORD"), db=os.getenv("DB_DATABASE"), port=os.getenv("PORT"),  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+    "DB_PASSWORD"), db=os.getenv("DB_DATABASE"), port=int(os.getenv("PORT")),  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 
 # prepare a cursor object using cursor() method
 cursor = db_connection.cursor()
 
-# list all .json files in the directory
-json_files = [pos_json for pos_json in os.listdir(
-    '.') if pos_json.endswith('.json')]
-
-print()
-for i in range(len(json_files)):
-    print(f'{i+1}. {json_files[i]}')
-
-print("Select the file you want to import to database: ", end="")
-file_index = int(input())-1
-
-if file_index < 0 or file_index > len(json_files):
-    print("Invalid file index")
-    exit()
-
-file = json_files[file_index]
-print(file)
-
-subject = file.split('.')[0]
 
 # Open and read the file as a single buffer
-fd = open(file, 'r')
+fd = open(FILE_PATH, 'r')
 json_data = json.load(fd)
 
 print("Importing data to database...")
 
-print("Creating subject")
-sql = "INSERT INTO `subjects` (`name`, `year`, `slug`) VALUES (%s, %s, %s)"
-cursor.execute(sql, (subject, '2022', subject))
+for subject in json_data:
+    print(subject)
+    print("Creating subject")
+    sql = "INSERT INTO `subjects` (`name`, `year`, `slug`) VALUES (%s, %s, %s)"
+    cursor.execute(sql, (subject, '2022', subject))
 
-# get subject id
-sql = "SELECT `id` FROM `subjects` WHERE `name` = %s"
-cursor.execute(sql, (subject))
-subject_id = cursor.fetchone()['id']
+    # get subject id
+    sql = "SELECT `id` FROM `subjects` WHERE `name` = %s"
+    cursor.execute(sql, (subject))
+    subject_id = cursor.fetchone()['id']
 
-print("Creating sample question type")
-sql = "INSERT INTO `question_types` (`name`, `subject_id`) VALUES (%s, %s)"
-cursor.execute(sql, ('sample type', subject_id))
-
-# Iterate over the data and insert values into the table
-for exam in json_data:
-    print(exam)
-    for question in json_data[exam]:
+    for question in json_data[subject]:
         print(question)
         if question['correct_index'] == -1:
             continue
         if len(question['question']) > 255:
+            print("Question too long, skipping...")
             continue
-
-        # get subject id
-        sql = "SELECT `id` FROM `subjects` WHERE `name` = %s"
-        cursor.execute(sql, (subject))
-        subject_id = cursor.fetchone()['id']
+        valid = True
+        for option in question['options']:
+            if len(option) > 255:
+                print("Option too long, skipping...")
+                valid = False
+        if not valid:
+            continue
 
         # insert question
         sql = "INSERT INTO `questions` (`question`, `image`, `correct_option`, `exam`, `subject_id`, `question_type_id`) VALUES (%s, %s, %s, %s, %s, %s)"
         cursor.execute(sql, (question['question'], '',
-                       question['correct_index']+1, exam, int(subject_id), 1))
+                             question['correct_index']+1, subject, int(subject_id), 3))
 
         # insert options
         question_id = cursor.lastrowid
