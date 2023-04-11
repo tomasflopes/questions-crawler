@@ -21,6 +21,7 @@ json_data = json.load(fd)
 
 print("Importing data to database...")
 
+j = 100
 for subject in json_data:
     print(subject)
     print("Creating subject")
@@ -31,6 +32,19 @@ for subject in json_data:
     sql = "SELECT `id` FROM `subjects` WHERE `name` = %s"
     cursor.execute(sql, (subject))
     subject_id = cursor.fetchone()['id']
+
+    # create question type if not exists
+    sql = "SELECT `id` FROM `question_types` WHERE `name` = %s AND `subject_id` = %s"
+    cursor.execute(sql, ('Sample type', subject_id))
+    question_type_id = cursor.fetchone()
+
+    if question_type_id is not None:
+        question_type_id = question_type_id['id']
+    else:
+        sql = "INSERT INTO `question_types` (`id`, `name`, `subject_id`) VALUES (%s, %s, %s)"
+        cursor.execute(sql, (j, 'Sample type', subject_id))
+        question_type_id = cursor.lastrowid
+        j += 1
 
     for question in json_data[subject]:
         print(question)
@@ -50,7 +64,7 @@ for subject in json_data:
         # insert question
         sql = "INSERT INTO `questions` (`question`, `image`, `correct_option`, `exam`, `subject_id`, `question_type_id`) VALUES (%s, %s, %s, %s, %s, %s)"
         cursor.execute(sql, (question['question'], '',
-                             question['correct_index']+1, subject, int(subject_id), 3))
+                             question['correct_index']+1, subject, int(subject_id), question_type_id))
 
         # insert options
         question_id = cursor.lastrowid
