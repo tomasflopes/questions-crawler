@@ -1,0 +1,86 @@
+﻿
+1. Como aproximação, considera-se que a intensidade do ruído é igual ao longo do meio de transmissão, nesse contexto, … 
+   … a relação sinal-ruído (S/N ou SNR - Signal Noise Ratio) é também igual ao longo do meio de transmissão. ................................ ______ 
+   … a relação sinal-ruído (S/N ou SNR - Signal Noise Ratio) diminui quando o recetor se afasta do emissor. ..................................... ___X__ 
+   … a relação sinal-ruído (S/N ou SNR - Signal Noise Ratio) aumenta quando o recetor se afasta do emissor. .................................. ______ 
+   … a intensidade do sinal também se mantem igual ao longo do meio de transmissão. ...................................................................... ______ 
+2. Na codificação (line coding) do tipo NRZ-L (Non Return-to-Zero Level) … 
+   … existem sempre apenas dois níveis de sinal possíveis, são usados para representar os símbolos zero e um. ............................. ______ 
+   … , seja qual for a sequência de bits/símbolos a ser transmitida, o sinal sofre continuamente transições de nível. .......................... ______ 
+   … os bits/símbolos a serem transmitidos são representados por transições de nível e não por níveis absolutos de sinal. ............... ______ 
+   … os sinais produzidos são digitais e com valor de frequência sempre inferior ao valor da taxa de transmissão utilizada. ............... ___X__ 
+3. A modulação digital (digital modulation) … 
+   … torna-se necessária quando o meio de transmissão é do tipo banda-base (baseband transmission medium). ............................. ______ 
+   … nunca pode ser usada se o meio de transmissão for sem fios (wireless transmission medium). ................................................... ______ 
+   … produz sinais analógicos cuja amplitude, frequência e fase representam a informação a transmitir. ............................................. ___X__ 
+   … nunca pode ser usada se o meio de transmissão for do tipo banda-canal (passband transmission medium). ............................... ______ 
+4. O controlo de erros Continuous Automatic Repeat Request (Continuous ARQ) … 
+   … é do tipo FEC (Forward Error Correction), por isso em caso de erro não há necessidade de retransmissão. ............................... ______ 
+   … utiliza o protocolo de janela deslizante (sliding window protocol), por isso os pacotes têm de ser numerados. ............................. ___X__ 
+   … usa a técnica stop & wait, esse facto torna-o muito ineficiente quando os atrasos de propagação na rede são elevados. ........... ______ 
+   … é do tipo BEC (Backward Error Correction), ou seja, cabe ao emissor detetar os erros e pedir ao recetor a retransmissão. ........ ______ 
+5. No modelo de referência OSI (Open Systems Interconnection) os pacotes são designados de PDU (Protocol Data Unit), … 
+   … mas no modelo OSI só existem PDU no nível 3 (network layer), nas restantes camadas não existem PDU. ................................ ______ 
+   … os PDU tendem a ser de maior dimensão nas camadas superiores do que nas camadas inferiores do modelo OSI. ................... ______ 
+   … é habitual um PDU de uma camada transportar no seu interior um outro PDU de uma camada superior. .................................... ___X__ 
+   … uma parte do PDU é o PCI (Protocol Control Information) que contém a informação útil a ser transacionada (payload). ............. ______ 
+6. Nas redes Ethernet (IEEE 802.3 / ISO 8802-3) atuais … 
+   … não é possível emitir um frame numa interface de fibra ótica e receber esse mesmo frame numa interface de cobre. ................. ______ 
+   … não existe qualquer tipo de restrição relativamente à dimensão dos frames (pacotes) que podem ser emitidos. .......................... ______ 
+   … é possível emitir um frame a uma dada taxa de transmissão e receber o mesmo frame a uma taxa de transmissão diferente. ... ___X__ 
+   … está incluído um mecanismo de controlo de erros do tipo FEC (Forward Error Correction). .......................................................... ______ 
+7. As redes locais sem fios (Wireless Local Networks - WLAN), definidas pelas normas IEEE 802.11, … 
+   … utilizam frames (pacotes) exatamente iguais aos das redes Ethernet (802.3). ............................................................................... ______ 
+   … utilizam sinais digitais através de um meio de transmissão do tipo banda-base (baseband transmission medium). ..................... ______ 
+   … evitam as colisões garantindo que nunca é possível dois nós tentarem emitir simultaneamente. .................................................. ______ 
+   … utilizam técnicas de modulação digital (digital modulation) para transferir a informação entre os nós. .......................................... ___X__ 
+8. Uma caraterística das células (pacotes) das redes ATM (Asynchronous Transfer Mode) é … 
+   … implementarem controlo de erros FEC (Forward Error Correction) sobre os dados úteis que estão a transportar (payload)......... ______ 
+   … serem encaminhadas através de circuitos virtuais (virtual circuits) previamente criados. ............................................................... ___X__ 
+   … terem um overhead bastante reduzido, normalmente entre 1% e 2%. ............................................................................................ ______ 
+   … terem dimensão variável, ajustando-se às necessidades específicas de cada cliente e tipo de aplicação. ................................... ______ 
+9. O protocolo IPv4 (Internet Protocol version 4) suporta a fragmentação dos pacotes nos nós intermédios (routers), … 
+   … se um pacote é fragmentado, os fragmentos só serão reagrupados quando o pacote chega ao nó final de destino. .................... ______ 
+   … a fragmentação e reagrupamento usa o mecanismo PMTUD (Path Maximum Transmission Unit Discovery). .............................. ______ 
+   … no entanto o único nó que decide se o pacote necessita de ser fragmentado é o nó final de origem. ........................................... ______ 
+   … a fragmentação permite aproveitar ao máximo os valores de MTU (Maximum Transmission Unit) ao longo do caminho. ............ ___X__ 
+10. As mensagens de erro ICMP (Internet Control Message Protocol) do tipo Destination Unreachable (tipo 3) … 
+   … são usadas para assinalar situações em que o campo TTL (Time to Live) de um pacote atingiu o valor zero. ............................. ______ 
+   … significam sempre que um pacote IP não chegou ao nó final de destino pretendido. ..................................................................... ______ 
+   … são usadas na implementação do mecanismo PMTUD (Path Maximum Transmission Unit Discovery). ....................................... ___X__ 
+   … contêm uma cópia integral do pacote IP ao qual se refere o erro reportado. .................................................................................. ______ 
+11. Quando um router IPv4 (Internet Protocol version 4) transfere um pacote IPv4 de uma rede IPv4 para outra rede IPv4 … 
+   … não deve alterar nenhum dos campos existentes no cabeçalho do pacote. ................................................................................... ______ 
+   … deve incrementar em uma unidade o campo TTL (Time to Live) do pacote.................................................................................... ______ 
+   … altera o campo endereço IPv4 de destino do pacote para corresponder ao próximo router ou ao nó final..................................... ______ 
+   … é sempre obrigado a calcular o campo header checksum do pacote e atualizar o mesmo antes de emitir. ................................... ___X__ 
+12. O protocolo IGMP (Internet Group Management Protocol) … 
+   … permite aos routers saberem se devem retransmitir para uma rede pacotes destinados a determinado endereço multicast. ....... ___X__ 
+   … é usado apenas por routers e nós finais, nunca por nós intermédios de nível dois (switches). ...................................................... ______ 
+   … é usado para transportar os dados úteis (payload) até aos nós finais pertencentes a um grupo de multicast. .............................. ______ 
+   … identifica os grupos através de endereços IPv4 do prefixo 127.0.0.0/8. ......................................................................................... ______ 
+13. Numa tabela de routing IPv4, sobre linha 178.20.50.0/23 -> 92.3.5.67 , podemos afirmar que … 
+   … esta linha não pode nunca em caso algum ser a última linha da tabela de routing. ....................................................................... ______ 
+   … 178.20.50.0/23 é o endereço IPv4 de uma rede ou redes vizinhas. ...................................................................................... ______ 
+   … não é possível na mesma tabela de routing existir a linha “ 54.72.0.0/16 -> 92.3.5.67 ”. .......................................... ______ 
+   … 92.3.5.67 é o endereço IPv4 de um router vizinho. ................................................................................................................... ___X__ 
+14. No contexto do protocolo IPv6 (Internet Protocol version 6) … 
+   … os endereços de nó link-local unicast são atribuídos por SLAAC (Stateless Address Auto Configuration). ................................... ______ 
+   … não existe deteção de erros, nem para o cabeçalho do pacote IPv6, nem para os dados transportados (payload). ..................... ___X__ 
+   … os endereços anycast, tal como os endereços multicast, permitem que uma cópia de um pacote seja entregue em vários nós. . ______ 
+   … o protocolo ARP (Address Resolution Protocol) é usado para manter e gerir as tabelas ARP. ...................................................... ______ 
+15. No contexto da API Berkeley Sockets, um servidor UDP (User Datagram Protocol) … 
+   … , quando envia uma resposta, tem garantias de que a mesma vai chegar ao cliente. .................................................................... ______ 
+   … , antes de receber um pedido, tem de saber a respetiva dimensão, ou seja o número exato de bytes que deve ler. .................... ______ 
+   … tem garantias de que recebe todos os pedidos que lhe são enviados pelos clientes. .................................................................... ______ 
+   … pode receber pedidos enviados para endereços multicast ou para o endereço de broadcast. ....................................................... ___X__ 
+16. No protocolo HTTP (Hypertext Transfer Protocol), o campo de cabeçalho (header field) … 
+   … Authorization, tal como o campo de cabeçalho WWW-Authenticate, apenas pode existir em respostas (HTTP responses). .... ______ 
+   … Content-Length pode existir em respostas (HTTP responses) e também em pedidos (HTTP requests). ..................................... ___X__ 
+   … Keep-Alive deve ser utilizado juntamente com a linha de cabeçalho Connection: close. ............................................................ ______ 
+   … Content-Length indica o número total de linhas que existem na mensagem HTTP onde é incluído............................................. ______ 
+17. Um cliente SMTP (Simple Mail Transfer Protocol) é uma aplicação que … 
+   … permite aos utilizadores acederem ao conteúdo das respetivas caixas de correio eletrónico (mailboxes). .................................... ______ 
+   … tem como objetivo receber mensagens de correio eletrónico do servidor SMTP. ........................................................................... ______ 
+   … dialoga com o servidor SMTP através de uma ligação TCP (Transmission Control Protocol). ....................................................... ___X__ 
+   … aceita pedidos de ligação TCP (Transmission Control Protocol) no porto número vinte e cinco. ................................................... ______ 

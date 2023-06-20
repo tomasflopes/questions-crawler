@@ -1,0 +1,87 @@
+﻿
+1. Os meios de transmissão vulgarmente conhecidos como cablagens de cobre (copper cables) … 
+   … permitem a transmissão de sinais elétricos e de sinais óticos. ....................................................................................................... ______ 
+   … são particularmente afetados pelo fenómeno da interferência eletromagnética (EMI - electromagnetic interference). .................. ___X__ 
+   … são adequados para a transmissão de sinais digitais, mas não permitem a passagem de sinais analógicos. ............................... ______ 
+   … nunca necessitam de blindagens pois não são afetados pelo ruído externo. ................................................................................. ______ 
+2. Num meio de transmissão banda base (baseband) que suporta a frequência máxima de 100 MHz, … 
+   … nunca é possível usar taxas de transmissão superiores a 100 Mbps (mega bits por segundo). .................................................... ______ 
+   … com codificação (line coding) NRZ-L (Non Return-to-Zero Level), nunca é possível transmitir à taxa de 400 Mbps. .................... ______ 
+   … as codificações (line coding) bifásicas (e.g. Biphase-L) não permitem a utilização de taxas superiores a 50 Mbps. ..................... ______ 
+   … com qualquer tipo de codificação (line coding) NRZ (Non Return-to-Zero), é possível transmitir à taxa de 200 Mbps. ................. ___X__ 
+3. Um pacote de rede (network packet) transporta dados úteis (payload) e informação de controlo. Seja qual for o tipo de rede, … 
+   … entre a informação de controlo existe sempre um código que permite detetar erros nos dados transportados (payload). ............ ______ 
+   … quanto maior for o tamanho do payload menor será o overhead do pacote e maior será a eficiência do pacote. ......................... ___X__ 
+   … entre a informação de controlo encontra-se sempre o endereço do nó de destino. ........................................................................ ______ 
+   … toda a informação de controlo é obrigatoriamente enviada antes da informação útil (payload). ..................................................... ______ 
+4. Quando um pacote de rede (network packet) atravessa um nó intermédio de uma rede de comutação (switching network), … 
+   … o atraso na rede (network latency) introduzido nunca depende da dimensão (número de bytes) do pacote. ................................ ______ 
+   … o atraso na rede (network latency) introduzido depende sempre das taxas de transmissão na receção e emissão. ..................... ___X__ 
+   … a taxa de transmissão com que é recebido tem de ser sempre igual à taxa de transmissão com que é emitido. .......................... ______ 
+   … nunca é possível a emissão do pacote iniciar-se antes de o mesmo ter sido integralmente recebido. .......................................... ______ 
+5. A arquitetura de camadas designada como IEEE 802, ou ISO 8802, … 
+   … inclui, entre outros, os standards usados pelas redes locais vulgarmente conhecidas como redes Ethernet. ............................... ___X__ 
+   … não define nos seus standards nenhum formato de pacote ou formato de frame. .......................................................................... ______ 
+   … não inclui especificações relativas a cablagens ou sinais (nível 1 do modelo de referência OSI). ................................................. ______ 
+   … inclui standards relativos apenas a redes cabladas, excluindo as redes sem fios (wireless). ......................................................... ______ 
+6. As redes ATM (Asynchronous Transfer Mode) utilizam comutação com circuitos virtuais (virtual circuits), … 
+   … essa técnica garante que os dados são sempre entregues no destino pretendido, embora a ordem não seja garantida. ............. ______ 
+   … por essa razão, quando os dados são entregues, o recetor consegue saber se existe algum erro nos dados úteis (payload). .... ______ 
+   … esse facto garante que a ordem (sequência) de entrega dos dados é a mesma em os dados foram emitidos. ............................. ___X__ 
+   … cada circuito virtual identifica um nó de rede, um nó de rede nunca pode manusear mais do que um circuito virtual. .................. ______ 
+7. Uma caraterística da tecnologia ADSL (Asymmetric Digital Subscriber Line) é … 
+   … garantir a mesma capacidade de transferência de dados nos dois sentidos de circulação do tráfego. .......................................... ______ 
+   … usar meios de transmissão do tipo banda base (baseband), através dos quais são transmitidos sinais digitais. .......................... ______ 
+   … permitir que o mesmo cabo seja partilhado por diferentes subscritores. ......................................................................................... ______ 
+   … usar sinais analógicos, recorrendo por isso à modulação digital (digital modulation). .................................................................... ___X__ 
+8. O mecanismo PMTUD (Path Maximum Transmission Unit Discovery) … 
+   … tem como objetivo evitar que os pacotes IP sejam fragmentados nos nós intermédios (routers). .................................................. ___X__ 
+   … pode ser usado com o protocolo IPv4 (Internet Protocol version 4), mas não é suportado pelo IPv6. ........................................... ______ 
+   … tem como objetivo determinar o caminho mais rápido até ao nó de destino. .................................................................................. ______ 
+   … tem como objetivo determinar o maior valor de MTU (Maximum Transmission Unit) existente ao longo do caminho. ............... ______ 
+9. O protocolo ARP (Address Resolution Protocol), é usado para construir as tabelas ARP, … 
+   … se um nó estiver desligado da rede durante algum tempo, a sua tabela ARP tende a ficar vazia. ................................................. ___X__ 
+   … esta tabela permite transformar nomes de máquinas em endereços IPv4 (Internet Protocol version 4). ....................................... ______ 
+   … este protocolo é usado para endereços IPv4 e também para endereços IPv6 (Internet Protocol version 6). ................................. ______ 
+   … estas tabelas permitem aos switches encaminhar os pacotes para que se propaguem apenas para onde são necessários. ....... ______ 
+10. No protocolo TCP (Transmission Control Protocol), durante o estabelecimento da ligação TCP (TCP connection) … 
+   … são trocados (exchanged) os números de sequência (sequence numbers), que nesta fase têm sempre o valor zero. ................. ______ 
+   … é definido um valor fixo do RTO (Retransmission Timeout), que será utilizado em todas as transações. ...................................... ______ 
+   … é ativada a flag SYN (synchronization request) existente no cabeçalho dos segmentos TCP. ...................................................... ___X__ 
+   … são definidos os números de porto (port numbers) que cada aplicação deve usar. ....................................................................... ______ 
+11. Duas colunas fundamentais de uma tabela de routing IPv4 são o destino (destination) e o next-hop, … 
+   … numa tabela de routing nunca podem existir duas linhas diferentes com o mesmo valor para destino (destination). .................... ______ 
+   … ambas estas colunas contêm endereços IPv4 associados a máscaras de rede ou tamanhos de prefixo. ..................................... ______ 
+   … no contexto do routing dinâmico (dynamic routing), estas duas colunas são insuficientes. ............................................................ ___X__ 
+   … numa tabela de routing nunca podem existir duas linhas diferentes com o mesmo valor para o next-hop. .................................. ______ 
+12. No ICMPv6 (Internet Control Message Protocol version 6) são implementadas funcionalidades que … 
+   … no contexto do IPv4 são disponibilizadas através do protocolo RIP (Routing Information Protocol). ............................................. ______ 
+   … no contexto do IPv4 eram implementadas pelo protocolo ARP e pelo protocolo IGMP (Internet Group Management Protocol). .. ___X__ 
+   … permitem a fragmentação e reagrupamento dos pacotes nos nós intermédios (routers), ao longo do caminho. ........................... ______ 
+   … no contexto do IPv4 são disponibilizadas pelo protocolo IPsec (Internet Protocol Security). .......................................................... ______ 
+13. No sistema de resolução de nomes DNS (Domain Name System), os glue records … 
+   … são registos do tipo NS (name server). ........................................................................................................................................... ______ 
+   … contêm endereços IPv4 e IPv6 de servidores de nomes (name servers). ...................................................................................... ___X__ 
+   … são normalmente registos do tipo A, nunca podem ser registos do tipo AAAA. .............................................................................. ______ 
+   … são registos do tipo CNAME (canonical name). .............................................................................................................................. ______ 
+14. No contexto da API Berkeley Sockets, quando se desenvolvem aplicações baseadas no protocolo TCP … 
+   … , na receção de dados é necessário saber previamente quantos bytes devem ser lidos. ............................................................... ___X__ 
+   … não existe qualquer tipo de garantia de que os dados enviados cheguem ao destino pretendido. ................................................ ______ 
+   … não é possível enviar mais do que 512 bytes de dados em cada operação de escrita/envio. ........................................................ ______ 
+   … é possível enviar dados para endereços multicast ou para o endereço de broadcast. ................................................................... ______ 
+15. Numa mensagem de resposta (response message) do Hypertext Transfer Protocol (HTTP) … 
+   … existe sempre o campo de cabeçalho (header field) Content-Length. .......................................................................................... ______ 
+   … a primeira linha identifica o método que foi usado no pedido (e.g. GET, PUT, POST, DELETE). .................................................. ______ 
+   … existe sempre um código numérico que indica o resultado do processamento do pedido correspondente. ................................... ___X__ 
+   … nunca existe o campo de cabeçalho (header field) Connection. .................................................................................................... ______ 
+16. No contexto do protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security), a autenticação mútua de aplicações através 
+de certificados de chave pública (public key certificates) … 
+   … exige que ambas as aplicações envolvidas usem o mesmo certificado e conheçam a correspondente chave privada. ................ ______ 
+   … é possível mesmo que apenas uma das aplicações envolvidas possua um certificado de chave pública. .................................... ______ 
+   … não é de forma alguma viável se os certificados de chave pública envolvidos forem auto assinados. ........................................... ______ 
+   … só é viável se a aplicação servidora exigir à aplicação cliente que a mesma lhe envie um certificado de chave pública. ............. ___X__ 
+17. No contexto do Simple Network Management Protocol version 1 (SNMPv1), as mensagens GetRequest e GetResponse … 
+   … contêm OID (Object Identifiers) que especificam objetos da MIB (Management Information Base) do agente SNMP. ................. ___X__ 
+   … são dois tipos de pedido que o sistema gestor (management system) pode enviar ao agente SNMP. .......................................... ______ 
+   … contêm texto com o nomes de objetos da MIB do agente sobre os quais se pretende interagir. ................................................... ______ 
+   … são particularmente úteis na implementação de sistemas de monitorização passiva. .................................................................... ______ 

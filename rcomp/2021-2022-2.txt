@@ -1,0 +1,86 @@
+﻿
+1. Na transmissão de dados digitais, o ruído …  
+   … externo nunca afeta a modulação digital (digital modulation), afeta apenas os sinais digitais. ....................................................... ______ 
+   … resultante da interferência eletromagnética (EMI - electromagnetic interference) não existe nas fibras óticas. ............................. ___X__ 
+   … interno é sempre muito superior ao ruído externo, especialmente em meios de transmissão de sinais elétricos. ......................... ______ 
+   … é muito mais nefasto junto ao emissor do sinal do que junto ao recetor do sinal. ........................................................................... ______ 
+2. Os sinais digitais são criados através de técnicas designadas line coding, … 
+   … a frequência do sinal produzido não depende da técnica de line coding usada. ............................................................................. ______ 
+   … a técnica Biphase-L (Manchester) tem o inconveniente de dificultar a sincronização de símbolos (symbol synchronization). ...... ______ 
+   … num dado meio de transmissão, a taxa de transmissão máxima possível depende da técnica de line coding usada. .................. ___X__ 
+   … seja qual for a técnica de line coding, o sinal produzido apenas tem dois valores possíveis, correspondentes aos bits 0 e 1. ..... ______ 
+3. A técnica PSK (Phase Shift Keying) … 
+   … não deve ser usada em meios de transmissão do tipo passband, deve ser usada em meios de transmissão do tipo baseband. . ______ 
+   … pode ser combinada com a técnica FSK (Frequency Shift Keying), mas nunca com a técnica ASK (Amplitude Shift Keying). ..... ______ 
+   … produz sinais analógicos, enquanto a técnica ASK (Amplitude Shift Keying) produz sinais digitais. .............................................. ______ 
+   … é uma técnica de modulação digital (digital modulation), permite enviar dados digitais através de sinais analógicos. .................. ___X__ 
+4. Numa rede, um pacote (packet) pode conter um campo que permite ao recetor detetar se ocorreu algum erro na transmissão, … 
+   … o tamanho desse campo (número de bits) não depende do tamanho do pacote nem da quantidade de dados que transporta. ... ___X__ 
+   … esse campo tem de ser sempre enviado antes dos dados úteis (payload), nunca pode ser enviado depois dos dados úteis. ...... ______ 
+   … se o valor desse campo for o correto, então o recetor tem a total e absoluta certeza de que não acorreu nenhum erro. .............. ______ 
+   … este campo é fundamental em Forward Error Correction (FEC), mas desnecessário em Backward Error Correction (BEC). ....... ______ 
+5. O modelo de referência OSI (Open Systems Interconnection) estabelece sete camadas, … 
+   … as camadas da arquitetura IEEE 802 (ISSO 8802) correspondem à camada de rede (network layer) do modelo OSI. ................ ______ 
+   … a camada de ligação lógica (logical link layer) não interage diretamente com a camada de ligação física (physical link layer). .... ______ 
+   … quando os dados chegam da rede a primeira camada que atravessam é a camada de transporte (transport layer). .................... ______ 
+   … na pilha TCP/IP não existe uma camada correspondente à camada de ligação física (physical link layer) do modelo OSI........... ___X__ 
+6. Nas redes locais Ethernet (IEEE802.3/ISO8802-3) os endereços de nó são constituídos por 48 bits, … 
+   … numa tabela MAC de um comutador (switch) é normal existirem várias entradas com o mesmo endereço de nó Ethernet. ......... ______ 
+   … o endereço Ethernet em que os 48 bits têm o valor um é reservado e nunca pode ser usado para nenhum efeito. ...................... ______ 
+   … é absolutamente fundamental que cada endereço de nó Ethernet seja único em toda a Internet. ................................................. ______ 
+   … cada pacote (frame) Ethernet transporta dois endereços de nó Ethernet. ...................................................................................... ___X__ 
+7. A ligação de rede conhecida como Local Loop ... 
+   … é uma ligação física ponto-a-ponto entre dois diferentes subscritores de serviço de Internet. ....................................................... ______ 
+   … pode usar a tecnologia ADSL (Asymmetric Digital Subscriber Line), nesse caso é necessário instalar fibra ótica. ....................... ______ 
+   … pode ser implementada usando transmissão sem fios (Wireless Local Loop), nesse caso são usados sinais analógicos. ........... ___X__ 
+   … envolve sempre a utilização de MODEM pois implica sempre a utilização de sinais analógicos. ................................................... ______ 
+8. No IPv4 (Internet Protocol version 4) é possível fragmentar os pacotes IPv4 (IPv4 packet fragmentation), … 
+   … para isso é necessário que a flag DF (Don’t Fragment) esteja ativa no cabeçalho do pacote IPv4. ............................................... ______ 
+   … a fragmentação é aplicada sempre que o tamanho do pacote é inferior ao MTU (Maximum Transmission Unit) da rede. ............ ______ 
+   … essa fragmentação de pacotes IPv4 é baseada no mecanismo PMTUD (Path Maximum Transmission Unit Discovery). ............. ______ 
+   … a fragmentação garante o máximo aproveitamento do MTU (Maximum Transmission Unit) de cada rede. ................................... ___X__ 
+9. O protocolo ARP (Address Resolution Protocol) … 
+   … envia respostas para o endereço de broadcast da rede local, os pedidos ARP nunca são enviados para este endereço. ........... ______ 
+   … é fundamental tanto para o IPv4 como para o IPv6 (Internet Protocol version 6) operarem numa rede local Ethernet. ................. ______ 
+   … permite transformar nomes DNS de máquinas ou servidores em endereços IPv4. ........................................................................ ______ 
+   … opera estritamente dentro de uma rede local, os seus pacotes nunca são transferidos entre redes diferentes. ............................ ___X__ 
+10. O cabeçalho de um segmento TCP (Transmission Control Protocol) … 
+   … contém o campo Reception Window Size, este campo nunca pode em caso algum ter o valor zero. ......................................... ______ 
+   … contém, tal como no UDP (User Datagram Protocol), um número de porto de origem e um número de porto de destino. ............ ___X__ 
+   … tem uma dimensão fixa e sempre igual a vinte bytes. ..................................................................................................................... ______ 
+   … contém várias flags, nunca é possível as flags SYN e ACK estarem ativas simultaneamente num mesmo segmento.................. ______ 
+11. Numa tabela de routing a coluna designada metric ou cost … 
+   … só é relevante quando existem duas linhas que especificam a mesma rede de destino (mesmo valor na coluna destination). .... ___X__ 
+   … tem obrigatoriamente um valor igual entre duas linhas que têm o mesmo valor na coluna next-hop. ............................................ ______ 
+   … contêm valores numéricos que não dependem do protocolo de routing que está a ser utilizado para construir a tabela. ............. ______ 
+   … pode conter endereços IP ou nomes de interfaces de rede locais do router. .................................................................................. ______ 
+12. No sistema de resolução de nomes DNS (Domain Name System), os registos do tipo … 
+   … NS (Name Server) são usados para armazenar os endereços IP dos root name servers. ............................................................. ______ 
+   … MX (Mail eXchanger) contêm endereços IP de servidores SMTP (Simple Mail Transfer Protocol) de um domínio DNS. .............. ______ 
+   … SOA (Start Of Authority) contêm a lista de todos os root name servers existentes no sistema DNS. ............................................ ______ 
+   … A (IPv4 address) e AAAA (IPv6 address) são em determinados casos usados como registos-cola (Glue Records). .................... ___X__ 
+13. Uma vantagem de se optar por implementar uma aplicação de rede sobre UDP em lugar de TCP é que … 
+   … quando os dados não são entregues no destino, o emissor é sempre notificado dessa ocorrência. .............................................. ______ 
+   … o recetor não necessita de saber previamente quantos bytes vai receber do emissor. .................................................................. ___X__ 
+   … é possível transferir uma quantidade superior de dados em cada envio. ........................................................................................ ______ 
+   … existem mais garantias de que os dados enviados serão entregues no destino. ............................................................................ ______ 
+14. No HTTP (Hypertext Transfer Protocol) o argumento (URI) de um pedido com o método GET … 
+   … encontra-se numa linha de campo de cabeçalho (header field line) da mensagem de pedido (request message). ....................... ______ 
+   … pode ser usado para enviar dados ao servidor. ............................................................................................................................... ___X__ 
+   … refere-se obrigatoriamente a um conteúdo estático, o método GET não suporta conteúdos dinâmicos. ....................................... ______ 
+   … encontra-se no corpo (content) da mensagem de pedido (request message). ............................................................................... ______ 
+15. No protocolo HTTP 1.1 a ligação TCP entre cliente e servidor é persistente … 
+   … desde que o cliente inclua no primeiro pedido HTTP (HTTP request) o campo de cabeçalho Keep-Alive. ................................... ______ 
+   … , a ligação persiste por tempo indefinido até que cliente ou servidor solicitem explicitamente a sua terminação. .......................... ______ 
+   … , para terminar uma ligação persistente deve ser enviada a linha de campo de cabeçalho Connection: close. .......................... ___X__ 
+   … , isso permite ao servidor inverter o seu papel e enviar pedidos HTTP (HTTP requests) ao cliente. ............................................. ______ 
+16. O algoritmo RSA (Rivest–Shamir–Adleman) … 
+   … utiliza uma mesma chave secreta para encriptar e para desencriptar a informação. ...................................................................... ______ 
+   … utiliza uma chave pública e uma chave privada, por motivos de segurança, ambas devem ser mantidas secretas. ..................... ______ 
+   … é um algoritmo de criptografia de chave assimétrica que também é utilizado para implementar assinaturas digitais. ................... ___X__ 
+   … utiliza normalmente chaves criptográficas com 128 bits, ou no máximo com 256 bits. ................................................................... ______ 
+17. No contexto da utilização do protocolo … 
+   … SNMP (Simple Network Management Protocol) o agente comunica através do protocolo TCP. .................................................... ______ 
+   … SMTP (Simple Mail Transfer Protocol) o cliente pode enviar ou receber mensagens de correio eletrónico. .................................. ______ 
+   … SNMP (Simple Network Management Protocol) as mensagens TRAP são pedidos enviados ao agente. ..................................... ______ 
+   … IMAP4 (Internet Message Access Protocol version 4) o cliente permite o acesso à caixa de correio (mailbox) do utilizador. ....... ___X__ 

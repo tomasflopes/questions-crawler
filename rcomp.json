@@ -1,0 +1,1193 @@
+[
+  {
+    "question": "A EMI (Electromagnetic interference) é um fenómeno …",
+    "options": [
+      "… que afeta as transmissões, tanto através de sinais elétricos como através de sinais óticos.",
+      "… com impacto negativo na eficiência das transmissões através de cablagens óticas.",
+      "… que só afeta os sinais digitais, os sinais analógicos não são afetados.",
+      "… cujos efeitos nefastos podem ser reduzidos através de blindagens."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "A modulação digital (digital modulation) é uma técnica …",
+    "options": [
+      "… em que o sinal produzido nunca tem frequência zero.",
+      "… em que o sinal produzido é do tipo digital.",
+      "… que só pode ser usada com sinais óticos, nunca com sinais elétricos ou eletromagnéticos.",
+      "… adequada a meios de transmissão do tipo baseband (banda-base)."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Um vantagem de se utilizarem pacotes (packets) de dimensão reduzida é que dessa forma …",
+    "options": [
+      "… reduz-se o overhead de cada pacote.",
+      "… diminui-se o atraso de propagação dos pacotes através de nós intermédios que operam em modo store & forward.",
+      "… reduz-se a quantidade de informação de controlo (PCI) que é necessário enviar através dos meios de transmissão.",
+      "… para enviar um dado volume de informação útil (payload) são necessários menos pacotes."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "De acordo com o modelo OSI (Open Systems Interconnection), nas camadas inferiores desse modelo, …",
+    "options": [
+      "… os pacotes têm tendência a ter dimensão superior aos pacotes nas camadas superiores.",
+      "… nunca é implementada a deteção de erros, essa função apenas é implementada pela camada de transporte (layer four).",
+      "… os serviços disponibilizados são mais fiáveis do que aqueles disponibilizados pelas camadas superiores.",
+      "… não existe o conceito de endereço de nó, esse conceito apenas é implementado na camada de sessão  (layer five)."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "As redes de área local Ethernet (IEEE802.3/ISO8802-3) …",
+    "options": [
+      "… utilizam endereços únicos com 128 bits para identificar cada nó Ethernet existente na rede.",
+      "… são redes de cablagem de cobre, não existem redes Ethernet em fibra ótica.",
+      "… permitem que os nós saibam, com algum grau de certeza, se um pacote recebido contém algum erro.",
+      "… utiliza a técnica de circuitos virtuais para garantir a ordem de entrega dos pacotes."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "As linhas telefónicas da rede pública (PSTN - Public Switched Telephone Network) …",
+    "options": [
+      "… são constituídas por quatro pares de cobre entrançados, com blindagem.",
+      "… podem ser utilizadas pelas tecnologias DSL (Digital Subscriber Line) e ADSL (Asymmetric Digital Subscriber Line).",
+      "… permitem a transmissão de sinais óticos, analógicos e digitais.",
+      "… são meios de transmissão do tipo baseband (banda-base)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No cabeçalho de um pacote IPv6 existe um campo designado next-header, esse campo …",
+    "options": [
+      "… determina o número máximo de nós intermédios (routers) que o pacote poderá atravessar.",
+      "… apenas pode conter um de dois valores: 6 para o protocolo TCP ou 17 para o protocolo UDP.",
+      "… define de que tipo são os dados que se seguem ao cabeçalho IPv6.",
+      "… serve para implementar a fragmentação de pacotes pelos nós intermédios (routers)."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O protocolo TCP (Transmission Control Protocol) …",
+    "options": [
+      "… tem como principal desvantagem o facto de não garantir a ordem (sequência) de entrega dos dados.",
+      "… permite a utilização de endereços multicast e broadcast como destino para os dados.",
+      "… tem a possibilidade de operar sobre IPv4 ou sobre IPv6.",
+      "… implementa a numeração dos bytes enviados e recebidos, o primeiro byte enviado tem sempre o número de sequência 1."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No sistema DNS (Domain Name System), os registos (RR – Resource Records) …",
+    "options": [
+      "… do tipo SOA (Start Of Authority) contêm os endereços IP de todos os servidores de nomes do domínio.",
+      "… do tipo PTR servem para definir os servidores de nomes de um domínio DNS.",
+      "… que servem para definir endereços IPv4 de nós de rede são os registos do tipo A.",
+      "… do tipo NS (Name Server) contêm endereços IP de servidores de nomes."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Na API Berkeley Sockets, a função accept() e o método accept(), respetivamente em linguagens C e Java, usam-se …",
+    "options": [
+      "… quando se pretende aceitar um pedido de ligação TCP de um cliente.",
+      "… tipicamente com o protocolo UDP (User Datagram Protocol), mas também podem ser usadas com o protocolo TCP.",
+      "… em aplicações clientes de rede, nunca em aplicações servidoras da rede.",
+      "… quando se pretende aceitar um datagrama UDP enviado por outra aplicação."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Todas as mensagens do protocolo HTTP (Hypertext Transfer Protocol) começam por um cabeçalho em formato de texto, …",
+    "options": [
+      "… ao longo do cabeçalho podem existir várias linhas vazias que devem ser ignoradas.",
+      "… seja qual for a mensagem, a primeira linha do cabeçalho começa sempre pela palavra HTTP.",
+      "… olhando apenas para o conteúdo do cabeçalho não é possível saber se é um pedido ou uma resposta.",
+      "… a única forma de determinar o tamanho do cabeçalho é proceder à leitura integral do mesmo."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "O protocolo HTTP suporta vários tipos de pedidos (methods), …",
+    "options": [
+      "… o método mais adequado para obter o conteúdo de um recurso existente é o POST.",
+      "… todo e qualquer servidor HTTP é sempre obrigado a suportar todos os métodos definidos no protocolo HTTP.",
+      "… o método PUT é habitualmente usado no contexto REST para atualizar o conteúdo de um recurso.",
+      "… o método GET implica que o pedido não tem corpo, logo não pode ser usado para enviar dados ao servidor."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Através da primeira linha (request line) de uma mensagem de pedido HTTP, ficamos sempre a saber …",
+    "options": [
+      "… o tipo de conteúdo (body) transportado pelo pedido.",
+      "… qual é o tipo de pedido HTTP (method) e qual a versão do protocolo HTTP que o cliente está a utilizar.",
+      "… a versão do protocolo HTTP que o servidor está a utilizar.",
+      "… quantas linhas de texto existem no cabeçalho da mensagem."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "O protocolo HTTPS utiliza habitualmente certificados de chave pública. Um certificado de chave pública …",
+    "options": [
+      "… contém uma chave pública e a correspondente chave privada.",
+      "… pode ser auto-assinado (self-signed), nesse caso deve ser sempre considerado fidedigno.",
+      "… identifica uma entidade, frequentemente através de um nome DNS, e contém a respetiva chave pública.",
+      "… contém uma assinatura digital que é sempre criada pelo proprietário da chave pública contida no certificado."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O SSL/TLS (Secure Sockets Layer/Transport Layer Security) envolve uma negociação inicial, nessa negociação …",
+    "options": [
+      "… é o servidor que decide qual a versão SSL/TLS a utilizar, e também qual o cypher-suite a utilizar.",
+      "… o primeiro passo é sempre o servidor enviar ao cliente uma mensagem Server Hello.",
+      "… cliente e servidor definem o cypher-suite que cada um vai usar, é possível cada um usar um cypher-suite diferente do outro.",
+      "… envolve sempre obrigatoriamente a troca de certificados de chave pública."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Uma caraterística fundamental comum a qualquer tipo de VPN (Virtual Private Network) é que …",
+    "options": [
+      "… os pacotes transferidos através da VPN são sempre datagramas IP (nível três) nunca podem ser frames de nível dois.",
+      "… os endereços IP usados são privados, nunca podem a caso algum ser endereços públicos.",
+      "… é garantida a confidencialidade dos dados que são transferidos através dela.",
+      "… é sempre obrigatório que cada utilizador se autentique antes de a utilizar."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O envio de uma mensagem de correio eletrónico através de SMTP (Simple Mail Transfer Protocol) …",
+    "options": [
+      "… está muitas vezes limitado a formato de texto simples, mas mesmo assim é possível enviar outros tipos de conteúdos.",
+      "… exige sempre a autenticação do utilizador, através de username/password, perante o servidor.",
+      "… garante, em qualquer circunstância, a privacidade/confidencialidade do conteúdo da mensagem.",
+      "… recorre necessariamente a um servidor POP3 (Post Office Protocol) ou IMAP4 (Internet Message Access Protocol)."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "O fenómeno de interferência eletromagnética (EMI - electromagnetic interference) …",
+    "options": [
+      "… é a principal causa do ruído interno que existe nos meios de transmissão de dados.",
+      "… só afeta os sinais analógicos, os sinais digitais são imunes aos efeitos nefastos deste fenómeno.",
+      "… é causado pela interferência intersimbólica  (ISI - Inter Symbol Interference)",
+      "… não afeta de forma nenhuma as transmissões de dados através de fibra ótica."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "As técnicas QAM (Quadrature Amplitude Modulation) …",
+    "options": [
+      "… têm o inconveniente de produzirem um sinal constante durante a transmissão de uma sequência de símbolos um.",
+      "… produzem sinais analógicos em que os dados digitais são representados por valores de amplitude e mudanças de fase.",
+      "… são na realidade uma combinação das técnicas PSK (Phase Shift Keying) e FSK (Frequency Shift Keying).",
+      "… podem ser usada em meios de transmissão do tipo baseband, mas nunca em meios de transmissão do tipo passband."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "O controlo de erros do tipo …",
+    "options": [
+      "… Continuous ARQ é um exemplo de Forward Error Correction (FEC).",
+      "… Automatic Repeat Request (ARQ) é bastante afetado pela latência da rede, em especial no modo stop & wait.",
+      "… Forward Error Correction (FEC), obriga o recetor a solicitar ao emissor o reenvio dos dados sempre que ocorre um erro.",
+      "… Backward Error Correction (BEC), permite ao recetor corrigir autonomamente os erros sem recorrer ao emissor."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Quando a pilha de protocolos TCP/IP é comparada com o modelo de referência OSI (MR-OSI), podemos afirmar que …",
+    "options": [
+      "… o protocolo IP (Internet Protocol) situa-se na camada de transporte (nível 4 do MR-OSI).",
+      "… na pilha TCP/IP não existe camada de ligação física (nível 1 do MR-OSI).",
+      "… o protocolo TCP (Transmission Control Protocol) situa-se na camada de ligação lógica (nível 2 do MR-OSI).",
+      "… na pilha TCP/IP não existe camada de rede (nível 3 do MR-OSI)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Numa rede local Ethernet (IEEE802.3/ISO8802-3), os comutadores Ethernet (switches) usam as tabelas MAC para …",
+    "options": [
+      "… registar associações entre endereços Ethernet de 48 bits e endereços IPv4 de 32 bits.",
+      "… evitar que ocorram colisões, deixando de ser necessário o protocolo CSMA/CD.",
+      "… armazenar temporariamente os pacotes (frames) quando não podem ser emitidos de imediato.",
+      "… emitir cada pacote (frame) apenas na porta de saída onde é necessário."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "As células (cells) das redes ATM (Asynchronous Transfer Mode) …",
+    "options": [
+      "… transportam uma quantidade de dados úteis claramente superior à transportada pelos pacotes (frames) Ethernet típicos.",
+      "… têm um overhead variável entre 5% e 10%.",
+      "… não garantem a entrega dos dados, mas caso os dados sejam entregues, a ordem (sequência) de entrega é garantida.",
+      "… incluem mecanismos de deteção de erros nos dados que transportam (payload)."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O Cable Modem Termination System (CMTS) é …",
+    "options": [
+      "… um equipamento completamente passivo que agrega um conjunto de cablagens.",
+      "… usado para proporcionar ligações ADSL (Asymmetric Digital Subscriber Line) aos subscritores.",
+      "… um equipamento que se encontra habitualmente no interior da residência do subscritor.",
+      "… um equipamento que serve simultaneamente muitos subscritores, possuindo um MODEM para cada subscritor."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Uma caraterística do cabeçalho (header) de um pacote IPv4 (Internet Protocol version 4) é …",
+    "options": [
+      "… ter um campo que contém uma etiqueta data/hora e se designa TTL (Time to Live).",
+      "… conter um campo que permite detetar erros nos dados transportados (payload).",
+      "… conter o endereço IPv4 do nó de destino (onde o pacote deve ser entregue), mas não o endereço do nó de origem.",
+      "… ser constituído por um número de bytes variável, mas sempre múltiplo de 4."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "As mensagens ICMP (Internet Control Message Protocol) …",
+    "options": [
+      "… do tipo time exceeded indicam que foi excedido o tempo máximo especificado em segundos pelo emissor.",
+      "… do tipo destination unreachable indicam que houve um pacote que não chegou ao destino pretendido.",
+      "… são transportadas por pacote UDP (User Datagram Protocol), sendo para o efeito reservado o número de porto 1.",
+      "… do tipo echo request e echo reply são usadas pelo comando traceroute para determinar o caminho seguido pelos pacotes."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "O mecanismo SLAAC (Stateless Address Auto Configuration) …",
+    "options": [
+      "… nunca em caso algum recorre ao serviço DHCPv6.",
+      "… pode ou não ser usado para definir as configurações IPv6, tudo depende da mensagem Router Advertisement recebida.",
+      "… só pode ser usado se na rede local existir pelo menos um servidor DHCPv6.",
+      "… tem como objetivo atribuir ao nó um link-local unicast address."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No sistema de resolução de nomes DNS (Domain Name System), os registos do tipo NS (Name Server) …",
+    "options": [
+      "… são também vulgarmente conhecidos como Glue Records e representam os root name servers.",
+      "… são fundamentais, o sistema de domínios DNS não pode ser implementado sem recorrer a este tipo de registo.",
+      "… têm de ser únicos em cada domínio, tal como o registo SOA (Start Of Authority).",
+      "… contêm endereços IPv4 e endereços IPv6 de servidores de nomes DNS."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Na API Berkeley Sockets, quando um cliente TCP (Transmission Control Protocol) …",
+    "options": [
+      "… estabelece com sucesso a ligação TCP com o servidor, é criado um novo socket na aplicação cliente. .",
+      "… recebe dados através de uma ligação TCP, não necessita de saber previamente quantos bytes deve ler.",
+      "… pretende estabelecer uma ligação TCP, tem de conhecer o endereço de nó e número de porto do servidor.",
+      "… envia dados através de uma ligação TCP não tem qualquer garantia que esses dados sejam entregues."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "A primeira linha de uma mensagem HTTP (Hypertext Transfer Protocol) …",
+    "options": [
+      "… contém sempre um identificador do método que está a ser usado (e.g. GET, PUT, POST, DELETE)",
+      "… estabelece desde logo a quantidade de bytes que a mensagem transporta (Content-Length).",
+      "… pode ou não conter um identificador da versão do protocolo HTTP (e.g. HTTP/1.1)",
+      "… permite identificar imediatamente se a mensagem em questão é um pedido HTTP ou uma resposta HTTP."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No protocolo HTTP 1.1, o campo de cabeçalho (header field) …",
+    "options": [
+      "… User-Agent contém o nome do servidor HTTP que emitiu a mensagem, por exemplo Apache/2.4.9.",
+      "… Content-Type pode existir em respostas HTTP (HTTP responses), nunca em pedidos HTTP (HTTP requests).",
+      "… Connection não tem qualquer efeito, não afeta de nenhuma forma o comportamento de clientes e servidores.",
+      "… Authorization pode existir em pedidos HTTP (HTTP requests), nunca em respostas HTTP (HTTP responses)."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security), a mensagem Client Hello …",
+    "options": [
+      "… contém uma lista de cypher suites para o servidor escolher um deles",
+      "… contém sempre o certificado de chave pública do cliente.",
+      "… é a primeira mensagem enviada pelo servidor ao cliente.",
+      "… é enviada em resposta à mensagem Server Hello."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Os agentes SNMP (Simple Network Management Protocol) podem ser usados pelos sistemas de monitorização, …",
+    "options": [
+      "… para cada agente SNMP a ser usado terá de existir um sistema de monitorização distinto.",
+      "… neste contexto, o modelo de funcionamento mais comum é monitorização ativa (active checking).",
+      "… para esse efeito os sistemas de monitorização enviam pedidos HTTP e os agentes devolvem respostas HTTP.",
+      "… neste contexto, o sistema de monitorização envia mensagens SNMP SetRequest."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "O protocolo SMTP (Simple Mail Transfer Protocol) é usado para a comunicação entre …",
+    "options": [
+      "… os MUA (Mail User Agent) e os servidores POP3 (Post Office Protocol version 3)",
+      "… diferentes MTA (Mail Transfer Agent), um MTA pode assumir o papel de cliente ou de servidor.",
+      "… os MUA (Mail User Agent) e os servidores IMAP4 (Internet Message Access Protocol version 4)",
+      "… o MTA (Mail Transfer Agent) e as caixas de correio (mailboxes) locais para depositar mensagens."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Os meios de transmissão vulgarmente conhecidos como cablagens de cobre (copper cables) …",
+    "options": [
+      "… permitem a transmissão de sinais elétricos e de sinais óticos.",
+      "… são particularmente afetados pelo fenómeno da interferência eletromagnética (EMI - electromagnetic interference).",
+      "… são adequados para a transmissão de sinais digitais, mas não permitem a passagem de sinais analógicos.",
+      "… nunca necessitam de blindagens pois não são afetados pelo ruído externo."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Num meio de transmissão banda base (baseband) que suporta a frequência máxima de 100 MHz, …",
+    "options": [
+      "… nunca é possível usar taxas de transmissão superiores a 100 Mbps (mega bits por segundo).",
+      "… com codificação (line coding) NRZ-L (Non Return-to-Zero Level), nunca é possível transmitir à taxa de 400 Mbps.",
+      "… as codificações (line coding) bifásicas (e.g. Biphase-L) não permitem a utilização de taxas superiores a 50 Mbps.",
+      "… com qualquer tipo de codificação (line coding) NRZ (Non Return-to-Zero), é possível transmitir à taxa de 200 Mbps."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Um pacote de rede (network packet) transporta dados úteis (payload) e informação de controlo. Seja qual for o tipo de rede, …",
+    "options": [
+      "… entre a informação de controlo existe sempre um código que permite detetar erros nos dados transportados (payload).",
+      "… quanto maior for o tamanho do payload menor será o overhead do pacote e maior será a eficiência do pacote.",
+      "… entre a informação de controlo encontra-se sempre o endereço do nó de destino.",
+      "… toda a informação de controlo é obrigatoriamente enviada antes da informação útil (payload)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Quando um pacote de rede (network packet) atravessa um nó intermédio de uma rede de comutação (switching network), …",
+    "options": [
+      "… o atraso na rede (network latency) introduzido nunca depende da dimensão (número de bytes) do pacote.",
+      "… o atraso na rede (network latency) introduzido depende sempre das taxas de transmissão na receção e emissão.",
+      "… a taxa de transmissão com que é recebido tem de ser sempre igual à taxa de transmissão com que é emitido.",
+      "… nunca é possível a emissão do pacote iniciar-se antes de o mesmo ter sido integralmente recebido."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "A arquitetura de camadas designada como IEEE 802, ou ISO 8802, …",
+    "options": [
+      "… inclui, entre outros, os standards usados pelas redes locais vulgarmente conhecidas como redes Ethernet.",
+      "… não define nos seus standards nenhum formato de pacote ou formato de frame.",
+      "… não inclui especificações relativas a cablagens ou sinais (nível 1 do modelo de referência OSI).",
+      "… inclui standards relativos apenas a redes cabladas, excluindo as redes sem fios (wireless)."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "As redes ATM (Asynchronous Transfer Mode) utilizam comutação com circuitos virtuais (virtual circuits), …",
+    "options": [
+      "… essa técnica garante que os dados são sempre entregues no destino pretendido, embora a ordem não seja garantida.",
+      "… por essa razão, quando os dados são entregues, o recetor consegue saber se existe algum erro nos dados úteis (payload).",
+      "… esse facto garante que a ordem (sequência) de entrega dos dados é a mesma em os dados foram emitidos.",
+      "… cada circuito virtual identifica um nó de rede, um nó de rede nunca pode manusear mais do que um circuito virtual."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Uma caraterística da tecnologia ADSL (Asymmetric Digital Subscriber Line) é …",
+    "options": [
+      "… garantir a mesma capacidade de transferência de dados nos dois sentidos de circulação do tráfego.",
+      "… usar meios de transmissão do tipo banda base (baseband), através dos quais são transmitidos sinais digitais.",
+      "… permitir que o mesmo cabo seja partilhado por diferentes subscritores.",
+      "… usar sinais analógicos, recorrendo por isso à modulação digital (digital modulation)."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "O mecanismo PMTUD (Path Maximum Transmission Unit Discovery) …",
+    "options": [
+      "… tem como objetivo evitar que os pacotes IP sejam fragmentados nos nós intermédios (routers).",
+      "… pode ser usado com o protocolo IPv4 (Internet Protocol version 4), mas não é suportado pelo IPv6.",
+      "… tem como objetivo determinar o caminho mais rápido até ao nó de destino.",
+      "… tem como objetivo determinar o maior valor de MTU (Maximum Transmission Unit) existente ao longo do caminho."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "O protocolo ARP (Address Resolution Protocol), é usado para construir as tabelas ARP, …",
+    "options": [
+      "… se um nó estiver desligado da rede durante algum tempo, a sua tabela ARP tende a ficar vazia.",
+      "… esta tabela permite transformar nomes de máquinas em endereços IPv4 (Internet Protocol version 4).",
+      "… este protocolo é usado para endereços IPv4 e também para endereços IPv6 (Internet Protocol version 6).",
+      "… estas tabelas permitem aos switches encaminhar os pacotes para que se propaguem apenas para onde são necessários."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No protocolo TCP (Transmission Control Protocol), durante o estabelecimento da ligação TCP (TCP connection) …",
+    "options": [
+      "… são trocados (exchanged) os números de sequência (sequence numbers), que nesta fase têm sempre o valor zero.",
+      "… é definido um valor fixo do RTO (Retransmission Timeout), que será utilizado em todas as transações.",
+      "… é ativada a flag SYN (synchronization request) existente no cabeçalho dos segmentos TCP.",
+      "… são definidos os números de porto (port numbers) que cada aplicação deve usar."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Duas colunas fundamentais de uma tabela de routing IPv4 são o destino (destination) e o next-hop, …",
+    "options": [
+      "… numa tabela de routing nunca podem existir duas linhas diferentes com o mesmo valor para destino (destination).",
+      "… ambas estas colunas contêm endereços IPv4 associados a máscaras de rede ou tamanhos de prefixo.",
+      "… no contexto do routing dinâmico (dynamic routing), estas duas colunas são insuficientes.",
+      "… numa tabela de routing nunca podem existir duas linhas diferentes com o mesmo valor para o next-hop."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No ICMPv6 (Internet Control Message Protocol version 6) são implementadas funcionalidades que …",
+    "options": [
+      "… no contexto do IPv4 são disponibilizadas através do protocolo RIP (Routing Information Protocol).",
+      "… no contexto do IPv4 eram implementadas pelo protocolo ARP e pelo protocolo IGMP (Internet Group Management Protocol).",
+      "… permitem a fragmentação e reagrupamento dos pacotes nos nós intermédios (routers), ao longo do caminho.",
+      "… no contexto do IPv4 são disponibilizadas pelo protocolo IPsec (Internet Protocol Security)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No sistema de resolução de nomes DNS (Domain Name System), os glue records …",
+    "options": [
+      "… são registos do tipo NS (name server).",
+      "… contêm endereços IPv4 e IPv6 de servidores de nomes (name servers).",
+      "… são normalmente registos do tipo A, nunca podem ser registos do tipo AAAA.",
+      "… são registos do tipo CNAME (canonical name)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No contexto da API Berkeley Sockets, quando se desenvolvem aplicações baseadas no protocolo TCP …",
+    "options": [
+      "… , na receção de dados é necessário saber previamente quantos bytes devem ser lidos.",
+      "… não existe qualquer tipo de garantia de que os dados enviados cheguem ao destino pretendido.",
+      "… não é possível enviar mais do que 512 bytes de dados em cada operação de escrita/envio.",
+      "… é possível enviar dados para endereços multicast ou para o endereço de broadcast."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Numa mensagem de resposta (response message) do Hypertext Transfer Protocol (HTTP) …",
+    "options": [
+      "… existe sempre o campo de cabeçalho (header field) Content-Length.",
+      "… a primeira linha identifica o método que foi usado no pedido (e.g. GET, PUT, POST, DELETE).",
+      "… existe sempre um código numérico que indica o resultado do processamento do pedido correspondente.",
+      "… nunca existe o campo de cabeçalho (header field) Connection."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No contexto do protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security), a autenticação mútua de aplicações através",
+    "options": [
+      "de certificados de chave pública (public key certificates) …",
+      "… exige que ambas as aplicações envolvidas usem o mesmo certificado e conheçam a correspondente chave privada.",
+      "… é possível mesmo que apenas uma das aplicações envolvidas possua um certificado de chave pública.",
+      "… não é de forma alguma viável se os certificados de chave pública envolvidos forem auto assinados.",
+      "… só é viável se a aplicação servidora exigir à aplicação cliente que a mesma lhe envie um certificado de chave pública."
+    ],
+    "correct_index": 4
+  },
+  {
+    "question": "No contexto do Simple Network Management Protocol version 1 (SNMPv1), as mensagens GetRequest e GetResponse …",
+    "options": [
+      "… contêm OID (Object Identifiers) que especificam objetos da MIB (Management Information Base) do agente SNMP.",
+      "… são dois tipos de pedido que o sistema gestor (management system) pode enviar ao agente SNMP.",
+      "… contêm texto com o nomes de objetos da MIB do agente sobre os quais se pretende interagir.",
+      "… são particularmente úteis na implementação de sistemas de monitorização passiva."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Como aproximação, considera-se que a intensidade do ruído é igual ao longo do meio de transmissão, nesse contexto, …",
+    "options": [
+      "… a relação sinal-ruído (S/N ou SNR - Signal Noise Ratio) é também igual ao longo do meio de transmissão.",
+      "… a relação sinal-ruído (S/N ou SNR - Signal Noise Ratio) diminui quando o recetor se afasta do emissor.",
+      "… a relação sinal-ruído (S/N ou SNR - Signal Noise Ratio) aumenta quando o recetor se afasta do emissor.",
+      "… a intensidade do sinal também se mantem igual ao longo do meio de transmissão."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Na codificação (line coding) do tipo NRZ-L (Non Return-to-Zero Level) …",
+    "options": [
+      "… existem sempre apenas dois níveis de sinal possíveis, são usados para representar os símbolos zero e um.",
+      "… , seja qual for a sequência de bits/símbolos a ser transmitida, o sinal sofre continuamente transições de nível.",
+      "… os bits/símbolos a serem transmitidos são representados por transições de nível e não por níveis absolutos de sinal.",
+      "… os sinais produzidos são digitais e com valor de frequência sempre inferior ao valor da taxa de transmissão utilizada."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "A modulação digital (digital modulation) …",
+    "options": [
+      "… torna-se necessária quando o meio de transmissão é do tipo banda-base (baseband transmission medium).",
+      "… nunca pode ser usada se o meio de transmissão for sem fios (wireless transmission medium).",
+      "… produz sinais analógicos cuja amplitude, frequência e fase representam a informação a transmitir.",
+      "… nunca pode ser usada se o meio de transmissão for do tipo banda-canal (passband transmission medium)."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O controlo de erros Continuous Automatic Repeat Request (Continuous ARQ) …",
+    "options": [
+      "… é do tipo FEC (Forward Error Correction), por isso em caso de erro não há necessidade de retransmissão.",
+      "… utiliza o protocolo de janela deslizante (sliding window protocol), por isso os pacotes têm de ser numerados.",
+      "… usa a técnica stop & wait, esse facto torna-o muito ineficiente quando os atrasos de propagação na rede são elevados.",
+      "… é do tipo BEC (Backward Error Correction), ou seja, cabe ao emissor detetar os erros e pedir ao recetor a retransmissão."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No modelo de referência OSI (Open Systems Interconnection) os pacotes são designados de PDU (Protocol Data Unit), …",
+    "options": [
+      "… mas no modelo OSI só existem PDU no nível 3 (network layer), nas restantes camadas não existem PDU.",
+      "… os PDU tendem a ser de maior dimensão nas camadas superiores do que nas camadas inferiores do modelo OSI.",
+      "… é habitual um PDU de uma camada transportar no seu interior um outro PDU de uma camada superior.",
+      "… uma parte do PDU é o PCI (Protocol Control Information) que contém a informação útil a ser transacionada (payload)."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nas redes Ethernet (IEEE 802.3 / ISO 8802-3) atuais …",
+    "options": [
+      "… não é possível emitir um frame numa interface de fibra ótica e receber esse mesmo frame numa interface de cobre.",
+      "… não existe qualquer tipo de restrição relativamente à dimensão dos frames (pacotes) que podem ser emitidos.",
+      "… é possível emitir um frame a uma dada taxa de transmissão e receber o mesmo frame a uma taxa de transmissão diferente.",
+      "… está incluído um mecanismo de controlo de erros do tipo FEC (Forward Error Correction)."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "As redes locais sem fios (Wireless Local Networks - WLAN), definidas pelas normas IEEE 802.11, …",
+    "options": [
+      "… utilizam frames (pacotes) exatamente iguais aos das redes Ethernet (802.3).",
+      "… utilizam sinais digitais através de um meio de transmissão do tipo banda-base (baseband transmission medium).",
+      "… evitam as colisões garantindo que nunca é possível dois nós tentarem emitir simultaneamente.",
+      "… utilizam técnicas de modulação digital (digital modulation) para transferir a informação entre os nós."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Uma caraterística das células (pacotes) das redes ATM (Asynchronous Transfer Mode) é …",
+    "options": [
+      "… implementarem controlo de erros FEC (Forward Error Correction) sobre os dados úteis que estão a transportar (payload)",
+      "… serem encaminhadas através de circuitos virtuais (virtual circuits) previamente criados.",
+      "… terem um overhead bastante reduzido, normalmente entre 1% e 2%.",
+      "… terem dimensão variável, ajustando-se às necessidades específicas de cada cliente e tipo de aplicação."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "O protocolo IPv4 (Internet Protocol version 4) suporta a fragmentação dos pacotes nos nós intermédios (routers), …",
+    "options": [
+      "… se um pacote é fragmentado, os fragmentos só serão reagrupados quando o pacote chega ao nó final de destino.",
+      "… a fragmentação e reagrupamento usa o mecanismo PMTUD (Path Maximum Transmission Unit Discovery).",
+      "… no entanto o único nó que decide se o pacote necessita de ser fragmentado é o nó final de origem.",
+      "… a fragmentação permite aproveitar ao máximo os valores de MTU (Maximum Transmission Unit) ao longo do caminho."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "As mensagens de erro ICMP (Internet Control Message Protocol) do tipo Destination Unreachable (tipo 3) …",
+    "options": [
+      "… são usadas para assinalar situações em que o campo TTL (Time to Live) de um pacote atingiu o valor zero.",
+      "… significam sempre que um pacote IP não chegou ao nó final de destino pretendido.",
+      "… são usadas na implementação do mecanismo PMTUD (Path Maximum Transmission Unit Discovery).",
+      "… contêm uma cópia integral do pacote IP ao qual se refere o erro reportado."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Quando um router IPv4 (Internet Protocol version 4) transfere um pacote IPv4 de uma rede IPv4 para outra rede IPv4 …",
+    "options": [
+      "… não deve alterar nenhum dos campos existentes no cabeçalho do pacote.",
+      "… deve incrementar em uma unidade o campo TTL (Time to Live) do pacote",
+      "… altera o campo endereço IPv4 de destino do pacote para corresponder ao próximo router ou ao nó final",
+      "… é sempre obrigado a calcular o campo header checksum do pacote e atualizar o mesmo antes de emitir."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "O protocolo IGMP (Internet Group Management Protocol) …",
+    "options": [
+      "… permite aos routers saberem se devem retransmitir para uma rede pacotes destinados a determinado endereço multicast.",
+      "… é usado apenas por routers e nós finais, nunca por nós intermédios de nível dois (switches).",
+      "… é usado para transportar os dados úteis (payload) até aos nós finais pertencentes a um grupo de multicast.",
+      "… identifica os grupos através de endereços IPv4 do prefixo 127.0.0.0/8."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Numa tabela de routing IPv4, sobre linha 178.20.50.0/23 -> 92.3.5.67 , podemos afirmar que …",
+    "options": [
+      "… esta linha não pode nunca em caso algum ser a última linha da tabela de routing.",
+      "… 178.20.50.0/23 é o endereço IPv4 de uma rede ou redes vizinhas.",
+      "… não é possível na mesma tabela de routing existir a linha “ 54.72.0.0/16 -> 92.3.5.67 ”.",
+      "… 92.3.5.67 é o endereço IPv4 de um router vizinho."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No contexto do protocolo IPv6 (Internet Protocol version 6) …",
+    "options": [
+      "… os endereços de nó link-local unicast são atribuídos por SLAAC (Stateless Address Auto Configuration).",
+      "… não existe deteção de erros, nem para o cabeçalho do pacote IPv6, nem para os dados transportados (payload).",
+      "… os endereços anycast, tal como os endereços multicast, permitem que uma cópia de um pacote seja entregue em vários nós. . ______",
+      "… o protocolo ARP (Address Resolution Protocol) é usado para manter e gerir as tabelas ARP."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No contexto da API Berkeley Sockets, um servidor UDP (User Datagram Protocol) …",
+    "options": [
+      "… , quando envia uma resposta, tem garantias de que a mesma vai chegar ao cliente.",
+      "… , antes de receber um pedido, tem de saber a respetiva dimensão, ou seja o número exato de bytes que deve ler.",
+      "… tem garantias de que recebe todos os pedidos que lhe são enviados pelos clientes.",
+      "… pode receber pedidos enviados para endereços multicast ou para o endereço de broadcast."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No protocolo HTTP (Hypertext Transfer Protocol), o campo de cabeçalho (header field) …",
+    "options": [
+      "… Authorization, tal como o campo de cabeçalho WWW-Authenticate, apenas pode existir em respostas (HTTP responses).",
+      "… Content-Length pode existir em respostas (HTTP responses) e também em pedidos (HTTP requests).",
+      "… Keep-Alive deve ser utilizado juntamente com a linha de cabeçalho Connection: close.",
+      "… Content-Length indica o número total de linhas que existem na mensagem HTTP onde é incluído"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Um cliente SMTP (Simple Mail Transfer Protocol) é uma aplicação que …",
+    "options": [
+      "… permite aos utilizadores acederem ao conteúdo das respetivas caixas de correio eletrónico (mailboxes).",
+      "… tem como objetivo receber mensagens de correio eletrónico do servidor SMTP.",
+      "… dialoga com o servidor SMTP através de uma ligação TCP (Transmission Control Protocol).",
+      "… aceita pedidos de ligação TCP (Transmission Control Protocol) no porto número vinte e cinco."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Se com a codificação (line coding) NRZ-L (Non Return-to-Zero Level) for gerado um sinal que pode ter 16 níveis diferentes, …",
+    "options": [
+      "… em cada instante o sinal transporta três bits de informação.",
+      "… então se a taxa de transmissão é de 100 Mbps, a frequência máxima do sinal resultante será de 50 MHz.",
+      "… seja qual for a sequência de bits a ser transmitida, o sinal está sempre a mudar de nível.",
+      "… o valor instantâneo do sinal representa um conjunto de quatro bits."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Exemplos de meios de transmissão onde é obrigatório usar sinais analógicos (e.g., digital modulation) são …",
+    "options": [
+      "… todos os tipos de cabos de cobre (copper cables).",
+      "… todos os meios de transmissão do tipo baseband que suportam apenas frequências relativamente baixas.",
+      "… a rede telefónica pública tradicional (PTSN - public switched telephone network).",
+      "… todos os tipos de cabos de fibra ótica (optical fibre)."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Numa rede de meio de transmissão partilhado (shared medium network) …",
+    "options": [
+      "… o MAC (Media Access Control) tem como objetivo garantir que apenas os utilizadores autorizados conseguem usar a rede.",
+      "… o endereço de destino dos pacotes é analisado pelos nós intermédios para poderem decidir para onde retransmitir.",
+      "… existe a grande vantagem de nunca ocorrerem colisões durante a transmissão de dados.",
+      "… a eficiência da utilização decresce de forma significativa com o aumento do número de nós existentes na rede."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "A quantidade de dados úteis (payload) transportados por um pacote de rede …",
+    "options": [
+      "… pode normalmente variar, mas essa variação não afeta o tamanho total do pacote de rede.",
+      "… afeta o overhead do pacote, quanto maior for a quantidade de dados úteis, maior será o overhead do pacote.",
+      "… tem sempre um limite máximo que depende do protocolo que estabelece o formato do pacote de rede.",
+      "… afeta o tamanho (número de bits) de alguns dos campos que fazem parte da informação de controlo (header/tail) do pacote."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Numa rede de comutação de pacotes os nós intermédios pode operar em modo store & forward, …",
+    "options": [
+      "… neste modo, o nó intermédio só começa a emitir um pacote depois de o ter recebido na integra.",
+      "… neste modo, um pacote nunca pode ser emitido a uma taxa de transmissão inferior aquela a que foi recebido.",
+      "… este é o modo que garante os menores atrasos para um pacote ao atravessar a rede.",
+      "… neste modo, um pacote nunca pode ser emitido a uma taxa de transmissão superior aquela a que foi recebido."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No modelo de referência OSI (Open Systems Interconnection) o PDU (Protocol Data Unit) …",
+    "options": [
+      "… da camada de rede (network layer) é o SDU (Service Data Unit) da camada de ligação lógica (logical link layer).",
+      "… é a informação útil (payload) que cada camada se encarrega de transportar, não inclui informação de controlo.",
+      "… é emitido para a rede física, sob a forma de sinais, pela camada de rede (network layer).",
+      "… da camada de transporte (transport layer) tem sempre dimensão superior aos PDU da camada de rede (network layer)."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "As redes locais sem fios IEEE802.11 (Wireless Local Networks – WLAN) …",
+    "options": [
+      "… são, tal como as redes Ethernet (IEEE802.3) atuais, completamente imunes à ocorrência de colisões.",
+      "… são divididas em células, cada célula deve ter obrigatoriamente um SSID (Service Set Identifier) diferente e único.",
+      "… utilizam o mecanismo de controlo de acesso ao meio CSMA/CD (Carrier Sense Multiple Access with Collision Detection).",
+      "… utilizam a técnica RTS/CTS (Request to Send / Clear to Send), mas apenas para pacotes (frames) de maior dimensão"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nas redes ATM (Asynchronous Transfer Mode) a informação útil é transportada por células (cells), ...",
+    "options": [
+      "… nas células existe um mecanismo autocorretor (FEC – Forward Error Correction) para erros nos dados transportados.",
+      "… cada célula de uma rede ATM tem capacidade para transportar um pacote IPv4 (Internet Protocol version 4).",
+      "… a rede ATM garante que todas as células emitidas são efetivamente entregues no destino pretendido, e pela ordem correta.",
+      "… todas as células de uma rede ATM têm exatamente o mesmo tamanho, por essa razão o overhead não varia."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "O mecanismo PMTUD (Path Maximum Transmission Unit Discovery) …",
+    "options": [
+      "… utiliza os campos Fragment identifier e Fragment offset do cabeçalho do pacote IPv4 (Internet Protocol version 4)",
+      "… determina o maior valor de MTU (Maximum Transmission Unit) existente ao longo de um caminho através da rede.",
+      "… é usado no IPv4 (Internet Protocol version 4), mas não no IPv6 (Internet Protocol version 6).",
+      "… utiliza mensagens de erro enviadas através do protocolo ICMP (Internet Control Message Protocol)."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "As aplicações servidoras DHCP (Dynamic Host Configuration Protocol) …",
+    "options": [
+      "… são descobertas pelos clientes através do envio de pedidos para o endereço de broadcast da rede local.",
+      "… nunca conseguem garantir a atribuição de um endereço IP fixo (endereço IP estático) a um dado cliente.",
+      "… recebem pedidos de clientes DHCP, esses pedidos são enviados através de ligações TCP (Transmission Control Protocol).",
+      "… têm de ser únicas em cada rede IP, numa mesma rede IP nunca podem operar duas ou mais aplicações servidoras DHCP."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No TCP (Transmission Control Protocol) o valor do RTO (Retransmission Timeout) …",
+    "options": [
+      "… é definido no campo Reception Window Size, existente no cabeçalho dos segmentos TCP.",
+      "… nunca deve ser superior ao valor do RTT (Round-Trip Time).",
+      "… demasiado elevado tem como resultado indesejado a existência de um grande número de retransmissões desnecessárias.",
+      "… nunca deve ser igual a metade do valor do RTT (Round-Trip Time)."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No IPv6 (Internet Protocol version 6) existem endereços unicast, endereços multicast e endereços anycast.",
+    "options": [
+      "O endereço de broadcast do IPv4 pode ser considerado um caso particular de endereço anycast.",
+      "Tal como no IPv4, a gestão de grupos multicast é realizada através do protocolo IGMP (Internet Group Message Protocol).",
+      "É perfeitamente possível um nó de rede ter, além de um endereço unicast, vários endereços multicast.",
+      "Os endereços anycast têm a mesma utilidade dos endereços multicast, mas são muito mais eficientes."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No DNS (Domain Name System) os root name servers …",
+    "options": [
+      "… apenas aceitam pedidos que tenham como origem um name server de um top level domain.",
+      "… devem conhecer os endereços IP dos name servers dos subdomínios de todos os top level domains.",
+      "… têm de resolver autonomamente (authoritative name server) todos os nomes pertencentes aos top level domains.",
+      "… devem conhecer os endereços IP dos name servers de todos os top level domains."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Numa mensagem HTTP (Hypertext Transfer Protocol), o campo de cabeçalho (header field) …",
+    "options": [
+      "… Referer deve existir obrigatoriamente em todas as mensagens HTTP, sejam pedidos ou sejam respostas.",
+      "… Content-MD5 não faz qualquer sentido existir se a mensagem for um pedido com o método PUT.",
+      "… Connection pode ter o valor close ou o valor keep-alive.",
+      "… Retry-After encontra-se habitualmente em mensagens de resposta com status 200 OK"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "A utilização de algoritmos de cifragem de chave simétrica (symmetric key cyphers) …",
+    "options": [
+      "… não é suportada pelo protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security).",
+      "… exige uma chave pública usada para cifrar a informação e uma chave privada usada para decifrar a informação.",
+      "… consegue garantir por si só a autenticidade dos dados recebidos através da rede.",
+      "… tem a desvantagem de ser muito mais lenta do que a utilização de algoritmos de cifragem de chave assimétrica."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No contexto da utilização do SNMPv1 (Simple Network Management Protocol version 1) …",
+    "options": [
+      "… os agentes recebem pedidos SNMP que são transportados por datagramas UDP.",
+      "… é possível consultar os objetos existentes na MIB (Management Information Base), mas nunca alterar o seu estado.",
+      "… todas as mensagens enviadas têm uma mensagem de resposta que confirma a boa receção da mensagem inicial.",
+      "… para monitorização ativa (active checks) de dispositivos de rede, são usadas mensagens TRAP."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Um MTA (Mail Transfer Agent) assume os papeis de cliente e de servidor SMTP (Simple Mail Transfer Protocol), …",
+    "options": [
+      "… no papel de servidor apenas pode receber mensagens, no papel de cliente apenas pode enviar mensagens.",
+      "… sempre que recebe uma mensagem no papel de servidor assume a seguir o papel de cliente para enviar essa mensagem.",
+      "… no papel de servidor recebe mensagens apenas de outros MTA, nunca de outros tipos de aplicação cliente.",
+      "… no papel de servidor permite ao cliente o acesso à caixa de correio (mailbox) do utilizador."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Na transmissão de dados digitais, o ruído …",
+    "options": [
+      "… externo nunca afeta a modulação digital (digital modulation), afeta apenas os sinais digitais.",
+      "… resultante da interferência eletromagnética (EMI - electromagnetic interference) não existe nas fibras óticas.",
+      "… interno é sempre muito superior ao ruído externo, especialmente em meios de transmissão de sinais elétricos.",
+      "… é muito mais nefasto junto ao emissor do sinal do que junto ao recetor do sinal."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Os sinais digitais são criados através de técnicas designadas line coding, …",
+    "options": [
+      "… a frequência do sinal produzido não depende da técnica de line coding usada.",
+      "… a técnica Biphase-L (Manchester) tem o inconveniente de dificultar a sincronização de símbolos (symbol synchronization).",
+      "… num dado meio de transmissão, a taxa de transmissão máxima possível depende da técnica de line coding usada.",
+      "… seja qual for a técnica de line coding, o sinal produzido apenas tem dois valores possíveis, correspondentes aos bits 0 e 1."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "A técnica PSK (Phase Shift Keying) …",
+    "options": [
+      "… não deve ser usada em meios de transmissão do tipo passband, deve ser usada em meios de transmissão do tipo baseband. . ______",
+      "… pode ser combinada com a técnica FSK (Frequency Shift Keying), mas nunca com a técnica ASK (Amplitude Shift Keying).",
+      "… produz sinais analógicos, enquanto a técnica ASK (Amplitude Shift Keying) produz sinais digitais.",
+      "… é uma técnica de modulação digital (digital modulation), permite enviar dados digitais através de sinais analógicos."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Numa rede, um pacote (packet) pode conter um campo que permite ao recetor detetar se ocorreu algum erro na transmissão, …",
+    "options": [
+      "… o tamanho desse campo (número de bits) não depende do tamanho do pacote nem da quantidade de dados que transporta.",
+      "… esse campo tem de ser sempre enviado antes dos dados úteis (payload), nunca pode ser enviado depois dos dados úteis.",
+      "… se o valor desse campo for o correto, então o recetor tem a total e absoluta certeza de que não acorreu nenhum erro.",
+      "… este campo é fundamental em Forward Error Correction (FEC), mas desnecessário em Backward Error Correction (BEC)."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "O modelo de referência OSI (Open Systems Interconnection) estabelece sete camadas, …",
+    "options": [
+      "… as camadas da arquitetura IEEE 802 (ISSO 8802) correspondem à camada de rede (network layer) do modelo OSI.",
+      "… a camada de ligação lógica (logical link layer) não interage diretamente com a camada de ligação física (physical link layer).",
+      "… quando os dados chegam da rede a primeira camada que atravessam é a camada de transporte (transport layer).",
+      "… na pilha TCP/IP não existe uma camada correspondente à camada de ligação física (physical link layer) do modelo OSI"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nas redes locais Ethernet (IEEE802.3/ISO8802-3) os endereços de nó são constituídos por 48 bits, …",
+    "options": [
+      "… numa tabela MAC de um comutador (switch) é normal existirem várias entradas com o mesmo endereço de nó Ethernet.",
+      "… o endereço Ethernet em que os 48 bits têm o valor um é reservado e nunca pode ser usado para nenhum efeito.",
+      "… é absolutamente fundamental que cada endereço de nó Ethernet seja único em toda a Internet.",
+      "… cada pacote (frame) Ethernet transporta dois endereços de nó Ethernet."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "A ligação de rede conhecida como Local Loop ...",
+    "options": [
+      "… é uma ligação física ponto-a-ponto entre dois diferentes subscritores de serviço de Internet.",
+      "… pode usar a tecnologia ADSL (Asymmetric Digital Subscriber Line), nesse caso é necessário instalar fibra ótica.",
+      "… pode ser implementada usando transmissão sem fios (Wireless Local Loop), nesse caso são usados sinais analógicos.",
+      "… envolve sempre a utilização de MODEM pois implica sempre a utilização de sinais analógicos."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No IPv4 (Internet Protocol version 4) é possível fragmentar os pacotes IPv4 (IPv4 packet fragmentation), …",
+    "options": [
+      "… para isso é necessário que a flag DF (Don’t Fragment) esteja ativa no cabeçalho do pacote IPv4.",
+      "… a fragmentação é aplicada sempre que o tamanho do pacote é inferior ao MTU (Maximum Transmission Unit) da rede.",
+      "… essa fragmentação de pacotes IPv4 é baseada no mecanismo PMTUD (Path Maximum Transmission Unit Discovery).",
+      "… a fragmentação garante o máximo aproveitamento do MTU (Maximum Transmission Unit) de cada rede."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "O protocolo ARP (Address Resolution Protocol) …",
+    "options": [
+      "… envia respostas para o endereço de broadcast da rede local, os pedidos ARP nunca são enviados para este endereço.",
+      "… é fundamental tanto para o IPv4 como para o IPv6 (Internet Protocol version 6) operarem numa rede local Ethernet.",
+      "… permite transformar nomes DNS de máquinas ou servidores em endereços IPv4.",
+      "… opera estritamente dentro de uma rede local, os seus pacotes nunca são transferidos entre redes diferentes."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "O cabeçalho de um segmento TCP (Transmission Control Protocol) …",
+    "options": [
+      "… contém o campo Reception Window Size, este campo nunca pode em caso algum ter o valor zero.",
+      "… contém, tal como no UDP (User Datagram Protocol), um número de porto de origem e um número de porto de destino.",
+      "… tem uma dimensão fixa e sempre igual a vinte bytes.",
+      "… contém várias flags, nunca é possível as flags SYN e ACK estarem ativas simultaneamente num mesmo segmento"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Numa tabela de routing a coluna designada metric ou cost …",
+    "options": [
+      "… só é relevante quando existem duas linhas que especificam a mesma rede de destino (mesmo valor na coluna destination).",
+      "… tem obrigatoriamente um valor igual entre duas linhas que têm o mesmo valor na coluna next-hop.",
+      "… contêm valores numéricos que não dependem do protocolo de routing que está a ser utilizado para construir a tabela.",
+      "… pode conter endereços IP ou nomes de interfaces de rede locais do router."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No sistema de resolução de nomes DNS (Domain Name System), os registos do tipo …",
+    "options": [
+      "… NS (Name Server) são usados para armazenar os endereços IP dos root name servers.",
+      "… MX (Mail eXchanger) contêm endereços IP de servidores SMTP (Simple Mail Transfer Protocol) de um domínio DNS.",
+      "… SOA (Start Of Authority) contêm a lista de todos os root name servers existentes no sistema DNS.",
+      "… A (IPv4 address) e AAAA (IPv6 address) são em determinados casos usados como registos-cola (Glue Records)."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Uma vantagem de se optar por implementar uma aplicação de rede sobre UDP em lugar de TCP é que …",
+    "options": [
+      "… quando os dados não são entregues no destino, o emissor é sempre notificado dessa ocorrência.",
+      "… o recetor não necessita de saber previamente quantos bytes vai receber do emissor.",
+      "… é possível transferir uma quantidade superior de dados em cada envio.",
+      "… existem mais garantias de que os dados enviados serão entregues no destino."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No HTTP (Hypertext Transfer Protocol) o argumento (URI) de um pedido com o método GET …",
+    "options": [
+      "… encontra-se numa linha de campo de cabeçalho (header field line) da mensagem de pedido (request message).",
+      "… pode ser usado para enviar dados ao servidor.",
+      "… refere-se obrigatoriamente a um conteúdo estático, o método GET não suporta conteúdos dinâmicos.",
+      "… encontra-se no corpo (content) da mensagem de pedido (request message)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No protocolo HTTP 1.1 a ligação TCP entre cliente e servidor é persistente …",
+    "options": [
+      "… desde que o cliente inclua no primeiro pedido HTTP (HTTP request) o campo de cabeçalho Keep-Alive.",
+      "… , a ligação persiste por tempo indefinido até que cliente ou servidor solicitem explicitamente a sua terminação.",
+      "… , para terminar uma ligação persistente deve ser enviada a linha de campo de cabeçalho Connection: close.",
+      "… , isso permite ao servidor inverter o seu papel e enviar pedidos HTTP (HTTP requests) ao cliente."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O algoritmo RSA (Rivest–Shamir–Adleman) …",
+    "options": [
+      "… utiliza uma mesma chave secreta para encriptar e para desencriptar a informação.",
+      "… utiliza uma chave pública e uma chave privada, por motivos de segurança, ambas devem ser mantidas secretas.",
+      "… é um algoritmo de criptografia de chave assimétrica que também é utilizado para implementar assinaturas digitais.",
+      "… utiliza normalmente chaves criptográficas com 128 bits, ou no máximo com 256 bits."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No contexto da utilização do protocolo …",
+    "options": [
+      "… SNMP (Simple Network Management Protocol) o agente comunica através do protocolo TCP.",
+      "… SMTP (Simple Mail Transfer Protocol) o cliente pode enviar ou receber mensagens de correio eletrónico.",
+      "… SNMP (Simple Network Management Protocol) as mensagens TRAP são pedidos enviados ao agente.",
+      "… IMAP4 (Internet Message Access Protocol version 4) o cliente permite o acesso à caixa de correio (mailbox) do utilizador."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Num meio de transmissão de fibra ótica (optical fibre) …",
+    "options": [
+      "… não existe ruído interno e o ruído externo é muito menor do que aquele que existe nos meios de transmissão de cobre.",
+      "… a atenuação do sinal é comparativamente mais reduzida do que aquela que se verifica nos meios de transmissão de cobre.",
+      "… podem ser utilizados com sucesso sinais elétricos, sinais óticos ou sinais eletromagnéticos.",
+      "… não é possível usar sinais digitais (i.e., line coding), é obrigatório usar sinais analógicos (e.g., digital modulation)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "A técnica de modulação digital (digital modulation) Phase Shift Keying (PSK) …",
+    "options": [
+      "… pode ser combinada com Frequency Shift Keying (FSK), mas nunca com Amplitude Shift Keying (ASK).",
+      "… produz um sinal digital em que cada nível do sinal representa um conjunto de bits de dados a serem transmitidos.",
+      "… produz um sinal analógico em que a frequência do sinal representa os dados a serem transmitidos.",
+      "… produz um sinal que pode ser adequado a meios de transmissão sem fios."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Os mecanismos ou protocolos designados de Media Access Control (MAC) …",
+    "options": [
+      "… são importantes quando existe a possibilidade de dois nós emitirem simultaneamente no mesmo meio de transmissão.",
+      "… do tipo CSMA/CD (Carrier Sense Multiple Access with Collision Detection) evitam completamente as colisões.",
+      "… são importantes nas redes de meio de transmissão em cobre, mas completamente desnecessários nas redes sem fios.",
+      "… do tipo CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) evitam completamente as colisões"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Numa rede de comutação de pacotes com circuitos virtuais (packet switching network with virtual circuits) …",
+    "options": [
+      "… existe sempre a garantia de não haver perdas de dados, todos os dados emitidos são entregues.",
+      "… o endereço de nó de destino de cada pacote é analisado pelos nós intermédios para poderem decidir para onde retransmitir.",
+      "… existe a garantia de que a ordem de entrega dos dados é a mesma daquela em que foram emitidos.",
+      "… os pacotes não contêm qualquer tipo de informação de controlo, apenas dados úteis (payload)."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O controlo de erros (error control) tem como objetivo recuperar de erros ocorridos durante a transmissão de um pacote.",
+    "options": [
+      "O ARQ (Automatic Repeat Request) é uma técnica do tipo BEC (Backward Error Correction).",
+      "O ARQ (Automatic Repeat Request) em modo stop & wait obriga à numeração dos pacotes.",
+      "As técnicas FEC (Forward Error Correction) implicam que em caso de erro o emissor terá de enviar novamente o pacote",
+      "O ARQ (Automatic Repeat Request) em modo stop & wait é também conhecido por continuous ARQ."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Um pacote (frame) de rede Ethernet (IEEE 802.3) com etiqueta de VLAN (IEEE 802.1Q) …",
+    "options": [
+      "… não utiliza o campo FCS (Frame Check Sequence) para detetar erros ocorridos durante a transmissão.",
+      "… não inclui todos os campos (fields) que existem num pacote de rede Ethernet normal sem etiqueta de VLAN.",
+      "… contém mais campos (fields) do que aqueles que existem num pacote de rede Ethernet normal sem etiqueta de VLAN.",
+      "… tem um MTU (Maximum Transmission Unit) maior do um pacote de rede Ethernet normal sem etiqueta de VLAN."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nas redes locais sem fios IEEE 802.11 (Wireless Local Networks – WLAN), o SSID (Service Set Identifier) …",
+    "options": [
+      "… serve para identificar o ESS (Extended Service Set), um ESS pode incluir várias células.",
+      "… de duas células contíguas (vizinhas) nunca pode em caso algum ser o mesmo.",
+      "… é secreto e nunca pode ser divulgado aos utilizadores antes de estes se autenticarem.",
+      "… de cada célula é o endereço MAC de 48 bits da base station (access-point) dessa célula."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Numa ligação local-loop entre um subscritor e um ISP (Internet Service Provider) ...",
+    "options": [
+      "… com tecnologia ADSL (Asymmetric Digital Subscriber Line) reutilizam-se cabos coaxiais de televisão por cabo (CATV).",
+      "… o principal objetivo é a transferência de pacotes IP (Internet Protocol) entre o subscritor e a Internet.",
+      "… sem fios (WLL - Wireless Local Loop) são utilizados sinais digitais de acordo com as normas IEEE 802.11.",
+      "… com tecnologia ADSL é fundamental um mecanismo de controlo de acesso ao meio (MAC - Media Access Control)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "As mensagens ICMP (Internet Control Message Protocol) do tipo Destination Unreachable…",
+    "options": [
+      "… são mensagens de erro que implicam sempre que o pacote IP não chegou ao nó de destino.",
+      "… são usadas para notificar de que o campo TTL (Time to Live) do pacote IP atingiu o valor zero.",
+      "… são usadas pelo PMTUD (Path MTU Discovery) para determinar o maior MTU existente ao longo do caminho.",
+      "… são mensagens de erro que transportam uma cópia do cabeçalho do pacote IP que causou o erro."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No TCP (Transmission Control Protocol) os cabeçalhos dos pacotes (segments) contêm números de sequência, …",
+    "options": [
+      "… os números de sequência são usados para efetuar o acknowledge dos dados recebidos com sucesso.",
+      "… os dois números de sequência existentes num dado cabeçalho nunca podem em caso algum ser iguais.",
+      "… se a flag SYN estiver ativa no cabeçalho, então os números de sequência devem ser ignorados.",
+      "… inicialmente quando a ligação TCP acaba de ser estabelecida os números de sequência são sempre zero."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "O cabeçalho de um pacote IPv6 (Internet Protocol version 6) …",
+    "options": [
+      "… tem os 4 primeiros bits com valor exatamente igual ao que existe nos primeiros 4 bits do cabeçalho de um pacote IPv4.",
+      "… tem, tal como no caso do IPv4, um comprimento variável dependente das opções utilizadas.",
+      "… contém um total de 32 bytes (256 bits) dedicados a especificar endereços de nó IPv6.",
+      "… contém um número de campos (fields) superior aos que existem no cabeçalho de um pacote IPv4."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No IPv6 o mecanismo SLAAC (Stateless Address Auto Configuration) …",
+    "options": [
+      "… só consegue definir os servidores DNS recorrendo ao serviço DHCPv6 (Dynamic Host Configuration Protocol version 6).",
+      "… só pode funcionar se existir pelo menos um servidor DHCPv6 a operar na rede local onde o nó está ligado",
+      "… tem como objetivo definir um endereço unicast link-local, que consequentemente não permite a comunicação com a Internet.",
+      "… só pode funcionar se existir pelo menos um router IPv6 a operar na rede local onde o nó está ligado."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Num domínio DNS (Domain Name System) os registos (resource records) do tipo …",
+    "options": [
+      "… NS (Name Server) não são obrigatórios, podem existir domínios sem nenhum registo deste tipo.",
+      "… MX (Mail eXchanger) são obrigatórios, todos os domínios têm de ter pelo menos um registo MX.",
+      "… CNAME (Canonical Name) não contêm endereços de nó IPv4 nem endereços de nó IPv6.",
+      "… PTR permitem a resolução inversa de endereços IPv4, mas esta funcionalidade não existe para IPv6."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Durante a receção de uma mensagem HTTP (Hypertext Transfer Protocol) …",
+    "options": [
+      "… o tamanho total do cabeçalho (número de bytes) passa a ser conhecido após a leitura da primeira linha do mesmo.",
+      "… o tamanho total da mensagem (número de bytes) só é conhecido após a leitura completa do cabeçalho da mesma.",
+      "… todas as linhas do cabeçalho da mensagem têm comprimento (número de bytes) fixo.",
+      "… o corpo da mensagem (caso exista) tem de ser lido byte a byte, pois o mesmo pode terminar sem aviso prévio."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Quando um cliente HTTP (Hypertext Transfer Protocol) recebe uma resposta com o status …",
+    "options": [
+      "… 401 Unauthorized, isso deve-se a não ter sido efetuada a autenticação ou a mesma ter sido recusada pelo servidor.",
+      "… 501 Not Implemented, isso indica que o recurso solicitado pelo pedido do cliente não existe no servidor.",
+      "… 404 Not Found, isso significa que o servidor HTTP não foi encontrado na rede (a resolução DNS falhou).",
+      "… 202 Accepted isso indica que o pedido foi recebido pelo servidor, mas ignorado pelo mesmo (não foi executado)."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security), a mensagem Client Hello …",
+    "options": [
+      "… é enviada em resposta à mensagem Server Hello.",
+      "… é uma mensagem enviada pelo servidor ao cliente.",
+      "… contém uma lista com os cypher suites que são suportados pelo cliente.",
+      "… inclui sempre o certificado de chave pública do cliente para efeitos de autenticação."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O SMTP (Simple Mail Transfer Protocol) permite transferir mensagens de correio eletrónico, …",
+    "options": [
+      "… uma das suas utilizações mais comum é no acesso remoto a caixas do correio (mailboxes) de utilizadores.",
+      "… no SMTP as mensagens de correio eletrónico são transportadas por datagramas UDP (User Datagram Protocol)",
+      "… um servidor SMTP pode receber correio eletrónico, mas não pode enviar correio eletrónico.",
+      "… as aplicações designadas de MUA (Mail User Agent) são exemplos comuns de implementações de servidores SMTP."
+    ],
+    "correct_index": 2
+  }
+]

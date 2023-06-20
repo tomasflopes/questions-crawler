@@ -1,0 +1,86 @@
+﻿
+1. A EMI (Electromagnetic interference) é um fenómeno … 
+  … que afeta as transmissões, tanto através de sinais elétricos como através de sinais óticos. ......................................................... ______ 
+  … com impacto negativo na eficiência das transmissões através de cablagens óticas. ..................................................................... ______ 
+  … que só afeta os sinais digitais, os sinais analógicos não são afetados. .......................................................................................... ______ 
+  … cujos efeitos nefastos podem ser reduzidos através de blindagens.  .............................................................................................. __ X __ 
+2. A modulação digital (digital modulation) é uma técnica … 
+  … em que o sinal produzido nunca tem frequência zero. .................................................................................................................... __ X __ 
+  … em que o sinal produzido é do tipo digital.  ...................................................................................................................................... ______ 
+  … que só pode ser usada com sinais óticos, nunca com sinais elétricos ou eletromagnéticos. ......................................................... ______ 
+  … adequada a meios de transmissão do tipo baseband (banda-base).  ............................................................................................. ______ 
+3. Um vantagem de se utilizarem pacotes (packets) de dimensão reduzida é que dessa forma … 
+  … reduz-se o overhead de cada pacote. ............................................................................................................................................. ______ 
+  … diminui-se o atraso de propagação dos pacotes através de nós intermédios que operam em modo store & forward. .................. __ X __ 
+  … reduz-se a quantidade de informação de controlo (PCI) que é necessário enviar através dos meios de transmissão. ................. ______ 
+  … para enviar um dado volume de informação útil (payload) são necessários menos pacotes.  ........................................................ ______ 
+4. De acordo com o modelo OSI (Open Systems Interconnection), nas camadas inferiores desse modelo, … 
+  … os pacotes têm tendência a ter dimensão superior aos pacotes nas camadas superiores.  ........................................................... __ X __ 
+  … nunca é implementada a deteção de erros, essa função apenas é implementada pela camada de transporte (layer four).  ......... ______ 
+  … os serviços disponibilizados são mais fiáveis do que aqueles disponibilizados pelas camadas superiores.  ................................. ______ 
+  … não existe o conceito de endereço de nó, esse conceito apenas é implementado na camada de sessão  (layer five).  ................ ______ 
+5. As redes de área local Ethernet (IEEE802.3/ISO8802-3) … 
+  … utilizam endereços únicos com 128 bits para identificar cada nó Ethernet existente na rede.  ....................................................... ______ 
+  … são redes de cablagem de cobre, não existem redes Ethernet em fibra ótica.  .............................................................................. ______ 
+  … permitem que os nós saibam, com algum grau de certeza, se um pacote recebido contém algum erro.  ...................................... __ X __ 
+  … utiliza a técnica de circuitos virtuais para garantir a ordem de entrega dos pacotes.  ..................................................................... ______ 
+6. As linhas telefónicas da rede pública (PSTN - Public Switched Telephone Network) …
+  … são constituídas por quatro pares de cobre entrançados, com blindagem.  ................................................................................... ______ 
+  … podem ser utilizadas pelas tecnologias DSL (Digital Subscriber Line) e ADSL (Asymmetric Digital Subscriber Line).  ................. __ X __ 
+  … permitem a transmissão de sinais óticos, analógicos e digitais.  ..................................................................................................... ______ 
+  … são meios de transmissão do tipo baseband (banda-base).  .......................................................................................................... ______ 
+7. No cabeçalho de um pacote IPv6 existe um campo designado next-header, esse campo … 
+  … determina o número máximo de nós intermédios (routers) que o pacote poderá atravessar.  ....................................................... ______ 
+  … apenas pode conter um de dois valores: 6 para o protocolo TCP ou 17 para o protocolo UDP.  ................................................... ______ 
+  … define de que tipo são os dados que se seguem ao cabeçalho IPv6.  ............................................................................................ __ X __ 
+  … serve para implementar a fragmentação de pacotes pelos nós intermédios (routers). ................................................................... ______ 
+8. O protocolo TCP (Transmission Control Protocol) … 
+  … tem como principal desvantagem o facto de não garantir a ordem (sequência) de entrega dos dados. ........................................ ______ 
+  … permite a utilização de endereços multicast e broadcast como destino para os dados.  ................................................................ ______ 
+  … tem a possibilidade de operar sobre IPv4 ou sobre IPv6. ............................................................................................................... __ X __ 
+  … implementa a numeração dos bytes enviados e recebidos, o primeiro byte enviado tem sempre o número de sequência 1. ....... ______ 
+9. No sistema DNS (Domain Name System), os registos (RR – Resource Records) …  
+   … do tipo SOA (Start Of Authority) contêm os endereços IP de todos os servidores de nomes do domínio.  .................................... ______ 
+   … do tipo PTR servem para definir os servidores de nomes de um domínio DNS.  ............................................................................ ______ 
+   … que servem para definir endereços IPv4 de nós de rede são os registos do tipo A.  ..................................................................... __ X __ 
+   … do tipo NS (Name Server) contêm endereços IP de servidores de nomes. .................................................................................... ______ 
+10. Na API Berkeley Sockets, a função accept() e o método accept(), respetivamente em linguagens C e Java, usam-se … 
+   … quando se pretende aceitar um pedido de ligação TCP de um cliente.  ......................................................................................... __ X __ 
+   … tipicamente com o protocolo UDP (User Datagram Protocol), mas também podem ser usadas com o protocolo TCP.  ............... ______ 
+   … em aplicações clientes de rede, nunca em aplicações servidoras da rede.  ................................................................................... ______ 
+   … quando se pretende aceitar um datagrama UDP enviado por outra aplicação.  ............................................................................. ______ 
+11. Todas as mensagens do protocolo HTTP (Hypertext Transfer Protocol) começam por um cabeçalho em formato de texto, … 
+   … ao longo do cabeçalho podem existir várias linhas vazias que devem ser ignoradas.  ................................................................... ______ 
+   … seja qual for a mensagem, a primeira linha do cabeçalho começa sempre pela palavra HTTP.  ................................................... ______ 
+   … olhando apenas para o conteúdo do cabeçalho não é possível saber se é um pedido ou uma resposta.  .................................... ______ 
+   … a única forma de determinar o tamanho do cabeçalho é proceder à leitura integral do mesmo.  ................................................... __ X __ 
+12. O protocolo HTTP suporta vários tipos de pedidos (methods), … 
+   … o método mais adequado para obter o conteúdo de um recurso existente é o POST.  .................................................................. ______ 
+   … todo e qualquer servidor HTTP é sempre obrigado a suportar todos os métodos definidos no protocolo HTTP.  .......................... ______ 
+   … o método PUT é habitualmente usado no contexto REST para atualizar o conteúdo de um recurso.  ........................................... __ X __ 
+   … o método GET implica que o pedido não tem corpo, logo não pode ser usado para enviar dados ao servidor.  ........................... ______ 
+13. Através da primeira linha (request line) de uma mensagem de pedido HTTP, ficamos sempre a saber … 
+   … o tipo de conteúdo (body) transportado pelo pedido.   ........................................................................................................ ______ 
+   … qual é o tipo de pedido HTTP (method) e qual a versão do protocolo HTTP que o cliente está a utilizar.  .................................... __ X __ 
+   … a versão do protocolo HTTP que o servidor está a utilizar.  ............................................................................................................ ______ 
+   … quantas linhas de texto existem no cabeçalho da mensagem.  ...................................................................................................... ______ 
+14. O protocolo HTTPS utiliza habitualmente certificados de chave pública. Um certificado de chave pública … 
+   … contém uma chave pública e a correspondente chave privada.  ..................................................................................................... ______ 
+   … pode ser auto-assinado (self-signed), nesse caso deve ser sempre considerado fidedigno.  ........................................................ ______ 
+   … identifica uma entidade, frequentemente através de um nome DNS, e contém a respetiva chave pública.  .................................. __ X __ 
+   … contém uma assinatura digital que é sempre criada pelo proprietário da chave pública contida no certificado.  ........................... ______ 
+15. O SSL/TLS (Secure Sockets Layer/Transport Layer Security) envolve uma negociação inicial, nessa negociação … 
+   … é o servidor que decide qual a versão SSL/TLS a utilizar, e também qual o cypher-suite a utilizar.  ............................................. __ X __ 
+   … o primeiro passo é sempre o servidor enviar ao cliente uma mensagem Server Hello.  ................................................................ ______ 
+   … cliente e servidor definem o cypher-suite que cada um vai usar, é possível cada um usar um cypher-suite diferente do outro.  .. ______ 
+   … envolve sempre obrigatoriamente a troca de certificados de chave pública.  ................................................................................. ______ 
+16. Uma caraterística fundamental comum a qualquer tipo de VPN (Virtual Private Network) é que … 
+   … os pacotes transferidos através da VPN são sempre datagramas IP (nível três) nunca podem ser frames de nível dois.  ........... ______ 
+   … os endereços IP usados são privados, nunca podem a caso algum ser endereços públicos.  ....................................................... ______ 
+   … é garantida a confidencialidade dos dados que são transferidos através dela.  ............................................................................. __ X __ 
+   … é sempre obrigatório que cada utilizador se autentique antes de a utilizar.  ................................................................................... ______ 
+17. O envio de uma mensagem de correio eletrónico através de SMTP (Simple Mail Transfer Protocol) … 
+   … está muitas vezes limitado a formato de texto simples, mas mesmo assim é possível enviar outros tipos de conteúdos.  ........... __ X __ 
+   … exige sempre a autenticação do utilizador, através de username/password, perante o servidor.  ................................................. ______ 
+   … garante, em qualquer circunstância, a privacidade/confidencialidade do conteúdo da mensagem.  .............................................. ______ 
+   … recorre necessariamente a um servidor POP3 (Post Office Protocol) ou IMAP4 (Internet Message Access Protocol).  ................ ______ 

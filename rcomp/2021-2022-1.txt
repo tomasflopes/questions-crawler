@@ -1,0 +1,86 @@
+﻿
+1. Se com a codificação (line coding) NRZ-L (Non Return-to-Zero Level) for gerado um sinal que pode ter 16 níveis diferentes, … 
+   … em cada instante o sinal transporta três bits de informação. ........................................................................................................... ______ 
+   … então se a taxa de transmissão é de 100 Mbps, a frequência máxima do sinal resultante será de 50 MHz. ................................. ______ 
+   … seja qual for a sequência de bits a ser transmitida, o sinal está sempre a mudar de nível. ............................................................ ______ 
+   … o valor instantâneo do sinal representa um conjunto de quatro bits. ............................................................................................... ___X__ 
+2. Exemplos de meios de transmissão onde é obrigatório usar sinais analógicos (e.g., digital modulation) são … 
+   … todos os tipos de cabos de cobre (copper cables). ......................................................................................................................... ______ 
+   … todos os meios de transmissão do tipo baseband que suportam apenas frequências relativamente baixas. ................................ ______ 
+   … a rede telefónica pública tradicional (PTSN - public switched telephone network). ......................................................................... ___X__ 
+   … todos os tipos de cabos de fibra ótica (optical fibre). ....................................................................................................................... ______ 
+3. Numa rede de meio de transmissão partilhado (shared medium network) … 
+   … o MAC (Media Access Control) tem como objetivo garantir que apenas os utilizadores autorizados conseguem usar a rede. ..... ______ 
+   … o endereço de destino dos pacotes é analisado pelos nós intermédios para poderem decidir para onde retransmitir. ................. ______ 
+   … existe a grande vantagem de nunca ocorrerem colisões durante a transmissão de dados. ........................................................... ______ 
+   … a eficiência da utilização decresce de forma significativa com o aumento do número de nós existentes na rede. ........................ ___X__ 
+4. A quantidade de dados úteis (payload) transportados por um pacote de rede … 
+   … pode normalmente variar, mas essa variação não afeta o tamanho total do pacote de rede. ........................................................ ______ 
+   … afeta o overhead do pacote, quanto maior for a quantidade de dados úteis, maior será o overhead do pacote. ........................... ______ 
+   … tem sempre um limite máximo que depende do protocolo que estabelece o formato do pacote de rede. ...................................... ___X__ 
+   … afeta o tamanho (número de bits) de alguns dos campos que fazem parte da informação de controlo (header/tail) do pacote. ... ______ 
+5. Numa rede de comutação de pacotes os nós intermédios pode operar em modo store & forward, … 
+   … neste modo, o nó intermédio só começa a emitir um pacote depois de o ter recebido na integra. ................................................. ___X__ 
+   … neste modo, um pacote nunca pode ser emitido a uma taxa de transmissão inferior aquela a que foi recebido. .......................... ______ 
+   … este é o modo que garante os menores atrasos para um pacote ao atravessar a rede. ................................................................ ______ 
+   … neste modo, um pacote nunca pode ser emitido a uma taxa de transmissão superior aquela a que foi recebido. ........................ ______ 
+6. No modelo de referência OSI (Open Systems Interconnection) o PDU (Protocol Data Unit) … 
+   … da camada de rede (network layer) é o SDU (Service Data Unit) da camada de ligação lógica (logical link layer). ....................... ___X__ 
+   … é a informação útil (payload) que cada camada se encarrega de transportar, não inclui informação de controlo. ......................... ______ 
+   … é emitido para a rede física, sob a forma de sinais, pela camada de rede (network layer). ............................................................ ______ 
+   … da camada de transporte (transport layer) tem sempre dimensão superior aos PDU da camada de rede (network layer). ........... ______ 
+7. As redes locais sem fios IEEE802.11 (Wireless Local Networks – WLAN) … 
+   … são, tal como as redes Ethernet (IEEE802.3) atuais, completamente imunes à ocorrência de colisões. ....................................... ______ 
+   … são divididas em células, cada célula deve ter obrigatoriamente um SSID (Service Set Identifier) diferente e único. ................... ______ 
+   … utilizam o mecanismo de controlo de acesso ao meio CSMA/CD (Carrier Sense Multiple Access with Collision Detection). ........ ______ 
+   … utilizam a técnica RTS/CTS (Request to Send / Clear to Send), mas apenas para pacotes (frames) de maior dimensão............. ___X__ 
+8. Nas redes ATM (Asynchronous Transfer Mode) a informação útil é transportada por células (cells), ... 
+   … nas células existe um mecanismo autocorretor (FEC – Forward Error Correction) para erros nos dados transportados. .............. ______ 
+   … cada célula de uma rede ATM tem capacidade para transportar um pacote IPv4 (Internet Protocol version 4). ............................ ______ 
+   … a rede ATM garante que todas as células emitidas são efetivamente entregues no destino pretendido, e pela ordem correta. .... ______ 
+   … todas as células de uma rede ATM têm exatamente o mesmo tamanho, por essa razão o overhead não varia. .......................... ___X__ 
+9. O mecanismo PMTUD (Path Maximum Transmission Unit Discovery) … 
+   … utiliza os campos Fragment identifier e Fragment offset do cabeçalho do pacote IPv4 (Internet Protocol version 4)..................... ______ 
+   … determina o maior valor de MTU (Maximum Transmission Unit) existente ao longo de um caminho através da rede. .................. ______ 
+   … é usado no IPv4 (Internet Protocol version 4), mas não no IPv6 (Internet Protocol version 6). ...................................................... ______ 
+   … utiliza mensagens de erro enviadas através do protocolo ICMP (Internet Control Message Protocol). .......................................... ___X__ 
+10. As aplicações servidoras DHCP (Dynamic Host Configuration Protocol) … 
+   … são descobertas pelos clientes através do envio de pedidos para o endereço de broadcast da rede local. .................................. ___X__ 
+   … nunca conseguem garantir a atribuição de um endereço IP fixo (endereço IP estático) a um dado cliente. .................................. ______ 
+   … recebem pedidos de clientes DHCP, esses pedidos são enviados através de ligações TCP (Transmission Control Protocol). .... ______ 
+   … têm de ser únicas em cada rede IP, numa mesma rede IP nunca podem operar duas ou mais aplicações servidoras DHCP. .... ______ 
+11. No TCP (Transmission Control Protocol) o valor do RTO (Retransmission Timeout) … 
+   … é definido no campo Reception Window Size, existente no cabeçalho dos segmentos TCP. ........................................................ ______ 
+   … nunca deve ser superior ao valor do RTT (Round-Trip Time). ........................................................................................................ ______ 
+   … demasiado elevado tem como resultado indesejado a existência de um grande número de retransmissões desnecessárias. ..... ______ 
+   … nunca deve ser igual a metade do valor do RTT (Round-Trip Time). .............................................................................................. ___X__ 
+12. No IPv6 (Internet Protocol version 6) existem endereços unicast, endereços multicast e endereços anycast. 
+   O endereço de broadcast do IPv4 pode ser considerado um caso particular de endereço anycast. .................................................. ______ 
+   Tal como no IPv4, a gestão de grupos multicast é realizada através do protocolo IGMP (Internet Group Message Protocol). .......... ______ 
+   É perfeitamente possível um nó de rede ter, além de um endereço unicast, vários endereços multicast. .......................................... ___X__ 
+   Os endereços anycast têm a mesma utilidade dos endereços multicast, mas são muito mais eficientes. .......................................... ______ 
+13. No DNS (Domain Name System) os root name servers … 
+   … apenas aceitam pedidos que tenham como origem um name server de um top level domain. ................................................... ______ 
+   … devem conhecer os endereços IP dos name servers dos subdomínios de todos os top level domains. .................................... ______ 
+   … têm de resolver autonomamente (authoritative name server) todos os nomes pertencentes aos top level domains. .................. ______ 
+   … devem conhecer os endereços IP dos name servers de todos os top level domains. ................................................................ ___X__ 
+14. Numa mensagem HTTP (Hypertext Transfer Protocol), o campo de cabeçalho (header field) … 
+   … Referer deve existir obrigatoriamente em todas as mensagens HTTP, sejam pedidos ou sejam respostas. ................................ ______ 
+   … Content-MD5 não faz qualquer sentido existir se a mensagem for um pedido com o método PUT. ............................................. ______ 
+   … Connection pode ter o valor close ou o valor keep-alive. ............................................................................................................. ___X__ 
+   … Retry-After encontra-se habitualmente em mensagens de resposta com status 200 OK.............................................................. ______ 
+15. A utilização de algoritmos de cifragem de chave simétrica (symmetric key cyphers) … 
+   … não é suportada pelo protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security). ........................................................ ______ 
+   … exige uma chave pública usada para cifrar a informação e uma chave privada usada para decifrar a informação. ...................... ______ 
+   … consegue garantir por si só a autenticidade dos dados recebidos através da rede. ....................................................................... ___X__ 
+   … tem a desvantagem de ser muito mais lenta do que a utilização de algoritmos de cifragem de chave assimétrica. ...................... ______ 
+16. No contexto da utilização do SNMPv1 (Simple Network Management Protocol version 1) … 
+   … os agentes recebem pedidos SNMP que são transportados por datagramas UDP. ....................................................................... ___X__ 
+   … é possível consultar os objetos existentes na MIB (Management Information Base), mas nunca alterar o seu estado. ................ ______ 
+   … todas as mensagens enviadas têm uma mensagem de resposta que confirma a boa receção da mensagem inicial. .................. ______ 
+   … para monitorização ativa (active checks) de dispositivos de rede, são usadas mensagens TRAP. ............................................... ______ 
+17. Um MTA (Mail Transfer Agent) assume os papeis de cliente e de servidor SMTP (Simple Mail Transfer Protocol), … 
+   … no papel de servidor apenas pode receber mensagens, no papel de cliente apenas pode enviar mensagens. ............................ ___X__ 
+   … sempre que recebe uma mensagem no papel de servidor assume a seguir o papel de cliente para enviar essa mensagem. ...... ______ 
+   … no papel de servidor recebe mensagens apenas de outros MTA, nunca de outros tipos de aplicação cliente. ............................. ______ 
+   … no papel de servidor permite ao cliente o acesso à caixa de correio (mailbox) do utilizador. ......................................................... ______ 

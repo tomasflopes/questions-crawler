@@ -1,0 +1,87 @@
+﻿
+1. O fenómeno de interferência eletromagnética (EMI - electromagnetic interference) … 
+   … é a principal causa do ruído interno que existe nos meios de transmissão de dados. .................................................................... ______ 
+   … só afeta os sinais analógicos, os sinais digitais são imunes aos efeitos nefastos deste fenómeno. ............................................... ______ 
+   … é causado pela interferência intersimbólica  (ISI - Inter Symbol Interference)................................................................................. ______ 
+   … não afeta de forma nenhuma as transmissões de dados através de fibra ótica. ............................................................................. ___X__ 
+2. As técnicas QAM (Quadrature Amplitude Modulation) … 
+   … têm o inconveniente de produzirem um sinal constante durante a transmissão de uma sequência de símbolos um. ................... ______ 
+   … produzem sinais analógicos em que os dados digitais são representados por valores de amplitude e mudanças de fase. .......... ___X__ 
+   … são na realidade uma combinação das técnicas PSK (Phase Shift Keying) e FSK (Frequency Shift Keying). .............................. ______ 
+   … podem ser usada em meios de transmissão do tipo baseband, mas nunca em meios de transmissão do tipo passband. ............ ______ 
+3. O controlo de erros do tipo … 
+   … Continuous ARQ é um exemplo de Forward Error Correction (FEC). ............................................................................................. ______ 
+   … Automatic Repeat Request (ARQ) é bastante afetado pela latência da rede, em especial no modo stop & wait. .......................... ___X__ 
+   … Forward Error Correction (FEC), obriga o recetor a solicitar ao emissor o reenvio dos dados sempre que ocorre um erro. .......... ______ 
+   … Backward Error Correction (BEC), permite ao recetor corrigir autonomamente os erros sem recorrer ao emissor. ....................... ______ 
+4. Quando a pilha de protocolos TCP/IP é comparada com o modelo de referência OSI (MR-OSI), podemos afirmar que … 
+   … o protocolo IP (Internet Protocol) situa-se na camada de transporte (nível 4 do MR-OSI). ............................................................ ______ 
+   … na pilha TCP/IP não existe camada de ligação física (nível 1 do MR-OSI). .................................................................................... ___X__ 
+   … o protocolo TCP (Transmission Control Protocol) situa-se na camada de ligação lógica (nível 2 do MR-OSI). ............................. ______ 
+   … na pilha TCP/IP não existe camada de rede (nível 3 do MR-OSI). ................................................................................................. ______ 
+5. Numa rede local Ethernet (IEEE802.3/ISO8802-3), os comutadores Ethernet (switches) usam as tabelas MAC para … 
+   … registar associações entre endereços Ethernet de 48 bits e endereços IPv4 de 32 bits. ............................................................... ______ 
+   … evitar que ocorram colisões, deixando de ser necessário o protocolo CSMA/CD. .......................................................................... ______ 
+   … armazenar temporariamente os pacotes (frames) quando não podem ser emitidos de imediato. .................................................. ______ 
+   … emitir cada pacote (frame) apenas na porta de saída onde é necessário. ...................................................................................... ___X__ 
+6. As células (cells) das redes ATM (Asynchronous Transfer Mode) … 
+   … transportam uma quantidade de dados úteis claramente superior à transportada pelos pacotes (frames) Ethernet típicos. ......... ______ 
+   … têm um overhead variável entre 5% e 10%. .................................................................................................................................... ______ 
+   … não garantem a entrega dos dados, mas caso os dados sejam entregues, a ordem (sequência) de entrega é garantida. ........... ___X__ 
+   … incluem mecanismos de deteção de erros nos dados que transportam (payload). ......................................................................... ______ 
+7. O Cable Modem Termination System (CMTS) é … 
+   … um equipamento completamente passivo que agrega um conjunto de cablagens. ........................................................................ ______ 
+   … usado para proporcionar ligações ADSL (Asymmetric Digital Subscriber Line) aos subscritores. .................................................. ______ 
+   … um equipamento que se encontra habitualmente no interior da residência do subscritor. .............................................................. ______ 
+   … um equipamento que serve simultaneamente muitos subscritores, possuindo um MODEM para cada subscritor. ....................... ___X__ 
+8. Uma caraterística do cabeçalho (header) de um pacote IPv4 (Internet Protocol version 4) é … 
+   … ter um campo que contém uma etiqueta data/hora e se designa TTL (Time to Live). .................................................................... ______ 
+   … conter um campo que permite detetar erros nos dados transportados (payload). .......................................................................... ______ 
+   … conter o endereço IPv4 do nó de destino (onde o pacote deve ser entregue), mas não o endereço do nó de origem. ................. ______ 
+   … ser constituído por um número de bytes variável, mas sempre múltiplo de 4. ................................................................................ ___X__ 
+9. As mensagens ICMP (Internet Control Message Protocol) … 
+   … do tipo time exceeded indicam que foi excedido o tempo máximo especificado em segundos pelo emissor. ................................ ______ 
+   … do tipo destination unreachable indicam que houve um pacote que não chegou ao destino pretendido. ....................................... ___X__ 
+   … são transportadas por pacote UDP (User Datagram Protocol), sendo para o efeito reservado o número de porto 1. ................... ______ 
+   … do tipo echo request e echo reply são usadas pelo comando traceroute para determinar o caminho seguido pelos pacotes. ...... ______ 
+10. O mecanismo SLAAC (Stateless Address Auto Configuration) … 
+   … nunca em caso algum recorre ao serviço DHCPv6. ........................................................................................................................ ______ 
+   … pode ou não ser usado para definir as configurações IPv6, tudo depende da mensagem Router Advertisement recebida. ......... ___X__ 
+   … só pode ser usado se na rede local existir pelo menos um servidor DHCPv6. ............................................................................... ______ 
+   … tem como objetivo atribuir ao nó um link-local unicast address. ...................................................................................................... ______ 
+11. No sistema de resolução de nomes DNS (Domain Name System), os registos do tipo NS (Name Server) … 
+   … são também vulgarmente conhecidos como Glue Records e representam os root name servers. ................................................ ______ 
+   … são fundamentais, o sistema de domínios DNS não pode ser implementado sem recorrer a este tipo de registo. ........................ ___X__ 
+   … têm de ser únicos em cada domínio, tal como o registo SOA (Start Of Authority). ......................................................................... ______ 
+   … contêm endereços IPv4 e endereços IPv6 de servidores de nomes DNS. ..................................................................................... ______ 
+12. Na API Berkeley Sockets, quando um cliente TCP (Transmission Control Protocol) … 
+   … estabelece com sucesso a ligação TCP com o servidor, é criado um novo socket na aplicação cliente. . ..................................... ______ 
+   … recebe dados através de uma ligação TCP, não necessita de saber previamente quantos bytes deve ler. ................................... ______ 
+   … pretende estabelecer uma ligação TCP, tem de conhecer o endereço de nó e número de porto do servidor. ............................... ___X__ 
+   … envia dados através de uma ligação TCP não tem qualquer garantia que esses dados sejam entregues. ................................... ______ 
+13. A primeira linha de uma mensagem HTTP (Hypertext Transfer Protocol) … 
+   … contém sempre um identificador do método que está a ser usado (e.g. GET, PUT, POST, DELETE)........................................... ______ 
+   … estabelece desde logo a quantidade de bytes que a mensagem transporta (Content-Length). ..................................................... ______ 
+   … pode ou não conter um identificador da versão do protocolo HTTP (e.g. HTTP/1.1).. .................................................................... ______ 
+   … permite identificar imediatamente se a mensagem em questão é um pedido HTTP ou uma resposta HTTP. ............................... ___X__ 
+14. No protocolo HTTP 1.1, o campo de cabeçalho (header field) … 
+   … User-Agent contém o nome do servidor HTTP que emitiu a mensagem, por exemplo Apache/2.4.9. ......................................... ______ 
+   … Content-Type pode existir em respostas HTTP (HTTP responses), nunca em pedidos HTTP (HTTP requests). ......................... ______ 
+   … Connection não tem qualquer efeito, não afeta de nenhuma forma o comportamento de clientes e servidores. ......................... ______ 
+   … Authorization pode existir em pedidos HTTP (HTTP requests), nunca em respostas HTTP (HTTP responses). ......................... ___X__ 
+15. No protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security), a mensagem Client Hello … 
+   … contém uma lista de cypher suites para o servidor escolher um deles............................................................................................ ___X__ 
+   … contém sempre o certificado de chave pública do cliente. .............................................................................................................. ______ 
+   … é a primeira mensagem enviada pelo servidor ao cliente. ............................................................................................................... ______ 
+   … é enviada em resposta à mensagem Server Hello. ........................................................................................................................ ______ 
+16. Os agentes SNMP (Simple Network Management Protocol) podem ser usados pelos sistemas de monitorização, … 
+   … para cada agente SNMP a ser usado terá de existir um sistema de monitorização distinto. .......................................................... ______ 
+   … neste contexto, o modelo de funcionamento mais comum é monitorização ativa (active checking). .............................................. ___X__ 
+   … para esse efeito os sistemas de monitorização enviam pedidos HTTP e os agentes devolvem respostas HTTP. ........................ ______ 
+   … neste contexto, o sistema de monitorização envia mensagens SNMP SetRequest. ...................................................................... ______ 
+17. O protocolo SMTP (Simple Mail Transfer Protocol) é usado para a comunicação entre … 
+   … os MUA (Mail User Agent) e os servidores POP3 (Post Office Protocol version 3)......................................................................... ______ 
+   … diferentes MTA (Mail Transfer Agent), um MTA pode assumir o papel de cliente ou de servidor. .................................................. ___X__ 
+   … os MUA (Mail User Agent) e os servidores IMAP4 (Internet Message Access Protocol version 4)................................................. ______ 
+   … o MTA (Mail Transfer Agent) e as caixas de correio (mailboxes) locais para depositar mensagens. ............................................. ______ 
+ 

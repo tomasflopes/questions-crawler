@@ -1,0 +1,86 @@
+﻿
+1. Num meio de transmissão de fibra ótica (optical fibre) … 
+   … não existe ruído interno e o ruído externo é muito menor do que aquele que existe nos meios de transmissão de cobre. ........... ______ 
+   … a atenuação do sinal é comparativamente mais reduzida do que aquela que se verifica nos meios de transmissão de cobre. .... ___X__ 
+   … podem ser utilizados com sucesso sinais elétricos, sinais óticos ou sinais eletromagnéticos. ....................................................... ______ 
+   … não é possível usar sinais digitais (i.e., line coding), é obrigatório usar sinais analógicos (e.g., digital modulation). ..................... ______ 
+2. A técnica de modulação digital (digital modulation) Phase Shift Keying (PSK) … 
+   … pode ser combinada com Frequency Shift Keying (FSK), mas nunca com Amplitude Shift Keying (ASK). .................................... ______ 
+   … produz um sinal digital em que cada nível do sinal representa um conjunto de bits de dados a serem transmitidos. .................... ______ 
+   … produz um sinal analógico em que a frequência do sinal representa os dados a serem transmitidos. ........................................... ______ 
+   … produz um sinal que pode ser adequado a meios de transmissão sem fios. .................................................................................. ___X__ 
+3. Os mecanismos ou protocolos designados de Media Access Control (MAC) … 
+   … são importantes quando existe a possibilidade de dois nós emitirem simultaneamente no mesmo meio de transmissão. ............ ___X__ 
+   … do tipo CSMA/CD (Carrier Sense Multiple Access with Collision Detection) evitam completamente as colisões. .......................... ______ 
+   … são importantes nas redes de meio de transmissão em cobre, mas completamente desnecessários nas redes sem fios. ........... ______ 
+   … do tipo CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) evitam completamente as colisões.......................... ______ 
+4. Numa rede de comutação de pacotes com circuitos virtuais (packet switching network with virtual circuits) … 
+   … existe sempre a garantia de não haver perdas de dados, todos os dados emitidos são entregues. .............................................. ______ 
+   … o endereço de nó de destino de cada pacote é analisado pelos nós intermédios para poderem decidir para onde retransmitir. .. ______ 
+   … existe a garantia de que a ordem de entrega dos dados é a mesma daquela em que foram emitidos. ......................................... ___X__ 
+   … os pacotes não contêm qualquer tipo de informação de controlo, apenas dados úteis (payload). ................................................. ______ 
+5. O controlo de erros (error control) tem como objetivo recuperar de erros ocorridos durante a transmissão de um pacote. 
+   O ARQ (Automatic Repeat Request) é uma técnica do tipo BEC (Backward Error Correction). ......................................................... ___X__ 
+   O ARQ (Automatic Repeat Request) em modo stop & wait obriga à numeração dos pacotes. ........................................................... ______ 
+   As técnicas FEC (Forward Error Correction) implicam que em caso de erro o emissor terá de enviar novamente o pacote.............. ______ 
+   O ARQ (Automatic Repeat Request) em modo stop & wait é também conhecido por continuous ARQ. ............................................ ______ 
+6. Um pacote (frame) de rede Ethernet (IEEE 802.3) com etiqueta de VLAN (IEEE 802.1Q) … 
+   … não utiliza o campo FCS (Frame Check Sequence) para detetar erros ocorridos durante a transmissão. ..................................... ______ 
+   … não inclui todos os campos (fields) que existem num pacote de rede Ethernet normal sem etiqueta de VLAN. ............................ ______ 
+   … contém mais campos (fields) do que aqueles que existem num pacote de rede Ethernet normal sem etiqueta de VLAN. ............ ___X__ 
+   … tem um MTU (Maximum Transmission Unit) maior do um pacote de rede Ethernet normal sem etiqueta de VLAN. ..................... ______ 
+7. Nas redes locais sem fios IEEE 802.11 (Wireless Local Networks – WLAN), o SSID (Service Set Identifier) … 
+   … serve para identificar o ESS (Extended Service Set), um ESS pode incluir várias células. ............................................................ ___X__ 
+   … de duas células contíguas (vizinhas) nunca pode em caso algum ser o mesmo. ........................................................................... ______ 
+   … é secreto e nunca pode ser divulgado aos utilizadores antes de estes se autenticarem. ............................................................... ______ 
+   … de cada célula é o endereço MAC de 48 bits da base station (access-point) dessa célula. ........................................................... ______ 
+8. Numa ligação local-loop entre um subscritor e um ISP (Internet Service Provider) ... 
+   … com tecnologia ADSL (Asymmetric Digital Subscriber Line) reutilizam-se cabos coaxiais de televisão por cabo (CATV). ............ ______ 
+   … o principal objetivo é a transferência de pacotes IP (Internet Protocol) entre o subscritor e a Internet. .......................................... ___X__ 
+   … sem fios (WLL - Wireless Local Loop) são utilizados sinais digitais de acordo com as normas IEEE 802.11. ............................... ______ 
+   … com tecnologia ADSL é fundamental um mecanismo de controlo de acesso ao meio (MAC - Media Access Control). ................. ______ 
+9. As mensagens ICMP (Internet Control Message Protocol) do tipo Destination Unreachable… 
+   … são mensagens de erro que implicam sempre que o pacote IP não chegou ao nó de destino. ..................................................... ______ 
+   … são usadas para notificar de que o campo TTL (Time to Live) do pacote IP atingiu o valor zero. .................................................. ______ 
+   … são usadas pelo PMTUD (Path MTU Discovery) para determinar o maior MTU existente ao longo do caminho. .......................... ______ 
+   … são mensagens de erro que transportam uma cópia do cabeçalho do pacote IP que causou o erro. ............................................ ___X__ 
+10. No TCP (Transmission Control Protocol) os cabeçalhos dos pacotes (segments) contêm números de sequência, … 
+   … os números de sequência são usados para efetuar o acknowledge dos dados recebidos com sucesso. ...................................... ___X__ 
+   … os dois números de sequência existentes num dado cabeçalho nunca podem em caso algum ser iguais. ................................... ______ 
+   … se a flag SYN estiver ativa no cabeçalho, então os números de sequência devem ser ignorados. ................................................ ______ 
+   … inicialmente quando a ligação TCP acaba de ser estabelecida os números de sequência são sempre zero. ............................... ______ 
+11. O cabeçalho de um pacote IPv6 (Internet Protocol version 6) … 
+   … tem os 4 primeiros bits com valor exatamente igual ao que existe nos primeiros 4 bits do cabeçalho de um pacote IPv4. ........... ______ 
+   … tem, tal como no caso do IPv4, um comprimento variável dependente das opções utilizadas. ...................................................... ______ 
+   … contém um total de 32 bytes (256 bits) dedicados a especificar endereços de nó IPv6. ................................................................ ___X__ 
+   … contém um número de campos (fields) superior aos que existem no cabeçalho de um pacote IPv4. ............................................ ______ 
+12. No IPv6 o mecanismo SLAAC (Stateless Address Auto Configuration) … 
+   … só consegue definir os servidores DNS recorrendo ao serviço DHCPv6 (Dynamic Host Configuration Protocol version 6). ......... ______ 
+   … só pode funcionar se existir pelo menos um servidor DHCPv6 a operar na rede local onde o nó está ligado................................ ______ 
+   … tem como objetivo definir um endereço unicast link-local, que consequentemente não permite a comunicação com a Internet. .. ______ 
+   … só pode funcionar se existir pelo menos um router IPv6 a operar na rede local onde o nó está ligado. ......................................... ___X__ 
+13. Num domínio DNS (Domain Name System) os registos (resource records) do tipo … 
+   … NS (Name Server) não são obrigatórios, podem existir domínios sem nenhum registo deste tipo. ................................................ ______ 
+   … MX (Mail eXchanger) são obrigatórios, todos os domínios têm de ter pelo menos um registo MX. ............................................... ______ 
+   … CNAME (Canonical Name) não contêm endereços de nó IPv4 nem endereços de nó IPv6. ......................................................... ___X__ 
+   … PTR permitem a resolução inversa de endereços IPv4, mas esta funcionalidade não existe para IPv6. ....................................... ______ 
+14. Durante a receção de uma mensagem HTTP (Hypertext Transfer Protocol) … 
+   … o tamanho total do cabeçalho (número de bytes) passa a ser conhecido após a leitura da primeira linha do mesmo. .................. ______ 
+   … o tamanho total da mensagem (número de bytes) só é conhecido após a leitura completa do cabeçalho da mesma. .................. ___X__ 
+   … todas as linhas do cabeçalho da mensagem têm comprimento (número de bytes) fixo. ................................................................ ______ 
+   … o corpo da mensagem (caso exista) tem de ser lido byte a byte, pois o mesmo pode terminar sem aviso prévio. ........................ ______ 
+15. Quando um cliente HTTP (Hypertext Transfer Protocol) recebe uma resposta com o status … 
+   … 401 Unauthorized, isso deve-se a não ter sido efetuada a autenticação ou a mesma ter sido recusada pelo servidor. ............... ___X__ 
+   … 501 Not Implemented, isso indica que o recurso solicitado pelo pedido do cliente não existe no servidor. .................................. ______ 
+   … 404 Not Found, isso significa que o servidor HTTP não foi encontrado na rede (a resolução DNS falhou). ................................. ______ 
+   … 202 Accepted isso indica que o pedido foi recebido pelo servidor, mas ignorado pelo mesmo (não foi executado). .................... ______ 
+16. No protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security), a mensagem Client Hello … 
+   … é enviada em resposta à mensagem Server Hello. ........................................................................................................................ ______ 
+   … é uma mensagem enviada pelo servidor ao cliente. ........................................................................................................................ ______ 
+   … contém uma lista com os cypher suites que são suportados pelo cliente. .................................................................................... ___X__ 
+   … inclui sempre o certificado de chave pública do cliente para efeitos de autenticação. .................................................................... ______ 
+17. O SMTP (Simple Mail Transfer Protocol) permite transferir mensagens de correio eletrónico, … 
+   … uma das suas utilizações mais comum é no acesso remoto a caixas do correio (mailboxes) de utilizadores. ............................... ______ 
+   … no SMTP as mensagens de correio eletrónico são transportadas por datagramas UDP (User Datagram Protocol)...................... ______ 
+   … um servidor SMTP pode receber correio eletrónico, mas não pode enviar correio eletrónico. ....................................................... ___X__ 
+   … as aplicações designadas de MUA (Mail User Agent) são exemplos comuns de implementações de servidores SMTP. ............. ______ 
