@@ -1,0 +1,102 @@
+
+1. Num sistema computacional as interrupções: /
+a) Permitem efetuar chamadas ao sistema operativo e que os periféricos sinalizem a ocorrência de eventos. __X__
+b) Permitem que os periféricos sinalizem a ocorrência de eventos, tal como a finalização de uma operação leitura ou escrita no disco, mas nunca são utilizadas para sinalizar erros no hardware. _____
+c) Permitem que os periféricos executem chamadas ao sistema operativo ____
+d) São utilizadas pelos periféricos, exclusivamente, para iniciar a transferência de grandes quantidades de dados por DMA. _____
+2. O conjunto seguinte de instruções pode apenas ser executado em kernel mode: /
+a) Operações de adição, alteração entre kernel e user mode. _____
+b) Operações de leitura de uma posição de memória, alteração entre kernel e user mode. _____
+c) Operações de alteração entre kernel e user mode, acesso às tabelas de interrupção. __X__
+d) Operações de Trap (interrupção de software), alteração entre kernel e user mode. _____
+3. Relativamente ao funcionamento do barramento de um computador: /
+a) O acesso para leitura ou escrita à memória principal implica o gasto de vários ciclos de relógio até concluir a operação. __X__
+b) O acesso para leitura ou escrita à memória principal é sempre feito num ciclo de relógio até concluir a operação. _____
+c) Não permite que os periféricos acedam à memória principal. _____
+d) O barramento não interliga o CPU com a memória principal. _____
+4. A comunicação entre processos através de pipes… /
+a) Não permite implementar qualquer tipo de sincronização entre processos. _____
+b) Implica, sempre, que a função de leitura do pipe seja evocada múltiplas vezes para verificar se o pipe tem dados. _____
+c) Permite implementar um funcionamento semelhante ao algoritmo dos leitores/escritores uma vez que a função de read não apaga os dados lidos do pipe e a função de write bloqueia se o pipe estiver cheio. _____
+d) Permite implementar um funcionamento semelhante ao algoritmo de sincronização do produtor/consumidor uma vez que a função de read bloqueia se o pipe estiver vazio e a função de write também bloqueia se o pipe estiver cheio. __X__
+5. Um Cluster de computação … /
+a) É um sistema em que vários processadores estão ligados uns aos outros através de um barramento de alto desempenho. _____
+b) É um sistema em que os computadores (com um ou mais processadores/cores) estão ligados através de uma rede local de alto desempenho. __X__
+c) É um sistema em que os computadores exclusivamente de baixo desempenho (apenas com um processador e um core) estão ligados através de uma rede local sem fios. _____
+d) É um sistema em que vários cores de um processadores estão ligados uns aos outros através de um barramento de alto desempenho. _____
+6. O módulo de gestão de I/O: /
+a) É responsável pela implementação de operações de comunicação via rede com outros computadores. _____
+b) Em Linux o módulo denominado de “Virtual File System” fornece uma interface genérica para acesso aos dispositivos de I/O. __X__
+c) Permite atribuir e libertar memória a processos. _____
+d) Nenhuma das anteriores. _____
+7. O código seguinte implementa um algoritmo de sincronização entre processos. Em que o valor inicial dos semáforos é S1=0, S2=0, M=1 e a variável partilhada rc=0. Considere três processos que irão começar a executar por esta ordem: P2, P1 e P2. O processo P1 não manipula o semáforo M e também não modifica a variável rc. /
+a) A secção crítica dos processos é sempre executada, mas sem garantia na ordem de execução. _____
+b) A secção crítica será sempre executada, primeiro nos processos P2 e só depois no processo P1. __X__
+c) O segundo processo P2 fica sempre bloqueado em deadlock na linha 6. _____
+d) Nenhuma das anteriores. _____
+8. Relativamente ao escalonamento usando Round Robin, pode-se afirmar o seguinte: /
+a) Cada fila tem obrigatoriamente que aplicar o mesmo algoritmo, embora possa aplicar parâmetros diferentes, p.e. utilizar time quantums diferentes entre filas. _____
+b) Não é uma solução adaptada a sistemas em que se desconhece o comportamento dos processos a escalonar. __X__
+c) Favorece os processos I/O bound. ____
+d) Nenhuma das anteriores. _____
+9. Quando uma thread fica bloqueada numa variável de condição depois de chamar a função pthread_cond_wait(…), esta encontra-se no estado de: /
+a) Ready. _____
+b) Running. _____
+c) Waiting. __X__
+d) Nenhuma das anteriores. _____
+10. Considere o pseudocódigo seguinte. Assuma que a região de memória já foi criada e inicializada e que podem existir vários processos a executar o programa P1 e o programa P2. /
+a) Os processos que executam o programa P1 podem executar em paralelo a função func_xpto() desde que também exista um processo a executar o programa P2. _____
+b) Os processos que executam o programa P1 podem executar em paralelo a função func_xpto(), desde que um dos processos que executa o programa P1 já tenha executado com sucesso a linha 5 (down(b);). __X__
+c) Em cada instante, apenas um processo que executa o programa P1 executar em paralelo a função func_xpto(), mesmo que não existam processos a executar o programa P2. ____
+d) Os processos que executam P1 e P2 não são exclusivos no acesso à invocação da função func_xpto(). _____
+11. Um endereço lógico: /
+a) É o endereço que indica a posição na memória física onde se encontra um item a ser manipulado. _____
+b) É o primeiro endereço de um segmento de memória. _____
+c) É o primeiro endereço de uma página de memória. _____
+d) É o endereço gerado pelo processador quando um programa está a ser executado antes de chegar à MMU. __X__
+12. Considere um sistema mono-processador cujo sistema operativo utiliza um algoritmo de escalonamento round-robin com time quantum igual a 3. Considerando os seguintes perfis de execução para os processos P1, P2 e P3. Indique uma possível sequência de execução destes processos, em que um 1, 2 ou 3 representa, respetivamente, o processo P1, P2 ou P3 em execução durante uma unidade de tempo, “-“ representa o processo no estado de waiting. Na solução o símbolo “-“ significa que o processador não está a executar qualquer processo. /
+a) 1113332213322111222 __X__
+b) 1111333221113322-222 ____
+c) 1111-111333-3322-22-222 _____
+d) 11133322-1-122-3311222 _____
+13. Assuma o conjunto de processos abaixo, respetivos perfis de execução e um algoritmo de escalonamento round-robin com um time quantum de 4, em que a execução é feita utilizando dois processadores, com uma
+fila global para todos os processos. Indique uma possível sequência de escalonamento para estes processos, assumindo que todos os processos chegam ao sistema no instante 0 (zero). /
+a) CPU1: 11242111223 CPU2: 333323-4444 ____
+b) CPU1: 3333-22111-3 CPU2: 41124444322- __X__
+c) CPU1: 42--44441113 CPU2: 113333223-22 _____
+d) CPU1: 11422111223 CPU2: 2333334444- ____
+14. Relativamente aos mecanismos de paginação de memória e segmentação de memória: /
+a) Uma página de memória tem sempre o mesmo tamanho para todos os processos. __X__
+b) Uma página de memória pode ter tamanhos diferentes conforme as necessidades dos processos. _____
+c) Um segmento de memória tem que ter sempre o mesmo tamanho para todos os processos. _____
+d) Nenhuma das anteriores. _____
+15. Das seguintes afirmações selecione a opção correta: /
+a) Um sistema multimédia não pode ser considerado um sistema de tempo-real. _____
+b) Um automóvel não é um sistema de tempo-real. _____
+c) O escalonamento Round-Robin é adequado para sistemas de tempo-real. _____
+d) Num sistema de tempo-real, a deadline é o instante no tempo até ao qual o resultado de uma computação deve estar disponível. __X__
+16. Considere o pseudocódigo seguinte, referente às threads T1 e T2. Assuma que existem duas variáveis de exclusão mútua m1 e m2, que são acessíveis a todas as threads e já foram inicializadas. Considerando o código executado pelas threads T1 e T2 e que as funções utilizadas seguem o seu funcionamento normal, sem erros: /
+a) A utilização das variáveis de exclusão mútua assegura que o bloco A é sempre executado primeiro que o bloco B. _____
+b) O bloco C é sempre executado antes do bloco D pois a thread T1 só faz o unlock da variável de exclusão mútua m2 após a execuçáo do bloco C. _____
+c) O código apresentado não respeita o funcionamento e utilização das variáveis de exclusão mútua, já que só a thread que efetuou o lock é que poderá efetuar o unlock da mesma variável de exclusão. __X__
+d) Para uma correta implementação da solução é necessário utilizar uma terceira variável de exclusão mútua na thread T1 antes da execução do bloco C. _____
+17. Considere o programa seguinte. Um possível output será: /
+a) BAACB _____
+b) BCABA __X__
+c) AACBB _____
+d) BABAC _____
+18. A lei de Amdhal define o máximo speedup que se pode obter para um programa ao proceder à sua paralelização. O speedup depende … /
+a) Apenas da percentagem do programa que não pode ser paralelizada e do número de processadores. __X__
+b) Apenas da percentagem do programa que se pode paralelizar e do número de processadores. _____
+c) Apenas da percentagem do programa que não pode ser paralelizada, percentagem do programa que se pode paralelizar e do número de processadores. _____
+d) Nenhuma das anteriores. _____
+19. Considere o pseudocódigo seguinte. Assuma que a região de memória já foi criada e inicializada e que podem ser executados vários processos a executar o programa P1 e o programa P2. Indique a resposta correta. /
+a) A solução 1 não garante a coerência dos dados devido a não utilizar synchronized antes do nome do método metodo_alt(). _____
+b) As duas soluções garantem a coerência dos dados. A solução 1 permite uma sincronização mais fina e por esse motivo aumenta a probabilidade de uma execução concorrente mais otimizada. __X__
+c) A solução 1 permite que mais do que uma thread aceda à zona critica em simultâneo. _____
+d) A solução 1 não funciona pois um objeto apenas pode ser utilizado por uma thread. _____
+20. Considere o extrato de código seguinte em OpenMP: / 
+a) Vai criar 2 threads, ambas imprimem “T1”, apenas a thread 2 vai imprimir “T2”. __X__
+b) Vai criar tantas threads como o número de cores/processadores disponíveis, todas imprimem “T1”, apenas a thread 2 vai imprimir “T2”. _____
+c) Vai criar 4 threads, todas imprimem “T1”, apenas a thread 2 vai imprimir “T2”. _____
+d) Não vai criar nenhuma thread. _____

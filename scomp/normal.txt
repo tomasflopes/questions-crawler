@@ -1,0 +1,6 @@
+
+1. O que é um sistema operativo? /
+a) Um gestor de recursos de hardware. _____
+b) Um controlador da execução dos programas de modo a prevenir erros e um uso inadequado do hardware. _____
+c) Um intermediário entre os utilizadores e o hardware. _____
+d) Todos os anteriores. __X__

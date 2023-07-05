@@ -1,0 +1,403 @@
+[
+  {
+    "question": "Num sistema computacional as interrupções:",
+    "options": [
+      "Permitem efetuar chamadas ao sistema operativo e que os periféricos sinalizem a ocorrência de eventos.",
+      "Permitem que os periféricos sinalizem a ocorrência de eventos, tal como a finalização de uma operação leitura ou escrita no disco, mas nunca são utilizadas para sinalizar erros no hardware.",
+      "Permitem que os periféricos executem chamadas ao sistema operativo",
+      "São utilizadas pelos periféricos, exclusivamente, para iniciar a transferência de grandes quantidades de dados por DMA."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "O conjunto seguinte de instruções pode apenas ser executado em kernel mode:",
+    "options": [
+      "Operações de adição, alteração entre kernel e user mode.",
+      "Operações de leitura de uma posição de memória, alteração entre kernel e user mode.",
+      "Operações de alteração entre kernel e user mode, acesso às tabelas de interrupção.",
+      "Operações de Trap (interrupção de software), alteração entre kernel e user mode."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Relativamente ao funcionamento do barramento de um computador:",
+    "options": [
+      "O acesso para leitura ou escrita à memória principal implica o gasto de vários ciclos de relógio até concluir a operação.",
+      "O acesso para leitura ou escrita à memória principal é sempre feito num ciclo de relógio até concluir a operação.",
+      "Não permite que os periféricos acedam à memória principal.",
+      "O barramento não interliga o CPU com a memória principal."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "A comunicação entre processos através de pipes…",
+    "options": [
+      "Não permite implementar qualquer tipo de sincronização entre processos.",
+      "Implica, sempre, que a função de leitura do pipe seja evocada múltiplas vezes para verificar se o pipe tem dados.",
+      "Permite implementar um funcionamento semelhante ao algoritmo dos leitores/escritores uma vez que a função de read não apaga os dados lidos do pipe e a função de write bloqueia se o pipe estiver cheio.",
+      "Permite implementar um funcionamento semelhante ao algoritmo de sincronização do produtor/consumidor uma vez que a função de read bloqueia se o pipe estiver vazio e a função de write também bloqueia se o pipe estiver cheio."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Um Cluster de computação …",
+    "options": [
+      "É um sistema em que vários processadores estão ligados uns aos outros através de um barramento de alto desempenho.",
+      "É um sistema em que os computadores (com um ou mais processadores/cores) estão ligados através de uma rede local de alto desempenho.",
+      "É um sistema em que os computadores exclusivamente de baixo desempenho (apenas com um processador e um core) estão ligados através de uma rede local sem fios.",
+      "É um sistema em que vários cores de um processadores estão ligados uns aos outros através de um barramento de alto desempenho."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "O módulo de gestão de I",
+    "options": [
+      "É responsável pela implementação de operações de comunicação via rede com outros computadores.",
+      "Em Linux o módulo denominado de “Virtual File System” fornece uma interface genérica para acesso aos dispositivos de I/O.",
+      "Permite atribuir e libertar memória a processos.",
+      "Nenhuma das anteriores."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "O código seguinte implementa um algoritmo de sincronização entre processos. Em que o valor inicial dos semáforos é S1=0, S2=0, M=1 e a variável partilhada rc=0. Considere três processos que irão começar a executar por esta ordem: P2, P1 e P2. O processo P1 não manipula o semáforo M e também não modifica a variável rc.",
+    "options": [
+      "A secção crítica dos processos é sempre executada, mas sem garantia na ordem de execução.",
+      "A secção crítica será sempre executada, primeiro nos processos P2 e só depois no processo P1.",
+      "O segundo processo P2 fica sempre bloqueado em deadlock na linha 6.",
+      "Nenhuma das anteriores."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Relativamente ao escalonamento usando Round Robin, pode-se afirmar o seguinte:",
+    "options": [
+      "Cada fila tem obrigatoriamente que aplicar o mesmo algoritmo, embora possa aplicar parâmetros diferentes, p.e. utilizar time quantums diferentes entre filas.",
+      "Não é uma solução adaptada a sistemas em que se desconhece o comportamento dos processos a escalonar.",
+      "Favorece os processos I/O bound.",
+      "Nenhuma das anteriores."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Quando uma thread fica bloqueada numa variável de condição depois de chamar a função pthread_cond_wait(…), esta encontra-se no estado de:",
+    "options": [
+      "Ready.",
+      "Running.",
+      "Waiting.",
+      "Nenhuma das anteriores."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Considere o pseudocódigo seguinte. Assuma que a região de memória já foi criada e inicializada e que podem existir vários processos a executar o programa P1 e o programa P2.",
+    "options": [
+      "Os processos que executam o programa P1 podem executar em paralelo a função func_xpto() desde que também exista um processo a executar o programa P2.",
+      "Os processos que executam o programa P1 podem executar em paralelo a função func_xpto(), desde que um dos processos que executa o programa P1 já tenha executado com sucesso a linha 5 (down(b);).",
+      "Em cada instante, apenas um processo que executa o programa P1 executar em paralelo a função func_xpto(), mesmo que não existam processos a executar o programa P2.",
+      "Os processos que executam P1 e P2 não são exclusivos no acesso à invocação da função func_xpto()."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Um endereço lógico:",
+    "options": [
+      "É o endereço que indica a posição na memória física onde se encontra um item a ser manipulado.",
+      "É o primeiro endereço de um segmento de memória.",
+      "É o primeiro endereço de uma página de memória.",
+      "É o endereço gerado pelo processador quando um programa está a ser executado antes de chegar à MMU."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Considere um sistema mono-processador cujo sistema operativo utiliza um algoritmo de escalonamento round-robin com time quantum igual a 3. Considerando os seguintes perfis de execução para os processos P1, P2 e P3. Indique uma possível sequência de execução destes processos, em que um 1, 2 ou 3 representa, respetivamente, o processo P1, P2 ou P3 em execução durante uma unidade de tempo, “-“ representa o processo no estado de waiting. Na solução o símbolo “-“ significa que o processador não está a executar qualquer processo.",
+    "options": [
+      "1113332213322111222",
+      "1111333221113322-222",
+      "1111-111333-3322-22-222",
+      "11133322-1-122-3311222"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Assuma o conjunto de processos abaixo, respetivos perfis de execução e um algoritmo de escalonamento round-robin com um time quantum de 4, em que a execução é feita utilizando dois processadores, com uma",
+    "options": [
+      "la global para todos os processos. Indique uma possível sequência de escalonamento para estes processos, assumindo que todos os processos chegam ao sistema no instante 0 (zero). /",
+      "CPU1: 11242111223 CPU2: 333323-4444",
+      "CPU1: 3333-22111-3 CPU2: 41124444322-",
+      "CPU1: 42--44441113 CPU2: 113333223-22",
+      "CPU1: 11422111223 CPU2: 2333334444-"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Relativamente aos mecanismos de paginação de memória e segmentação de memória:",
+    "options": [
+      "Uma página de memória tem sempre o mesmo tamanho para todos os processos.",
+      "Uma página de memória pode ter tamanhos diferentes conforme as necessidades dos processos.",
+      "Um segmento de memória tem que ter sempre o mesmo tamanho para todos os processos.",
+      "Nenhuma das anteriores."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Das seguintes afirmações selecione a opção correta:",
+    "options": [
+      "Um sistema multimédia não pode ser considerado um sistema de tempo-real.",
+      "Um automóvel não é um sistema de tempo-real.",
+      "O escalonamento Round-Robin é adequado para sistemas de tempo-real.",
+      "Num sistema de tempo-real, a deadline é o instante no tempo até ao qual o resultado de uma computação deve estar disponível."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Considere o pseudocódigo seguinte, referente às threads T1 e T2. Assuma que existem duas variáveis de exclusão mútua m1 e m2, que são acessíveis a todas as threads e já foram inicializadas. Considerando o código executado pelas threads T1 e T2 e que as funções utilizadas seguem o seu funcionamento normal, sem erros:",
+    "options": [
+      "A utilização das variáveis de exclusão mútua assegura que o bloco A é sempre executado primeiro que o bloco B.",
+      "O bloco C é sempre executado antes do bloco D pois a thread T1 só faz o unlock da variável de exclusão mútua m2 após a execuçáo do bloco C.",
+      "O código apresentado não respeita o funcionamento e utilização das variáveis de exclusão mútua, já que só a thread que efetuou o lock é que poderá efetuar o unlock da mesma variável de exclusão.",
+      "Para uma correta implementação da solução é necessário utilizar uma terceira variável de exclusão mútua na thread T1 antes da execução do bloco C."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Considere o programa seguinte. Um possível output será:",
+    "options": [
+      "BAACB",
+      "BCABA",
+      "AACBB",
+      "BABAC"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "A lei de Amdhal define o máximo speedup que se pode obter para um programa ao proceder à sua paralelização. O speedup depende …",
+    "options": [
+      "Apenas da percentagem do programa que não pode ser paralelizada e do número de processadores.",
+      "Apenas da percentagem do programa que se pode paralelizar e do número de processadores.",
+      "Apenas da percentagem do programa que não pode ser paralelizada, percentagem do programa que se pode paralelizar e do número de processadores.",
+      "Nenhuma das anteriores."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Considere o pseudocódigo seguinte. Assuma que a região de memória já foi criada e inicializada e que podem ser executados vários processos a executar o programa P1 e o programa P2. Indique a resposta correta.",
+    "options": [
+      "A solução 1 não garante a coerência dos dados devido a não utilizar synchronized antes do nome do método metodo_alt().",
+      "As duas soluções garantem a coerência dos dados. A solução 1 permite uma sincronização mais fina e por esse motivo aumenta a probabilidade de uma execução concorrente mais otimizada.",
+      "A solução 1 permite que mais do que uma thread aceda à zona critica em simultâneo.",
+      "A solução 1 não funciona pois um objeto apenas pode ser utilizado por uma thread."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Considere o extrato de código seguinte em OpenMP:",
+    "options": [
+      "Vai criar 2 threads, ambas imprimem “T1”, apenas a thread 2 vai imprimir “T2”.",
+      "Vai criar tantas threads como o número de cores/processadores disponíveis, todas imprimem “T1”, apenas a thread 2 vai imprimir “T2”.",
+      "Vai criar 4 threads, todas imprimem “T1”, apenas a thread 2 vai imprimir “T2”.",
+      "Não vai criar nenhuma thread."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Num sistema computacional as interrupções de hardware:",
+    "options": [
+      "Permitem que os periféricos se liguem ao CPU através de uma linha dedicada (direta ou através de outro hardware) que ao passar do nível lógico 0 para 1 assinala a ocorrência de um evento nesse periférico.",
+      "Permitem que os periféricos sinalizem a ocorrência de eventos, tal como a finalização de uma operação leitura ou escrita no disco, mas nunca são utilizadas para sinalizar erros no hardware.",
+      "Permitem que os periféricos executem chamadas ao sistema operativo.",
+      "São utilizadas pelos periféricos, para exclusivamente iniciar a transferência de grandes quantidades de dados por DMA."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Assuma que em Linux, o seu programa quer alterar a tabela de interrupções do CPU:",
+    "options": [
+      "Esta operação pode ser realizada por código executado em user-mode.",
+      "Esta operação requer que o ficheiro executável do programa tenha permissão WRITE para poder escrever na tabela de interrupções.",
+      "Esta operação apenas pode ser feita por código executado em kernel-mode.",
+      "As tabelas de interrupção apenas podem ser alteradas através de interrupções de hardware."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Considere um sistema computacional com um CPU e vários periféricos:",
+    "options": [
+      "Num sistema deste tipo podem ser executadas múltiplas ações em paralelo, como por exemplo a receção de dados via ligação WiFi e via Ethernet.",
+      "O acesso para leitura ou escrita à memória principal é sempre feito num ciclo de relógio até concluir a operação.",
+      "Em qualquer sistema computacional, os periféricos nunca podem aceder à memória principal.",
+      "Num sistema deste tipo não podem ser executadas múltiplas ações em paralelo, p.e. quando está a ser recebida uma mensagem via ligação WiFi não pode estar a ser transmitida outra via USB."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "A comunicação entre processos utilizando exclusivamente mecanismos de memória partilhada…",
+    "options": [
+      "Não permitem implementar qualquer tipo de sincronização entre processos.",
+      "Permitem a implementação de mecanismos de sincronização baseados em espera ativa, mais eficientes que os mecanismos de semáforos, desde que o tempo de espera para entrar na secção crítica seja muito elevado.",
+      "Permitem impedir a escrita na memória se já lá existir um valor.",
+      "Permitem a implementação de mecanismos de sincronização baseados em espera ativa."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Porque é que os mecanismos de DMA apresentam melhor desempenho do que mecanismos de interrupção, na transferência de grandes volumes de dados:",
+    "options": [
+      "Os mecanismos de DMA permitem que os dispositivos de I/O acedam diretamente à memória cache do processador.",
+      "Os mecanismos de DMA não implicam a utilização do CPU em operações de transferência de dados entre os dispositivos e a memória principal.",
+      "O desempenho do mecanismo de DMA é superior porque utiliza instruções do CPU para a acelerar a transferência de dados entre dispositivos de I/O e a memória principal.",
+      "Nenhuma das anteriores."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Acerca do módulo de gestão de I",
+    "options": [
+      "É responsável pela implementação de operações de comunicação com os dispositivos de I/O enviando-lhes interrupções.",
+      "Em Linux o módulo denominado de “Virtual File System” não fornece uma interface genérica para acesso aos dispositivos de I/O.",
+      "Pode configurar os dispositivos de I/O para sinalizar as alterações de estado através de interrupções.",
+      "Apenas permite comunicação síncrona."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O código seguinte implementa um algoritmo de sincronização entre processos do tipo P1 e P2. Considere que já foi criada uma região de memória partilhada com o valor da variável shm->d inicializado a zero e os semáforos a, b, c inicializados com o valor 1.Considere três processos (2 processo P1 e um processo P2) que irão começar a executar, assumindo que quando P2 começa a executar a variável shm->d já tem o valor 1.",
+    "options": [
+      "A função func_abc() é sempre executada primeiro em P2.",
+      "A função func_abc() será sempre executada, primeiro em um processo do tipo P1.",
+      "O segundo processo P1 a tentar executar a função func_abc() nunca o consegue fazer antes do primeiro processo P1 terminar.",
+      "Nenhuma das opções anteriores."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O acesso a recursos partilhados através da sincronização por semáforos tem os seguintes efeitos no perfil de execução de um processo:",
+    "options": [
+      "Um processo bloqueado num semáforo fica no estado de waiting continuando em contenção para ser executado no processador, até mudar de estado.",
+      "Um processo bloqueado num semáforo fica no estado de waiting saindo de contenção para ser executada no processador, até mudar de estado para ready.",
+      "Um processo bloqueado num semáforo fica no estado de ready continuando em contenção para ser executado no processador, até mudar de estado.",
+      "Um processo bloqueado num semáforo fica no estado de ready saindo de contenção para ser executado no processador, até mudar de estado."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Quando uma thread executa a função pthread_cond_broadcast(...), verifica-se o seguinte comportamento:",
+    "options": [
+      "Sinaliza todas as threads bloqueadas na variável de condição.",
+      "Sinaliza a primeira thread bloqueada na variável condição.",
+      "Sinaliza a thread indicada como argumento da função.",
+      "Liberta o mutex associado à variável de condição."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Considere o pseudocódigo seguinte. Assuma que a região de memória partilhada já foi criada e inicializada. Assuma ainda que podem existir vários processos a executar o pseudocódigo P1 e P2:",
+    "options": [
+      "Se um processo P1 estiver a executar a func_xpto(), então também um processo P2 poderá executar, concorrentemente, func_xpto().",
+      "Se um processo P2 estiver a executar a func_xpto(), então também um processo P1 poderá executar, concorrentemente, func_xpto().",
+      "Se um processo P1 estiver a executar a func_xpto(), então também outro processo P1 poderá executar, concorrentemente, func_xpto().",
+      "Se um processo P2 estiver a executar a func_xpto(), então também outro processo P2 poderá executar, concorrentemente, func_xpto()."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Um endereço lógico:",
+    "options": [
+      "É um endereço que indica a posição na memória física onde se encontra um item a ser manipulado.",
+      "É o primeiro endereço de um segmento de memória.",
+      "É o primeiro endereço de uma página de memória.",
+      "É um endereço gerado pelo processador quando um programa está a ser executado, antes de ser convertido para um endereço físico pela MMU."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Considere um sistema mono-processador cujo sistema operativo utiliza um algoritmo de escalonamento round-robin com time quantum igual a 3. Considerando os seguintes perfis de execução para os processos P1, P2 e P3, determine a sequência de execução destes processos num sistema com um processador. Indique uma possível sequência de execução destes processos, em que um 1, 2 ou 3 representa, respetivamente, o processo P1, P2 ou P3 em execução durante uma unidade de tempo, “-“ representa o processo no estado de waiting. Na solução o símbolo “-“ significa que o processador não está a executar qualquer processo.",
+    "options": [
+      "2 2 3 3 1 1 2 2 3 3 1 1 3 3 1 3 - 1 -",
+      "2 2 3 3 3 1 1 1 2 2 3 1 3 3 3 1 - - 1",
+      "2 2 3 3 3 3 1 1 1 1 2 2 3 3 3 1 - - 1",
+      "1 1 1 2 2 3 3 3 1 1 2 2 3 1 3 3 3 - -"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Assuma o conjunto de processos abaixo, respetivos perfis de execução e um algoritmo de escalonamento round-robin com um time quantum de 3, em que a execução é feita utilizando dois processadores, com uma fila global para todos os processos. Cada processo tem apenas um fio (thread) de execução. Indique uma possível sequência de escalonamento para estes processos, assumindo que todos os processos chegam ao sistema no instante 0 (zero).",
+    "options": [
+      "CPU1: 1 2 4 2 2 1 3 3 2 2 3 - - - CPU2: 1 3 3 3 1 1 4 4 4 4 - - - -",
+      "CPU1: 1 1 4 2 2 1 1 1 2 2 - - - - CPU2: 2 3 3 3 3 3 4 4 4 3 4 - - -",
+      "CPU1: 1 1 3 3 3 1 1 1 3 3 - - 3 - CPU2: - 2 4 2 2 – 4 4 4 2 2 4 - -",
+      "CPU1: 1 1 4 2 2 1 1 1 2 2 4 - - - CPU2: 2 3 3 3 - - 4 4 4 3 3 - - 3"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Relativamente aos mecanismos de paginação de memória e segmentação de memória:",
+    "options": [
+      "Um segmento de memória tem sempre o mesmo tamanho para todos os processos.",
+      "Uma página de memória pode ter tamanhos diferentes conforme as necessidades dos processos.",
+      "Os segmentos de memória podem ter tamanhos diferentes.",
+      "Nenhuma das anteriores"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "O Linux define permite a utilização dos algoritmos de escalonamento SCHED_FIFO e SCHED_OTHER:",
+    "options": [
+      "O algoritmo SCHED_OTHER é um algoritmo para sistemas de tempo-real.",
+      "O algoritmo SCHED_FIFO apenas é adequado para escalonamento de longo prazo.",
+      "O algoritmo SCHED_OTHER é um algoritmo de round-robin simples.",
+      "O algoritmo SCHED_OTHER é um algoritmo hierárquico com realimentação por filas."
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Considere o programa seguinte: Um possível output será:",
+    "options": [
+      "BAACB",
+      "AACBB",
+      "BABAC",
+      "BACBA"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "O modelo de computação baseado na Comunicação por Mensagens (Message Passing Model) …",
+    "options": [
+      "Assume a cooperação apenas entre processos residentes na mesma máquina através da troca de mensagens.",
+      "Assume a cooperação entre processos residentes em máquinas diferentes através de memória partilhada.",
+      "Assume a cooperação entre processos na mesma máquina ou em máquinas diferentes através da troca de mensagens.",
+      "Nenhuma das anteriores."
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Considere o pseudocódigo seguinte. Assuma que a região de memória já foi criada e inicializada e que podem ser executados vários processos a executar o programa P1 e o programa P2. Indique a resposta correta.",
+    "options": [
+      "A solução 2 garante a coerência dos dados devido a utilizar synchronized antes do nome do método metodo_alt().",
+      "As duas soluções não garantem a coerência dos dados. A solução 1 permite uma sincronização mais fina e por esse motivo aumenta a probabilidade de uma execução concorrente menos otimizada.",
+      "A solução 2 permite que mais do que uma thread aceda à zona critica em simultâneo.",
+      "A solução 2 não funciona, pois um objeto apenas pode ser utilizado por threads que implementem a solução 1."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Considere o extrato de código seguinte em OpenMP:",
+    "options": [
+      "Vai criar um número indefinido de threads que vão executar a função do_huge_comp() em paralelo.",
+      "Vai criar uma thread para executar a função do_huge_comp().",
+      "Vai criar um número indefinido de processos que vão executar a função do_huge_comp() em paralelo.",
+      "Num processador com 2 cores vai criar pelo menos 2 processos que vão executar a função do_huge_comp() em paralelo."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "O que é um sistema operativo?",
+    "options": [
+      "Um gestor de recursos de hardware.",
+      "Um controlador da execução dos programas de modo a prevenir erros e um uso inadequado do hardware.",
+      "Um intermediário entre os utilizadores e o hardware.",
+      "Todos os anteriores."
+    ],
+    "correct_index": 3
+  }
+]

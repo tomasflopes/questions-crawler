@@ -1,0 +1,96 @@
+
+1. Num sistema computacional as interrupções de hardware: /
+a) Permitem que os periféricos se liguem ao CPU através de uma linha dedicada (direta ou através de outro hardware) que ao passar do nível lógico 0 para 1 assinala a ocorrência de um evento nesse periférico. __X__
+b) Permitem que os periféricos sinalizem a ocorrência de eventos, tal como a finalização de uma operação leitura ou escrita no disco, mas nunca são utilizadas para sinalizar erros no hardware. _____
+c) Permitem que os periféricos executem chamadas ao sistema operativo. _____
+d) São utilizadas pelos periféricos, para exclusivamente iniciar a transferência de grandes quantidades de dados por DMA. _____
+2. Assuma que em Linux, o seu programa quer alterar a tabela de interrupções do CPU: /
+a) Esta operação pode ser realizada por código executado em user-mode. _____
+b) Esta operação requer que o ficheiro executável do programa tenha permissão WRITE para poder escrever na tabela de interrupções. _____
+c) Esta operação apenas pode ser feita por código executado em kernel-mode. __X__
+d) As tabelas de interrupção apenas podem ser alteradas através de interrupções de hardware. _____
+3. Considere um sistema computacional com um CPU e vários periféricos: /
+a) Num sistema deste tipo podem ser executadas múltiplas ações em paralelo, como por exemplo a receção de dados via ligação WiFi e via Ethernet. __X__
+b) O acesso para leitura ou escrita à memória principal é sempre feito num ciclo de relógio até concluir a operação. _____
+c) Em qualquer sistema computacional, os periféricos nunca podem aceder à memória principal. _____
+d) Num sistema deste tipo não podem ser executadas múltiplas ações em paralelo, p.e. quando está a ser recebida uma mensagem via ligação WiFi não pode estar a ser transmitida outra via USB. _____
+4. A comunicação entre processos utilizando exclusivamente mecanismos de memória partilhada… /
+a) Não permitem implementar qualquer tipo de sincronização entre processos. _____
+b) Permitem a implementação de mecanismos de sincronização baseados em espera ativa, mais eficientes que os mecanismos de semáforos, desde que o tempo de espera para entrar na secção crítica seja muito elevado. _____
+c) Permitem impedir a escrita na memória se já lá existir um valor. _____
+d) Permitem a implementação de mecanismos de sincronização baseados em espera ativa. __X__
+5. Porque é que os mecanismos de DMA apresentam melhor desempenho do que mecanismos de interrupção, na transferência de grandes volumes de dados: /
+a) Os mecanismos de DMA permitem que os dispositivos de I/O acedam diretamente à memória cache do processador. _____
+b) Os mecanismos de DMA não implicam a utilização do CPU em operações de transferência de dados entre os dispositivos e a memória principal. __X__
+c) O desempenho do mecanismo de DMA é superior porque utiliza instruções do CPU para a acelerar a transferência de dados entre dispositivos de I/O e a memória principal. _____
+d) Nenhuma das anteriores. _____
+6. Acerca do módulo de gestão de I/O: /
+a) É responsável pela implementação de operações de comunicação com os dispositivos de I/O enviando-lhes interrupções. _____
+b) Em Linux o módulo denominado de “Virtual File System” não fornece uma interface genérica para acesso aos dispositivos de I/O. _____
+c) Pode configurar os dispositivos de I/O para sinalizar as alterações de estado através de interrupções. __X__
+d) Apenas permite comunicação síncrona. _____
+7.  O código seguinte implementa um algoritmo de sincronização entre processos do tipo P1 e P2. Considere que já foi criada uma região de memória partilhada com o valor da variável shm->d inicializado a zero e os semáforos a, b, c inicializados com o valor 1.Considere três processos (2 processo P1 e um processo P2) que irão começar a executar, assumindo que quando P2 começa a executar a variável shm->d já tem o valor 1.
+a) A função func_abc() é sempre executada primeiro em P2. _____
+b) A função func_abc() será sempre executada, primeiro em um processo do tipo P1. _____
+c) O segundo processo P1 a tentar executar a função func_abc() nunca o consegue fazer antes do primeiro processo P1 terminar. __X__
+d) Nenhuma das opções anteriores. _____
+8. O acesso a recursos partilhados através da sincronização por semáforos tem os seguintes efeitos no perfil de execução de um processo: /
+a) Um processo bloqueado num semáforo fica no estado de waiting continuando em contenção para ser executado no processador, até mudar de estado. _____
+b) Um processo bloqueado num semáforo fica no estado de waiting saindo de contenção para ser executada no processador, até mudar de estado para ready. __X__
+c) Um processo bloqueado num semáforo fica no estado de ready continuando em contenção para ser executado no processador, até mudar de estado. _____
+d) Um processo bloqueado num semáforo fica no estado de ready saindo de contenção para ser executado no processador, até mudar de estado. _____
+9. Quando uma thread executa a função pthread_cond_broadcast(...), verifica-se o seguinte comportamento: /
+a) Sinaliza todas as threads bloqueadas na variável de condição. __X__
+b) Sinaliza a primeira thread bloqueada na variável condição. _____
+c) Sinaliza a thread indicada como argumento da função. _____
+d) Liberta o mutex associado à variável de condição. _____
+10. Considere o pseudocódigo seguinte. Assuma que a região de memória partilhada já foi criada e inicializada. Assuma ainda que podem existir vários processos a executar o pseudocódigo P1 e P2: /
+a) Se um processo P1 estiver a executar a func_xpto(), então também um processo P2 poderá executar, concorrentemente, func_xpto(). _____
+b) Se um processo P2 estiver a executar a func_xpto(), então também um processo P1 poderá executar, concorrentemente, func_xpto(). _____
+c) Se um processo P1 estiver a executar a func_xpto(), então também outro processo P1 poderá executar, concorrentemente, func_xpto(). __X__
+d) Se um processo P2 estiver a executar a func_xpto(), então também outro processo P2 poderá executar, concorrentemente, func_xpto(). _____
+11. Um endereço lógico: /
+a) É um endereço que indica a posição na memória física onde se encontra um item a ser manipulado. _____
+b) É o primeiro endereço de um segmento de memória. _____
+c) É o primeiro endereço de uma página de memória. _____
+d) É um endereço gerado pelo processador quando um programa está a ser executado, antes de ser convertido para um endereço físico pela MMU. __X__
+12. Considere um sistema mono-processador cujo sistema operativo utiliza um algoritmo de escalonamento round-robin com time quantum igual a 3. Considerando os seguintes perfis de execução para os processos P1, P2 e P3, determine a sequência de execução destes processos num sistema com um processador. Indique uma possível sequência de execução destes processos, em que um 1, 2 ou 3 representa, respetivamente, o processo P1, P2 ou P3 em execução durante uma unidade de tempo, “-“ representa o processo no estado de waiting. Na solução o símbolo “-“ significa que o processador não está a executar qualquer processo. /
+a) 2 2 3 3 1 1 2 2 3 3 1 1 3 3 1 3 - 1 - _____
+b) 2 2 3 3 3 1 1 1 2 2 3 1 3 3 3 1 - - 1 __X__
+c) 2 2 3 3 3 3 1 1 1 1 2 2 3 3 3 1 - - 1 _____
+d) 1 1 1 2 2 3 3 3 1 1 2 2 3 1 3 3 3 - - _____
+13. Assuma o conjunto de processos abaixo, respetivos perfis de execução e um algoritmo de escalonamento round-robin com um time quantum de 3, em que a execução é feita utilizando dois processadores, com uma fila global para todos os processos. Cada processo tem apenas um fio (thread) de execução. Indique uma possível sequência de escalonamento para estes processos, assumindo que todos os processos chegam ao sistema no instante 0 (zero). /
+a) CPU1: 1 2 4 2 2 1 3 3 2 2 3 - - - CPU2: 1 3 3 3 1 1 4 4 4 4 - - - - _____
+b) CPU1: 1 1 4 2 2 1 1 1 2 2 - - - - CPU2: 2 3 3 3 3 3 4 4 4 3 4 - - - _____
+c) CPU1: 1 1 3 3 3 1 1 1 3 3 - - 3 - CPU2: - 2 4 2 2 – 4 4 4 2 2 4 - - __X__
+d) CPU1: 1 1 4 2 2 1 1 1 2 2 4 - - - CPU2: 2 3 3 3 - - 4 4 4 3 3 - - 3 _____
+14. Relativamente aos mecanismos de paginação de memória e segmentação de memória: /
+a) Um segmento de memória tem sempre o mesmo tamanho para todos os processos. _____
+b) Uma página de memória pode ter tamanhos diferentes conforme as necessidades dos processos. _____
+c) Os segmentos de memória podem ter tamanhos diferentes. __X__
+d) Nenhuma das anteriores _____
+15. O Linux define permite a utilização dos algoritmos de escalonamento SCHED_FIFO e SCHED_OTHER: /
+a) O algoritmo SCHED_OTHER é um algoritmo para sistemas de tempo-real. _____
+b) O algoritmo SCHED_FIFO apenas é adequado para escalonamento de longo prazo. _____
+c) O algoritmo SCHED_OTHER é um algoritmo de round-robin simples. _____
+d) O algoritmo SCHED_OTHER é um algoritmo hierárquico com realimentação por filas. __X__
+16. Considere o programa seguinte: Um possível output será: /
+a) BAACB _____
+b) AACBB _____
+c) BABAC _____
+d) BACBA __X__
+17. O modelo de computação baseado na Comunicação por Mensagens (Message Passing Model) … /
+a) Assume a cooperação apenas entre processos residentes na mesma máquina através da troca de mensagens. _____
+b) Assume a cooperação entre processos residentes em máquinas diferentes através de memória partilhada. _____
+c) Assume a cooperação entre processos na mesma máquina ou em máquinas diferentes através da troca de mensagens. __X__
+d) Nenhuma das anteriores. _____
+18. Considere o pseudocódigo seguinte. Assuma que a região de memória já foi criada e inicializada e que podem ser executados vários processos a executar o programa P1 e o programa P2. Indique a resposta correta. /
+a) A solução 2 garante a coerência dos dados devido a utilizar synchronized antes do nome do método metodo_alt(). __X__
+b) As duas soluções não garantem a coerência dos dados. A solução 1 permite uma sincronização mais fina e por esse motivo aumenta a probabilidade de uma execução concorrente menos otimizada. _____
+c) A solução 2 permite que mais do que uma thread aceda à zona critica em simultâneo. _____
+d) A solução 2 não funciona, pois um objeto apenas pode ser utilizado por threads que implementem a solução 1. _____
+19. Considere o extrato de código seguinte em OpenMP: /
+a) Vai criar um número indefinido de threads que vão executar a função do_huge_comp() em paralelo. __X__
+b) Vai criar uma thread para executar a função do_huge_comp(). _____
+c) Vai criar um número indefinido de processos que vão executar a função do_huge_comp() em paralelo. _____
+d) Num processador com 2 cores vai criar pelo menos 2 processos que vão executar a função do_huge_comp() em paralelo. _____

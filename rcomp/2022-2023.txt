@@ -1,0 +1,87 @@
+
+1. Os meios de transmissão em fibra ótica …
+… são adequados para a transmissão de sinais elétricos. .................................................................................................................. ______
+… só podem ser usados se existir linha direta de visão entre o emissor e o recetor. ......................................................................... ______
+… não produzem radiação eletromagnética e estão imunes à EMI (Electromagnetic interference). ................................................... ___X__
+… são imunes a todos os tipos de ruído que possam perturbar a transmissão dos dados. ................................................................ ______
+2. As técnicas de modulação digital (digital modulation) ASK, FSK e PSK …
+… são particularmente adequadas para meios de transmissão do tipo banda-base (baseband). ...................................................... ______
+… utilizam sinais analógicos, aplicando-lhes respetivamente variações de amplitude, frequência e fase. ......................................... ___X__
+… nunca podem ser usadas simultaneamente sobre o mesmo sinal pois são totalmente incompatíveis. .......................................... ______
+… produzem sinais digitais que são adequados para transmissões sem fios (wireless) ..................................................................... ______
+3. Uma vantagem das redes de comutação de pacotes relativamente às redes de meio de transmissão partilhado é que …
+… a latência da rede (tempo que a rede demora a fazer a entrega de um pacote emitido) é muito menor. ....................................... ______
+… não existe domínio de broadcast nem domínio de colisão. ............................................................................................................. ______
+…, na maioria das situações, os pacotes são entregues apenas no nó de destino e não em outros nós da rede.............................. ___X__
+… é garantida a entrega dos pacotes (não há perda de pacotes) e também a ordem de entrega dos mesmos. ............................... ______
+4. No modelo de referência OSI (MS-OSI) …
+… o PDU (Protocol Data Unit) de uma camada, contém o PDU da camada imediatamente acima dela. .......................................... ___X__
+… duas camadas de níveis sucessivos trocam entre si informação de controlo através do PCI (Protocol Control Information) ........ ______
+… os PDU nas camadas inferiores são mais pequenos dos que os PDU nas camadas superiores. .................................................. ______
+…, em cada camada, o PCI (Protocol Control Information) é usado para transportar dados provenientes da camada acima. .......... ______
+5. Uma trama (frame) Ethernet II …
+… utiliza endereços de 48 bits para identificar os nós, o endereço de destino nunca por ser FF:FF:FF:FF:FF:FF. ........................... ______
+… tem como principal objetivo transportar dados dados, a quantidade da dados que cada trama pode transportar é limitada. ....... ___X__
+… permite o transporte de dados entre nós finais desde que estejam ligados à internet. ................................................................... ______
+… não dispõe de qualquer mecanismo que permita detetar erros ocorridos durante a transmissão da mesma. ............................... ______
+6. A tecnologia ADSL (Asymmetric Digital Subscriber Line) …
+… exige a instalação de cablagem de fibra ótica adequada. ............................................................................................................... ______
+… utiliza sinais digitais sobre um meio de transmissão do tipo banda-base (baseband). ................................................................... ______
+… não utiliza meios de transmissão do tipo banda-canal (passband). ............................................................................................... ______
+… proporciona taxas de transmissão efetivas que dependem fortemente das condições das linhas de transmissão. ....................... ___X__
+7. O mecanismo designado por PMTUD (Path Maximum Transmission Unit Discovery) …
+… tem como objetivo determinar o menor valor de MTU (Maximum Transmission Unit) existente ao longo de um caminho. ........... ___X__
+… é obrigatório no IPv4 porque este protocolo não suporta a fragmentação de pacotes. .................................................................. ______
+… utiliza mensagens de erro ICMP destination unreachable, por isso é suportado pelo ICMPv4, mas não pelo ICPMv6. ............. ______
+… permite tirar o máximo proveito das capacidades do IPv4 sob o ponto de vista de fragmentação e reagrupamento de pacotes .. ______
+8. O cabeçalho de um pacote IPv6 …
+… possui um conjunto de campos dedicados à fragmentação e ao reagrupamento de pacotes. ....................................................... ______
+… nunca pode ser seguido de um cabeçalho UDP ou TCP, tem de ser sempre seguido de um cabeçalho de extensão. ................. ______
+… tem um tamanho fixo, porque ao contrário do IPv4, o IPv6 não suporta a adição de opções no cabeçalho. ................................. ___X__
+… pode usar endereços de origem e destino de 128 bits ou de 32 bits. ............................................................................................. ______
+Redes de Computadores – 2022/2023 – Exame Final – Prova Modelo com Proposta de Resolução
+9. No sistema de resolução de nomes DNS (Domain Name System) …
+… os registos do tipo NS (name server) contêm endereços IPv4 e endereços IPv6 ........................................................................... ______
+… todo e qualquer servidor de nomes (NS) deve conhecer os endereços dos root name servers. .................................................. ___X__
+… os nomes criados num domínio DNS podem afetar o funcionamento de outros domínios DNS. ................................................... ______
+…, em cada domínio DNS nunca deve existir mais do que um registo do tipo MX (Mail Exchanger) ................................................. ______
+10. Na API Berkeley Sockets, um socket apropriado à utilização do protocolo UDP …
+… possibilita o envio de pacotes UDP para endereços de multicast e broadcast. .............................................................................. ___X__
+… gera um erro/exceção quando o pacote UDP não é entregue no endereço de destino solicitado. ................................................ ______
+… exige que o recetor de um pacote UDP saiba exatamente o seu tamanho (número de bytes do payload) antes de o receber. .... ______
+… permite o envio de pacotes UDP de qualquer dimensão (qualquer quantidade de bytes de payload). .......................................... ______
+11. O cabeçalho de uma mensagem HTTP (Hypertext Transfer Protocol) …
+… pode conter a linha Connection: close, nesse caso o servidor deve fechar a ligação sem responder ao cliente. ........................ ______
+… só pode conter a linha Content-Type se se tratar de uma mensagem de resposta (response message). .................................... ______
+… começa sempre por uma linha que contém um identificador da versão do protocolo HTTP. ......................................................... ___X__
+… termina sempre com a linha Connection: close. ........................................................................................................................... ______
+12. A mensagem de resposta HTTP “503 Service Unavailable”, é obtida pelo cliente HTTP quando …
+…, devido a um problema de rede, o pedido HTTP não chega ao servidor. ....................................................................................... ______
+… o URI sobre o qual incide o pedido não existe no servidor HTTP. ................................................................................................. ______
+… o cliente não tem as permissões necessárias para aceder ao URI sobre o qual incide o pedido. .................................................. ______
+… o servidor não tem capacidade para processar o pedido devido a uma sobrecarga temporária. ................................................... ___X__
+13. Na negociação (handshake) do protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security), …
+… a mensagem Server Hello contém uma lista de cypher suites para o cliente poder escolher um.................................................. ______
+… é sempre obrigatório o envio de um certificado de chave pública pelo cliente ao servidor. ............................................................ ______
+… é sempre obrigatório o envio de um certificado de chave pública pelo servidor ao cliente. ............................................................ ______
+… a iniciativa cabe ao cliente através do envio da mensagem Client Hello, que contém uma lista de cypher suites. ....................... ___X__
+14. Um certificado de chave pública …
+… contém um par chave pública e chave privada correspondente, adequadas a algoritmos criptográficos de chave assimétrica. . . ______
+… tem como objetivo garantir que uma dada chave pública é a autentica de uma dada entidade (Subject). .................................... ___X__
+… contém uma chave secreta a ser utilizada em algoritmos criptográficos de chave simétrica. ......................................................... ______
+… não tem qualquer utilidade prática quando o emissor (Issuer) é o mesmo que o proprietário da chave (Subject). ........................ ______
+15. Uma das diferenças entre uma VPN LAN-to-LAN e uma VPN Host-LAN é que, …
+… nas VPN Host-LAN não é assegurada a privacidade das transações, apenas a autenticação.. .................................................... ______
+…normalmente, os utilizadores não têm conhecimento direto sobre a existência das VPN LAN-to-LAN. ......................................... ___X__
+… para usar uma VPN LAN-to-LAN os utilizadores são forçados a autenticarem-se, e.g. através de username/password............... ______
+… as VPN LAN-to-LAN são do tipo layer two, enquanto as VPN Host-LAN são do tipo layer three. .................................................. ______
+16. O protocolo SNMP (Simple Network Management Protocol) exige que o sistema gerido possua um agente SNMP.
+Um agente SNMPv1 é essencialmente um servidor UDP, mas também opera como cliente UDP. .................................................... ___X__
+Os agentes SNMPv1 utilizam o protocolo TCP, atuando quer como servidor quer como cliente. ...................................................... ______
+Um agente SNMPv1 é um servidor HTTP/HTTPS que disponibiliza web services (provider). ............................................................ ______
+Os agentes SNMP enviam mensagens TRAP em resposta a pedidos GetRequest que recebem. .................................................... ______
+17. O protocolo SMTP (Simple Mail Transfer Protocol) utiliza o modelo cliente-servidor, …
+… o protocolo não permite a sua utilização sem a autenticação do cliente perante o servidor através de username/password........ ______
+…, um tipo de aplicação que o utiliza é o MTA (Mail Transfer Agent), um MTA nunca assume o papel de cliente SMTP. ............... ______
+… os utilizadores podem usar um cliente SMTP para leram as mensagens que estão armazenadas na sua caixa do correio. ........ ______
+… tem como objetivo o envio de mensagens de correio eletrónico do cliente SMTP para o servidor SMTP e não o contrário. ......... ___X__

@@ -1,0 +1,86 @@
+
+1. Uma vantagem da cablagem de cobre quando comparada com a cablagem de fibra ótica é …
+… uma menor atenuação e um menor atraso de propagação do sinal. .............................................................................................. ______
+… a total imunidade ao efeito da EMI (Electromagnetic interference). ................................................................................................ ______
+… a maior simplicidade na montagem dos conetores. ......................................................................................................................... __ X __
+… permitir cabos de comprimento superior.......................................................................................................................................... ______
+2. A modulação digital (digital modulation) …
+… QAM (Quadrature Amplitude Modulation) usa ASK (Amplitude Shift Keying) e PSK (Phase Shift Keying). ................................... __ X __
+… produz sinais cuja frequência varia desde zero até um valor máximo. ........................................................................................... ______
+… utiliza-se quando o meio de transmissão é baseband (banda-base) e não passband (banda-canal). ............................................ ______
+… produz sinais digitais. ....................................................................................................................................................................... ______
+3. O tempo que um nó de rede demora a colocar um pacote no meio de transmissão (emitir o pacote) …
+… é tanto maior quanto maior for o atraso de propagação do sinal através do meio de transmissão. ............................................... ______
+… é tanto maior quanto maior for o tamanho do pacote. ..................................................................................................................... __ X __
+… depende da taxa de transmissão, mas não do tamanho do pacote. ............................................................................................... ______
+… depende de serem usados circuitos virtuais, ou não serem usados circuitos virtuais. .................................................................... ______
+4. No modelo OSI (Open Systems Interconnection), a camada de rede (network layer / layer three), …
+… tem como missão transformar os dados em sinais e enviar os mesmos através do meio de transmissão. ................................... ______
+… define um PCI (Protocol Control Information), que vai ser interpretado pela camada de transporte (layer four) ............................ ______
+… define um PDU (Protocol Data Unit) que vai ser o SDU (Service Data Unit) da camada de ligação lógica (layer two). ................. __ X __
+… é uma camada que não existe na pilha de protocolos TCP/IP. ....................................................................................................... ______
+5. Os códigos de validação de dados para efeitos de deteção de erros (e.g. Frame Check Sequence) …
+… têm um tamanho (número de bits) que depende do volume de dados (número de bytes) a ser validado. ..................................... ______
+… são definidos pelos emissores e verificados pelos recetores.. ........................................................................................................ __ X __
+… nunca permitem a um recetor ter total certeza de que ocorreu um erro.......................................................................................... ______
+… são parte integrante do SDU e consequentemente não fazem parte do PCI. ................................................................................. ______
+6. As tecnologias DSL (Digital Subscriber Line) e ADSL (Asymmetric Digital Subscriber Line) …
+… garantem uma taxa de transmissão efetiva mínima, sejam quais forem as condições do meio de transmissão. ........................... ______
+… produzem sinais digitais e por isso exigem meios de transmissão do tipo passband (banda-canal). ............................................. ______
+… utiliza sinais óticos, por isso exige a instalação de cablagem de fibra ótica adequada. .................................................................. ______
+… utilizam linhas telefónicas analógicas da rede pública (PSTN - Public Switched Telephone Network). .......................................... __ X __
+7. Uma semelhança entre o cabeçalho de um pacote IPv4 e o cabeçalho de um pacote IPv6 é que, ambos …
+… permitem exatamente os mesmo conjunto de valores possíveis no campo que define o tipo de dados transportados (payload). ______
+… possuem um campo que determina o número máximo de routers que o pacote poderá atravessar. ............................................. __ X __
+… têm uma dimensão fixa, embora diferente em cada versão. ........................................................................................................... ______
+… possuem campos destinados à implementação da fragmentação (fragmentation) pelos nós intermédios (routers). ..................... ______
+8. O protocolo ARP (Address Resolution Protocol) …
+… é considerado seguro e pouco exposto a ataques maliciosos. ....................................................................................................... ______
+… exige que os nós intervenientes estejam no mesmo domínio de broadcast (rede física ou VLAN). ............................................... __ X __
+… é usado para resolver endereços IP, quer se trate de endereços IPv4 quer se trate de endereços IPv6. ...................................... ______
+… exige que na rede esteja disponível e devidamente configurado um servidor ARP. ....................................................................... ______
+9. No sistema DNS (Domain Name System), os servidores de nomes dos domínios de topo (TDL - Top-Level Domain) …
+… não necessitam de conhecer endereços dos root name servers. ................................................................................................. ______
+… devem conhecer os endereços dos servidores de nomes de todos os restantes domínios de topo............................................... ______
+… devem ser conhecidos pelos root name servers. .......................................................................................................................... __ X __
+… nunca podem conter registos do tipo NS (Name Server). ............................................................................................................... ______
+10. Na API Berkeley Sockets, quando um cliente UDP (User Datagram Protocol) envia um pedido, …
+… se o pedido não é recebido por nenhum servidor, o cliente é sempre notificado desse facto. ...................................................... ______
+… pode definir como destino um endereço multicast ou broadcast. .................................................................................................... __ X __
+… o pedido pode ter qualquer dimensão desde que não exceda 1 Gb (1 gigabyte). .......................................................................... ______
+… a função/método usada/o para o efeito (sendto/send) bloqueia o processo/thread até que o pedido seja entregue ao servidor... ______
+11. O cabeçalho (header) de uma mensagem HTTP (Hypertext Transfer Protocol) …
+… pode ter como primeira linha a linha de cabeçalho (header field) Connection. ............................................................................. ______
+… é sempre integralmente constituído por linhas de texto, todas terminadas por CR/LF. .................................................................. __ X __
+… tem um número total de linhas que está especificado na primeira linha do cabeçalho. .................................................................. ______
+… é constituído por uma sequência de linhas de texto, das quais várias podem estar vazias. ........................................................... ______
+12. No protocolo HTTP, os pedidos com o método GET …
+… podem conter a linha de cabeçalho (header field) Accept. ............................................................................................................. __ X __
+… nunca devem definir as linhas de cabeçalho (header fields) Content-Length ou Content-Type. ................................................. __ X __
+… nunca podem ser usados para enviar nenhum tipo de dados ao servidor. ..................................................................................... ______
+… são atualmente considerados obsoletos e nunca devem ser usados. ............................................................................................ ______
+13. Através da primeira linha de uma mensagem HTTP, ficamos sempre a saber …
+… se é um pedido (HTTP request) ou uma resposta (HTTP response). ............................................................................................. __ X __
+… se possui conteúdo (body) ou não. .................................................................................................................................................. ______
+… quantas linhas existem no cabeçalho da mensagem. ..................................................................................................................... ______
+… o tipo de conteúdo (body) transportado pela mensagem. ............................................................................................................... ______
+14. Quando uma ligação TCP é protegida pelo protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security), …
+… é sempre obrigatório que seja utilizado pelo menos um certificado de chave pública. ................................................................... ______
+… é necessário que todas as versões SSL/TLS suportadas pelo servidor sejam também suportadas pelo cliente. .......................... ______
+… é opção do servidor exigir ou não ao cliente um certificado de chave pública. ............................................................................... __ X __
+… é necessário que todos os cypher-suites suportados pelo servidor sejam também suportados pelo cliente. ................................. ______
+15. Numa VPN (Virtual Private Network) do tipo Host-LAN (Remote-Access VPN) …
+… as configurações de rede (e.g. endereços IP) devem ser sempre definidas manualmente em ambas as extremidades. .............. ______
+… os pacotes transferidos através da VPN são sempre datagramas IP (nível três) nunca podem ser frames de nível dois. ............ ______
+… é habitual os utilizadores serem autenticados através de username/password. ............................................................................. __ X __
+… estabelecer a autenticidade do servidor é irrelevante para o cliente. .............................................................................................. ______
+16. Os agentes SNMP (Simple Network Management Protocol) …
+… utilizam o protocolo TCP (Transmission Control Protocol) para transportar as mensagens SNMP. ............................................... ______
+… recebem pedidos em formato JSON ou XML e devolvem respostas em formato idêntico. ............................................................. ______
+… garantem sempre que as respostas são entregues no nó de destino. ............................................................................................ ______
+… são adequados para implementar active checking, mas não são adequados para implementar passive checking. ................. __ X __
+17. Para um utilizador ter acesso às mensagens de correio eletrónico que estão depositadas na sua mailbox …
+… pode usar um Web Browser, para isso basta que o serviço MTA esteja disponível no servidor correspondente........................... ______
+… o protocolo SMTP (Simple Mail Transfer Protocol) é, entre outros, uma opção possível. .............................................................. ______
+… pode utilizar o serviço MTA (Mail Transfer Agent), se este estiver disponível no servidor correspondente. .................................. ______
+… pode utilizar o serviço POP3 (Post Office Protocol version 3), se este estiver disponível no servidor correspondente. ................. __ X __

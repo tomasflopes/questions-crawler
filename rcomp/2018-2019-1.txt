@@ -1,0 +1,87 @@
+
+1. A relação sinal/ruído (S/N ou SNR) …
+… é sempre igual ao longo de todo o meio de transmissão através do qual o sinal se propaga. ....................................................... ______
+… não se pode determinar para sinais óticos porque não existe ruído (N=0). .................................................................................... ______
+… para um sinal ótico não inclui o efeito da EMI (Electromagnetic interference). ............................................................................... __ X __
+… no ponto de receção é normalmente maior do que aquela que existe no ponto de emissão do sinal. ........................................... ______
+2. Algumas tecnologias que usam codificação (line coding) e não usam modulação digital (digital modulation) são:
+Ethernet 1000baseT e 10GbaseT. ....................................................................................................................................................... __ X __
+DSL (Digital Subscriber Line) e ADSL (Asymmetric Digital Subscriber Line). ...................................................................................... ______
+Wi-Fi (redes locais sem fios), e.g. normas 802.11. .............................................................................................................................. ______
+DOCSIS (Data Over Cable Service Interface Specification). ............................................................................................................... ______
+3. O tempo que um pacote demora a atravessar uma infraestrutura de rede (e.g. a Internet), não depende …
+… da distância física entre emissor e recetor, nem do número de nós intermédios que o pacote atravessa. .................................... ______
+… do tipo de dados transportados pelo pacote. ................................................................................................................................... __ X __
+… do tamanho do pacote, nem da quantidade de tráfego em circulação na rede. .............................................................................. ______
+… das taxas de transmissão que são utilizadas no interior da infraestrutura. ..................................................................................... ______
+4. Um PDU (Protocol Data Unit), tal como definido no modelo OSI, …
+… contém apenas informação de controlo, não inclui informação útil trocada entre as aplicações finais. ......................................... ______
+… é um conceito existente na camada de rede (nível 3) , mas não em outras camadas .................................................................... ______
+… é constituído pelo PCI (Protocol Control Information) e pelo SDU (Service Data Unit). .................................................................. __ X __
+… nunca contém dados provenientes da camada imediatamente acima, nem da camada imediatamente abaixo. ........................... ______
+5. Na transmissão de um pacote entre um emissor e um recetor, a deteção de erros …
+… pode dar garantia total e absoluta de que não ocorreu nenhum erro. ............................................................................................. ______
+… exige que tanto emissor como recetor realizem ações concertadas e bem definidas. .................................................................... __ X __
+… garante que os erros ocorridos são detetados, e que de seguida são sempre automaticamente corrigidos. ................................. ______
+… só pode ser implementada se a ligação for do tipo full-duplex. ....................................................................................................... ______
+6. O Local Loop …
+… é uma ligação de nível dois entre um subscritor e um ISP (Internet Service Provider). .................................................................. __ X __
+… nunca pode ser implementado com recurso a tecnologias de rede sem fios (wireless). ................................................................ ______
+… implementado com a tecnologia DSL (Digital Subscriber Line) exige a instalação de cablagem de fibra ótica adequada. ........... ______
+… é um sistema de transmissão que utiliza sempre sinais digitais, nunca pode utilizar sinais analógicos. ........................................ ______
+7. No cabeçalho de um pacote IPv4, o campo …
+… IHL (Internet Header Length) tem sempre o valor 5 que representa exatamente 20 bytes. ............................................................ ______
+… TTL (time to live) deve ser sempre inicializado com o valor zero antes de o pacote ser emitido. ................................................... ______
+… PROTOCOL serve para indicar se se trata de um pacote IPv4 ou de um pacote IPv6. ................................................................. ______
+… HEADER CHECKSUM tem de ser recalculado sempre que um router retransmite o pacote. ........................................................ __ X __
+8. O protocolo DHCP (Dynamic Host Configuration Protocol) …
+… atribui endereços IP aos nós. Quando um endereço IP é atribuído a um nó, nunca mais poderá ser atribuído a outro nó. .......... ______
+… utiliza o protocolo UDP (User Datagram Protocol) para transporte das suas mensagens. ............................................................. __ X __
+… exige que os clientes DHCP conheçam sempre o endereço IP do servidor DHCP. ....................................................................... ______
+… utiliza, entre outras, as mensagens DISCOVER, OFFER e ACK, todas são sempre enviadas para o endereço de broadcast. .... ______
+Redes de Computadores – 2018/2019 – Exame Final – Época Normal
+9. Os servidores de nomes (NS - Name Server) do sistema de resolução de nomes DNS (Domain Name System), …
+… devem conhecer os endereços dos root name servers. ................................................................................................................ __ X __
+… devem conhecer os endereços dos servidores de nomes de todos os TLD (Top-Level Domain). ................................................. ______
+… devem ser conhecidos pelos root name servers. .......................................................................................................................... ______
+… devem conter sempre registos do tipo MX (Mail Exchange). .......................................................................................................... ______
+10. Na API Berkeley Sockets, quanto um servidor TCP (Transmission Control Protocol) aceita uma ligação de um cliente, …
+… torna-se possível enviar e receber dados, o destino dos dados podem ser endereços de multicast e broadcast. ......................... ______
+… no servidor é criado um novo socket TCP, que representa a ligação TCP estabelecida com o cliente. ........................................ __ X __
+… o cliente pode enviar dados ao servidor, em cada envio tem de especificar o endereço IP do servidor. ....................................... ______
+… tal como acontece com o UDP, o envio e receção de dados está sujeito a um limite de volume máximo em cada envio. ............ ______
+11. Uma mensagem HTTP (Hypertext Transfer Protocol) …
+… pode começar pela sequência de carateres POST, nesse caso podemos afirmar que é um pedido e não uma resposta. ........... __ X __
+… contém sempre um URI que identifica o recurso sobre o qual a mensagem incide ........................................................................ ______
+… nunca pode começar pela sequência de carateres HTTP. .............................................................................................................. ______
+… é sempre integralmente constituída por linhas de texto, todas terminadas por CR/LF. .................................................................. ______
+12. No protocolo HTTP, a linha de cabeçalho (header field) …
+… Content-Length é sempre obrigatória em qualquer tipo de mensagem HTTP. ............................................................................. ______
+… Content-Type é usada nas respostas HTTP, não faz qualquer sentido num pedido HTTP. ......................................................... ______
+… Accept é usada nos pedidos HTTP, não faz qualquer sentido numa resposta HTTP. ................................................................... __ X __
+… Connection só pode ser adicionada pelos clientes, nunca pelos servidores. ................................................................................ ______
+13. No contexto de web services, um pedido HTTP …
+… com o método PUT é adequado para substituir o conteúdo de um recurso existente. ................................................................... __ X __
+… é normalmente enviado pelo servidor (provider/publisher) ao cliente (requestor/consumer). ......................................................... ______
+… nunca pode transportar dados representados em notação XML (eXtensible Markup Language). .................................................. ______
+… com o método GET nunca pode ser usado para enviar dados ao servidor (provider/publisher). .................................................... ______
+14. Para autenticar um servidor através do certificado de chave pública …
+… o atributo CN (common name) do campo subject do certificado deve ser sempre ignorado pelo cliente. ...................................... ______
+… o emissor do certificado (Issuer) nunca pode ser o próprio servidor (self-signed certificate). ......................................................... ______
+… o cliente tem de conhecer a chave privada do servidor. ................................................................................................................. ______
+… o emissor do certificado (Issuer) tem de ser considerado fidedigno (trusted) pelo cliente. ............................................................. __ X __
+15. Um dos principais componentes de uma VPN (Virtual Private Network) é o túnel, numa VPN o túnel …
+… nunca pode permitir a passagem de tráfego destinado a endereços multicast ou broadcast. ........................................................ ______
+… deve ter a particularidade de garantir a privacidade (confidencialidade) dos pacotes que são transferidos através dele. ............ __ X __
+… é usado para transportar pacotes de nível 3 (datagrams), nunca pode transportar pacotes de nível 2 (frames). .......................... ______
+… nunca pode ser implementado com base no protocolo TCP, mesmo que protegido por SSL/TLS ou IPsec. ................................. ______
+16. Os sistemas de monitorização de rede e serviços (network and services monitoring systems) …
+… exigem sempre que os sistemas monitorizados possuam um agente SNMP (Simple Network Management Protocol). ............... ______
+… que utilizam passive checking contactam periodicamente os sistemas monitorizados para verificar o seu estado. ................... ______
+… devem verificar o estado dos serviços de rede diretamente, e não através de agentes nos sistemas monitorizados. ................... __ X __
+… podem utilizar agentes, os agentes SNMP são particularmente adequados para passive checking. .......................................... ______
+17. Um MTA (Mail Transfer Agent) é uma aplicação que utiliza o protocolo SMTP (Simple Mail Transfer Protocol), …
+… um MUA (Mail User Agent) nunca pode interagir diretamente com um MTA.. ................................................................................ ______
+… quando o MTA assume o papel de cliente envia mensagens, quando assume o papel de servidor, recebe mensagens. ............ __ X __
+… os utilizadores podem usar um MUA (Mail User Agent) para contactar o MTA e acederem à respetiva caixa do correio.............. ______
+… um MTA deve recusar toda e qualquer mensagem em que não provenha de um MUA (Mail User Agent). ................................... ______
