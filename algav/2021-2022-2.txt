@@ -1,0 +1,21 @@
+1. A Programação em Lógica para efetuar a Prova de Teoremas usa implicitamente qual dos seguintes métodos: 
+x- Primeiro em Profundidade com Retrocesso 
+?- Primeiro em Profundidade sem Retrocesso 
+?- Primeiro em Largura com Retrocesso 
+?- Primeiro em Largura sem Retrocesso 
+?- Primeiro em Profundidade ou em Largura com níveis de corte 
+ 
+2. Considere que num algoritmo genético, onde cada elemento da população é representado por N genes, é efetuado o cruzamento uniforme (com uma máscara) entre dois elementos da população. Qual o maior número de pontos de corte que o cruzamento desse tipo pode comportar?  
+?-  N  
+x-  N-1  
+?-  N+1  
+?-  N-2  
+?- o valor inteiro da divisão de N por 2  
+ 
+3. Qual das seguintes afirmações sobre métodos de pesquisa é falsa   
+?- se for visado apenas encontrar uma solução o primeiro em largura é bom para problemas nos quais se pretende uma solução que esteja a poucos níveis da raiz da árvore de pesquisa do problema 
+?- num problema de maximização convém que a estimativa usada no A* seja um majorante, mas tão próximo quanto possível do valor real que iremos ter se seguirmos pelo nó em questão 
+?- para problemas não sujeitos a explosão combinatória um gerador de todas as soluções usando como base o método primeiro em largura ou primeiro em profundidade ou primeiro o melhor irá sempre gerar o mesmo número de soluções 
+x- a colocação de um nível de corte fixo e retrocesso no primeiro em profundidade e no primeiro o melhor garante que esses métodos encontrarão sempre uma solução até esse nível de corte 
+?- se num problema de minimização de distâncias usar o A* e fizermos a estimativa tomar o valor 0 então o método degenera no Branch&Bound 
+ 

@@ -1,0 +1,27 @@
+1. Qual das seguintes afirmações é verdadeira relativamente a um Agente Inteligente quando ligado ao "mundo" do problema sobre o qual atua: 
+?-  o agente inteligente produz decisões que só podem ser operadas fisicamente sobre o mundo do problema através de robots 
+?- os outros agentes inteligentes operando sobre o mesmo mundo do problema são oponentes do agente considerado 
+?-  se houver mais do que um agente operando sobre o mundo do problema é obrigatório que todos partilhem do mesmo conhecimento no mesmo instante de tempo 
+x-  os agentes poderão interagir com o ser humano sugerindo atuações que este possa operar sobre o mundo do problema 
+?-  O agente inteligente poderá operar sobre o mundo do problema através de atuadores passivos ou ativos 
+ 
+2. Suponha que para além de outras assunções em lógica proposicional temos X?Y e Y?Z, ambas verdadeiras, sabendo que X é falso podemos concluir que: 
+?-  o único valor que Y pode tomar é falso 
+?- o único valor que Y pode tomar é verdade 
+?-  o único valor que Z pode tomar é falso 
+?-  podemos provar por refutação que Z é verdade 
+x-  nenhuma das anteriores 
+ 
+3. No método minimax avaliamos apenas os nós do nível mais profundo da árvore, não sendo feita a avaliação dos nós dos níveis anteriores. Da aplicação do método alguns dos valores do nível mais profundo vão subindo para níveis anteriores. Se avaliássemos esses nós que estão nos níveis anteriores aos nós que já foram avaliados no nível inferior então: 
+?- teriam os mesmos valores dos valores que subiram, razão pela qual não se perde tempo na avaliação de tais nós 
+?- teriam garantidamente valores (não inferiores)/(não superiores) relativamente aos valores que subiram consoante se tratasse de uma jogada nossa/(do adversário), razão pela qual não se perde tempo na avaliação de tais nós  
+?- teriam garantidamente valores (não superiores)/(não inferiores) relativamente aos valores que subiram consoante se tratasse de uma jogada nossa/(do adversário), razão pela qual não se perde tempo na avaliação de tais nós  
+x- estaríamos a perder tempo, pois no método já sabemos a avaliação de nós que estão mais à frente no jogo (no nível mais profundo) 
+?- nenhuma das alternativas anteriores 
+ 
+4. Considere que num algoritmo genético é usado o método dos torneios de 2 elementos para a escolha dos elementos que irão constituir a nova população. A aplicação desse método garantirá que 
+?- os dois melhores elementos da população são sempre escolhidos 
+x- o pior elemento da população é rejeitado e o melhor é escolhido  
+?- o melhor elemento da população é escolhido e os dois piores são rejeitados  
+?- os dois piores elementos da população são sempre rejeitados 
+?- nenhuma das anteriores 

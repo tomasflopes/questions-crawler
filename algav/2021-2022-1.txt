@@ -1,0 +1,27 @@
+1. Considere as seguintes duas afirmações: Se chover, o campo de golfe será fechado; O campo de golfe está fechado; Ao concluir que está a chover:
+?- estamos a usar modus ponens 
+?- estamos a usar raciocínio dedutivo 
+?- estamos a usar modus tollens 
+x- estamos a usar raciocínio abdutivo 
+?- Nenhuma das anteriores 
+ 
+2. Considere o problema de Escalonamento de Tarefas de Fabrico de Produtos em uma máquina. Se usarmos Algoritmos Genéticos para resolver este problema qual o operador de cruzamento que devemos usar: 
+?- Operador de Cruzamento em 1 ponto de corte 
+?- Operador de Cruzamento em 2 pontos de corte 
+x- Operador de Cruzamento Order Crossover 
+?- Operador de Cruzamento com Máscara 
+?- Operador de Cruzamento com Mutação  
+ 
+3. Nas Redes Neuronais o Gradiente Descendente é aplicado para:
+?- a função de ativação de cada neurónio da rede 
+?- a definição do número de nós da camada de entrada da rede 
+?- a definição do número de nós da camada de saída da rede 
+?- a definição do número de camadas intermédias da rede 
+x- o ajuste dos pesos associados às ligações entre nós da rede 
+ 
+4. A seguinte máscara 5x5 opera sobre uma imagem e permite:  
+?- obter médias dos pixeis correspondentes na imagem 
+?- detetar a componente horizontal de transições na imagem (por exemplo parte esquerda da imagem diferente da parte à direita) nos pixeis correspondentes da imagem 
+x- detetar a componente vertical de transições na imagem (por exemplo parte de cima da imagem diferente da parte de baixo) nos pixeis correspondentes da imagem 
+?- eliminar ruído dos pixeis correspondentes na imagem 
+?- efetuar a segmentação dos pixeis na imagem 

@@ -1,0 +1,28 @@
+1. Considere as seguintes regras em Prolog: a:- (\+b) ; c. a:- c, (\+d). De que modo esse conhecimento poderia ser representado em lógica, onde os operadores ".", "~" e "+" representam respetivamente a conjunção (AND), negação (NOT) e disjunção (OR) 
+?-  	a->(~b)+c     a->(~d).c  
+?-  	a?~(b.(~c))   a->c.(~d)  
+x-  	~(b.(~c))->a  (~d).c->a  
+?-  	(~b)+c->a     c+(~d)->a  
+?- nenhuma das anteriores 
+ 
+2. Considere um jogo no qual cada jogador joga à vez e só pode fazer uma de duas jogadas possíveis. Admita que um dos jogadores é um programa usando o Minimax que dispõe de uma função de avaliação que para avaliar um estado nesse jogo demora 20 milisegundos. Sabendo que o programa dispõe no máximo de 8 segundos para avaliar todos os estados a um mesmo nível da árvore do Minimax, indique qual o maior look ahead (número de níveis da árvore ou nó de jogadas) que podemos considerar? 
+?-  6 
+?-  7 
+x-  8 
+?-  9 
+?- 10  
+ 
+3. Numa Rede Neuronal o processo de retropropagação tem por finalidade  
+?-  tentar caminhos alternativos na rede quando não se consegue atingir um nó de saída  
+?-  permitir gerar todas as soluções de caminhos possíveis numa rede neuronal 
+?- alterar os valores das entradas na primeira camada da rede de modo a corresponderem aos valores obtidos na camada de saída  
+?- propagar para trás camadas de nós da rede de modo a trocar a posição relativa dessas camadas com outras camadas que as antecedem  
+x- proceder ao ajuste dos valores dos pesos associados às entradas dos nós da rede de modo a diminuir os erros à saída da rede 
+ 
+4. Quais máscaras/filtros de convolução sobre uma imagem são mais adequados para a posterior aplicação da Transformada de Hough   
+?- máscaras/filtros de Média 
+?- máscaras/filtros de Mediana 
+?- máscaras/filtros do Laplaciano 
+x- máscaras/filtros de Sobel 
+?- máscaras/filtros de Pooling 
+ 

@@ -1,0 +1,298 @@
+[
+  {
+    "question": "Considere as seguintes duas afirmações: Se chover, o campo de golfe será fechado; O campo de golfe está fechado; Ao concluir que está a chover:",
+    "options": [
+      "estamos a usar modus ponens",
+      "estamos a usar raciocínio dedutivo",
+      "estamos a usar modus tollens",
+      "estamos a usar raciocínio abdutivo",
+      "Nenhuma das anteriores"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Considere o problema de Escalonamento de Tarefas de Fabrico de Produtos em uma máquina. Se usarmos Algoritmos Genéticos para resolver este problema qual o operador de cruzamento que devemos usar:",
+    "options": [
+      "Operador de Cruzamento em 1 ponto de corte",
+      "Operador de Cruzamento em 2 pontos de corte",
+      "Operador de Cruzamento Order Crossover",
+      "Operador de Cruzamento com Máscara",
+      "Operador de Cruzamento com Mutação"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nas Redes Neuronais o Gradiente Descendente é aplicado para:",
+    "options": [
+      "a função de ativação de cada neurónio da rede",
+      "a definição do número de nós da camada de entrada da rede",
+      "a definição do número de nós da camada de saída da rede",
+      "a definição do número de camadas intermédias da rede",
+      "o ajuste dos pesos associados às ligações entre nós da rede"
+    ],
+    "correct_index": 4
+  },
+  {
+    "question": "A seguinte máscara 5x5 opera sobre uma imagem e permite:",
+    "options": [
+      "obter médias dos pixeis correspondentes na imagem",
+      "detetar a componente horizontal de transições na imagem (por exemplo parte esquerda da imagem diferente da parte à direita) nos pixeis correspondentes da imagem",
+      "detetar a componente vertical de transições na imagem (por exemplo parte de cima da imagem diferente da parte de baixo) nos pixeis correspondentes da imagem",
+      "eliminar ruído dos pixeis correspondentes na imagem",
+      "efetuar a segmentação dos pixeis na imagem"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "A Programação em Lógica para efetuar a Prova de Teoremas usa implicitamente qual dos seguintes métodos:",
+    "options": [
+      "Primeiro em Profundidade com Retrocesso",
+      "Primeiro em Profundidade sem Retrocesso",
+      "Primeiro em Largura com Retrocesso",
+      "Primeiro em Largura sem Retrocesso",
+      "Primeiro em Profundidade ou em Largura com níveis de corte"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Considere que num algoritmo genético, onde cada elemento da população é representado por N genes, é efetuado o cruzamento uniforme (com uma máscara) entre dois elementos da população. Qual o maior número de pontos de corte que o cruzamento desse tipo pode comportar?",
+    "options": [
+      "N",
+      "N-1",
+      "N+1",
+      "N-2",
+      "o valor inteiro da divisão de N por 2"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qual das seguintes afirmações sobre métodos de pesquisa é falsa",
+    "options": [
+      "se for visado apenas encontrar uma solução o primeiro em largura é bom para problemas nos quais se pretende uma solução que esteja a poucos níveis da raiz da árvore de pesquisa do problema",
+      "num problema de maximização convém que a estimativa usada no A* seja um majorante, mas tão próximo quanto possível do valor real que iremos ter se seguirmos pelo nó em questão",
+      "para problemas não sujeitos a explosão combinatória um gerador de todas as soluções usando como base o método primeiro em largura ou primeiro em profundidade ou primeiro o melhor irá sempre gerar o mesmo número de soluções",
+      "a colocação de um nível de corte fixo e retrocesso no primeiro em profundidade e no primeiro o melhor garante que esses métodos encontrarão sempre uma solução até esse nível de corte",
+      "se num problema de minimização de distâncias usar o A* e fizermos a estimativa tomar o valor 0 então o método degenera no Branch&Bound"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Considere as seguintes regras em Prolog: a:- (\\+b) ; c. a:- c, (\\+d). De que modo esse conhecimento poderia ser representado em lógica, onde os operadores \".\", \"~\" e \"+\" representam respetivamente a conjunção (AND), negação (NOT) e disjunção (OR)",
+    "options": [
+      "a->(~b)+c     a->(~d).c",
+      "a?~(b.(~c))   a->c.(~d)",
+      "~(b.(~c))->a  (~d).c->a",
+      "(~b)+c->a     c+(~d)->a",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Considere um jogo no qual cada jogador joga à vez e só pode fazer uma de duas jogadas possíveis. Admita que um dos jogadores é um programa usando o Minimax que dispõe de uma função de avaliação que para avaliar um estado nesse jogo demora 20 milisegundos. Sabendo que o programa dispõe no máximo de 8 segundos para avaliar todos os estados a um mesmo nível da árvore do Minimax, indique qual o maior look ahead (número de níveis da árvore ou nó de jogadas) que podemos considerar?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Numa Rede Neuronal o processo de retropropagação tem por finalidade",
+    "options": [
+      "tentar caminhos alternativos na rede quando não se consegue atingir um nó de saída",
+      "permitir gerar todas as soluções de caminhos possíveis numa rede neuronal",
+      "alterar os valores das entradas na primeira camada da rede de modo a corresponderem aos valores obtidos na camada de saída",
+      "propagar para trás camadas de nós da rede de modo a trocar a posição relativa dessas camadas com outras camadas que as antecedem",
+      "proceder ao ajuste dos valores dos pesos associados às entradas dos nós da rede de modo a diminuir os erros à saída da rede"
+    ],
+    "correct_index": 4
+  },
+  {
+    "question": "Quais máscaras/filtros de convolução sobre uma imagem são mais adequados para a posterior aplicação da Transformada de Hough",
+    "options": [
+      "máscaras/filtros de Média",
+      "máscaras/filtros de Mediana",
+      "máscaras/filtros do Laplaciano",
+      "máscaras/filtros de Sobel",
+      "máscaras/filtros de Pooling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qual das seguintes afirmações é verdadeira relativamente a um Agente Inteligente quando ligado ao \"mundo\" do problema sobre o qual atua:",
+    "options": [
+      "o agente inteligente produz decisões que só podem ser operadas fisicamente sobre o mundo do problema através de robots",
+      "os outros agentes inteligentes operando sobre o mesmo mundo do problema são oponentes do agente considerado",
+      "se houver mais do que um agente operando sobre o mundo do problema é obrigatório que todos partilhem do mesmo conhecimento no mesmo instante de tempo",
+      "os agentes poderão interagir com o ser humano sugerindo atuações que este possa operar sobre o mundo do problema",
+      "O agente inteligente poderá operar sobre o mundo do problema através de atuadores passivos ou ativos"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Suponha que para além de outras assunções em lógica proposicional temos X?Y e Y?Z, ambas verdadeiras, sabendo que X é falso podemos concluir que:",
+    "options": [
+      "o único valor que Y pode tomar é falso",
+      "o único valor que Y pode tomar é verdade",
+      "o único valor que Z pode tomar é falso",
+      "podemos provar por refutação que Z é verdade",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 4
+  },
+  {
+    "question": "No método minimax avaliamos apenas os nós do nível mais profundo da árvore, não sendo feita a avaliação dos nós dos níveis anteriores. Da aplicação do método alguns dos valores do nível mais profundo vão subindo para níveis anteriores. Se avaliássemos esses nós que estão nos níveis anteriores aos nós que já foram avaliados no nível inferior então:",
+    "options": [
+      "teriam os mesmos valores dos valores que subiram, razão pela qual não se perde tempo na avaliação de tais nós",
+      "teriam garantidamente valores (não inferiores)/(não superiores) relativamente aos valores que subiram consoante se tratasse de uma jogada nossa/(do adversário), razão pela qual não se perde tempo na avaliação de tais nós",
+      "teriam garantidamente valores (não superiores)/(não inferiores) relativamente aos valores que subiram consoante se tratasse de uma jogada nossa/(do adversário), razão pela qual não se perde tempo na avaliação de tais nós",
+      "estaríamos a perder tempo, pois no método já sabemos a avaliação de nós que estão mais à frente no jogo (no nível mais profundo)",
+      "nenhuma das alternativas anteriores"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Considere que num algoritmo genético é usado o método dos torneios de 2 elementos para a escolha dos elementos que irão constituir a nova população. A aplicação desse método garantirá que",
+    "options": [
+      "os dois melhores elementos da população são sempre escolhidos",
+      "o pior elemento da população é rejeitado e o melhor é escolhido",
+      "o melhor elemento da população é escolhido e os dois piores são rejeitados",
+      "os dois piores elementos da população são sempre rejeitados",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "As implicações a->x e b->x poderiam ser expressas em PROLOG por:",
+    "options": [
+      "x:-a;b.",
+      "x:-a,b.",
+      "a:-x.      b:-x.",
+      "a,b:-x.",
+      "nenhuma dos anteriores"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Na Língua Natural a Assunção de Markov de ordem n diz-nos que",
+    "options": [
+      "vamos considerar para cada palavra um máximo de n traduções possíveis",
+      "iremos considerar no máximo n traduções para cada frase",
+      "uma palavra de uma sequência depende normalmente das n palavras anteriores",
+      "iremos considerar no máximo n construções gramaticais diferentes",
+      "uma frase depende normalmente das n frases anteriores"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qual das seguintes imagens ocupa mais espaço",
+    "options": [
+      "uma imagem 100x100 onde cada pixel é representado por 1 byte",
+      "uma imagem binária 256x256",
+      "uma imagem 64x64 onde cada pixel é representado por um código RGB com 256 níveis em cada cor",
+      "uma imagem 128x128 onde cada pixel pode ter 32 níveis",
+      "uma imagem  32x32 onde cada pixel pode variar de 0 a 255"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Suponha que para além de outras assunções em lógica proposicional temos X->Y e Y->Z, ambas verdadeiras, sabendo que Y é falso podemos concluir que:",
+    "options": [
+      "X pode ser verdadeiro e Z pode ser verdadeiro",
+      "X pode ser verdadeiro e Z é falso",
+      "X é falso e Z pode ser verdadeiro",
+      "X é falso e Z é falso",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Suponha que para além de outras assunções em lógica proposicional temos Z->Y e Y->X, ambas verdadeiras, sabendo que Y é falso podemos concluir que:",
+    "options": [
+      "X pode ser verdadeiro e Z pode ser verdadeiro",
+      "X pode ser verdadeiro e Z é falso",
+      "X é falso e Z pode ser verdadeiro",
+      "X é falso e Z é falso",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Suponha que para além de outras assunções em lógica proposicional temos X->Z e Z->Y, ambas verdadeiras, sabendo que Y é falso podemos concluir que:",
+    "options": [
+      "X pode ser falso e Z pode ser verdadeiro ?- X pode ser verdadeiro e Z pode ser falso",
+      "X pode ser falso e Z é verdadeiro",
+      "X pode ser verdadeiro e Z é verdadeiro",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Considere um jogo no qual o jogador A dispõe sempre, em qualquer momento do jogo, de 4 jogadas possíveis e o jogador B dispõe sempre, também em qualquer momento do jogo, de 5 jogadas possíveis. O jogador A começa efetuando uma das suas 4 jogadas, o B responde efetuando uma das suas 5 jogadas, o A responde efetuando uma das suas 4 jogadas e assim por diante. Se usarmos o MINIMAX ao fim de 7 jogadas (4 do A e 3 do B) quantos nós teremos de avaliar?",
+    "options": [
+      "(5^3)*(4^4)",
+      "(4^3)*(5^4)",
+      "(3^5)*(4^4)",
+      "(3^4)*(5^4)",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Considere um jogo no qual o jogador A dispõe sempre, em qualquer momento do jogo, de 5 jogadas possíveis e o jogador B dispõe sempre, também em qualquer momento do jogo, de 4 jogadas possíveis. O jogador A começa efetuando uma das suas 5 jogadas, o B responde efetuando uma das suas 4 jogadas, o A responde efetuando uma das suas 5 jogadas e assim por diante. Se usarmos o MINIMAX ao fim de 7 jogadas (4 do A e 3 do B) quantos nós teremos de avaliar?",
+    "options": [
+      "(5^3)*(4^4)",
+      "(4^3)*(5^4)",
+      "(3^5)*(4^4)",
+      "(3^4)*(5^4)",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Considere um jogo no qual o jogador A dispõe sempre, em qualquer momento do jogo, de 3 jogadas possíveis e o jogador B dispõe sempre, também em qualquer momento do jogo, de 4 jogadas possíveis. O jogador A começa efetuando uma das suas 3 jogadas, o B responde efetuando uma das suas 4 jogadas, o A responde efetuando uma das suas 3 jogadas e assim por diante. Se usarmos o MINIMAX ao fim de 9 jogadas (5 do A e 4 do B) quantos nós teremos de avaliar?",
+    "options": [
+      "(5^3)*(4^4)",
+      "(4^3)*(5^4)",
+      "(3^5)*(4^4)",
+      "(3^4)*(5^4)",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Considere um jogo no qual o jogador A dispõe sempre, em qualquer momento do jogo, de 3 jogadas possíveis e o jogador B dispõe sempre, também em qualquer momento do jogo, de 5 jogadas possíveis. O jogador A começa efetuando uma das suas 3 jogadas, o B responde efetuando uma das suas 5 jogadas, o A responde efetuando uma das suas 3 jogadas e assim por diante. Se usarmos o MINIMAX ao fim de 8 jogadas (4 do A e 4 do B) quantos nós teremos de avaliar?",
+    "options": [
+      "(5^3)*(4^4)",
+      "(4^3)*(4^5)",
+      "(3^5)*(4^4)",
+      "(3^4)*(5^4)",
+      "nenhuma das anteriores"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "As Redes Neuronais Recorrentes com arquiteturas codificador-descodificador foram mais usadas em que área:",
+    "options": [
+      "Segmentação de Imagem",
+      "Tradução Automática",
+      "Clusterização",
+      "Cinemática Inversa de Robots",
+      "Sistemas Multi-Agente"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "A capacidade de um sistema multiagente adaptar-se ao contexto (context awareness) tem a ver com a capacidade:",
+    "options": [
+      "dos vários agentes do sistema lidarem com vários textos diferentes ao mesmo tempo",
+      "dos agentes inteligentes do sistema adaptarem-se ao utilizador humano",
+      "do sistema multiagente lidar com acontecimentos que não sejam controlados pelos agentes",
+      "dos agentes inteligentes usarem sensores para interpretar o mundo do problema",
+      "dos agentes inteligentes usarem métodos informados de pesquisa no seu raciocínio"
+    ],
+    "correct_index": 2
+  }
+]

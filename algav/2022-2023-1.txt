@@ -1,0 +1,62 @@
+1. Suponha que para além de outras assunções em lógica proposicional temos X->Y e Y->Z, ambas verdadeiras, sabendo que Y é falso podemos concluir que: 
+?- X pode ser verdadeiro e Z pode ser verdadeiro 
+?- X pode ser verdadeiro e Z é falso 
+x- X é falso e Z pode ser verdadeiro 
+?- X é falso e Z é falso 
+?- nenhuma das anteriores 
+ 
+2. Suponha que para além de outras assunções em lógica proposicional temos Z->Y e Y->X, ambas verdadeiras, sabendo que Y é falso podemos concluir que: 
+?- X pode ser verdadeiro e Z pode ser verdadeiro 
+x- X pode ser verdadeiro e Z é falso 
+?- X é falso e Z pode ser verdadeiro 
+?- X é falso e Z é falso 
+?- nenhuma das anteriores 
+ 
+3. Suponha que para além de outras assunções em lógica proposicional temos X->Z e Z->Y, ambas verdadeiras, sabendo que Y é falso podemos concluir que: 
+?- X pode ser falso e Z pode ser verdadeiro ?- X pode ser verdadeiro e Z pode ser falso 
+?- X pode ser falso e Z é verdadeiro 
+?- X pode ser verdadeiro e Z é verdadeiro 
+x- nenhuma das anteriores 
+ 
+ 
+4. Considere um jogo no qual o jogador A dispõe sempre, em qualquer momento do jogo, de 4 jogadas possíveis e o jogador B dispõe sempre, também em qualquer momento do jogo, de 5 jogadas possíveis. O jogador A começa efetuando uma das suas 4 jogadas, o B responde efetuando uma das suas 5 jogadas, o A responde efetuando uma das suas 4 jogadas e assim por diante. Se usarmos o MINIMAX ao fim de 7 jogadas (4 do A e 3 do B) quantos nós teremos de avaliar? 
+x-  (5^3)*(4^4) 
+?-  (4^3)*(5^4) 
+?-  (3^5)*(4^4) 
+?-  (3^4)*(5^4) 
+?- nenhuma das anteriores  
+ 
+5. Considere um jogo no qual o jogador A dispõe sempre, em qualquer momento do jogo, de 5 jogadas possíveis e o jogador B dispõe sempre, também em qualquer momento do jogo, de 4 jogadas possíveis. O jogador A começa efetuando uma das suas 5 jogadas, o B responde efetuando uma das suas 4 jogadas, o A responde efetuando uma das suas 5 jogadas e assim por diante. Se usarmos o MINIMAX ao fim de 7 jogadas (4 do A e 3 do B) quantos nós teremos de avaliar? 
+?-  (5^3)*(4^4) 
+x-  (4^3)*(5^4) 
+?-  (3^5)*(4^4) 
+?-  (3^4)*(5^4) 
+?- nenhuma das anteriores  
+ 
+6. Considere um jogo no qual o jogador A dispõe sempre, em qualquer momento do jogo, de 3 jogadas possíveis e o jogador B dispõe sempre, também em qualquer momento do jogo, de 4 jogadas possíveis. O jogador A começa efetuando uma das suas 3 jogadas, o B responde efetuando uma das suas 4 jogadas, o A responde efetuando uma das suas 3 jogadas e assim por diante. Se usarmos o MINIMAX ao fim de 9 jogadas (5 do A e 4 do B) quantos nós teremos de avaliar? 
+?-  (5^3)*(4^4) 
+?-  (4^3)*(5^4) 
+x-  (3^5)*(4^4) 
+?-  (3^4)*(5^4) 
+?- nenhuma das anteriores  
+ 
+7. Considere um jogo no qual o jogador A dispõe sempre, em qualquer momento do jogo, de 3 jogadas possíveis e o jogador B dispõe sempre, também em qualquer momento do jogo, de 5 jogadas possíveis. O jogador A começa efetuando uma das suas 3 jogadas, o B responde efetuando uma das suas 5 jogadas, o A responde efetuando uma das suas 3 jogadas e assim por diante. Se usarmos o MINIMAX ao fim de 8 jogadas (4 do A e 4 do B) quantos nós teremos de avaliar? 
+?-  (5^3)*(4^4) 
+?-  (4^3)*(4^5) 
+?-  (3^5)*(4^4) 
+x-  (3^4)*(5^4) 
+?- nenhuma das anteriores  
+ 
+8. As Redes Neuronais Recorrentes com arquiteturas codificador-descodificador foram mais usadas em que área: 
+?-  Segmentação de Imagem  
+x-  Tradução Automática  
+?-  Clusterização  
+?-  Cinemática Inversa de Robots  
+?- Sistemas Multi-Agente  
+ 
+9. A capacidade de um sistema multiagente adaptar-se ao contexto (context awareness) tem a ver com a capacidade:   
+?- dos vários agentes do sistema lidarem com vários textos diferentes ao mesmo tempo 
+?- dos agentes inteligentes do sistema adaptarem-se ao utilizador humano 
+x- do sistema multiagente lidar com acontecimentos que não sejam controlados pelos agentes 
+?- dos agentes inteligentes usarem sensores para interpretar o mundo do problema 
+?- dos agentes inteligentes usarem métodos informados de pesquisa no seu raciocínio 

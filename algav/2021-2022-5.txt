@@ -1,0 +1,21 @@
+1. As implicações a->x e b->x poderiam ser expressas em PROLOG por: 
+x- x:-a;b. 
+?- x:-a,b. 
+?- a:-x.      b:-x. 
+?- a,b:-x. 
+?- nenhuma dos anteriores 
+ 
+2. Na Língua Natural a Assunção de Markov de ordem n diz-nos que  
+?- vamos considerar para cada palavra um máximo de n traduções possíveis 
+?- iremos considerar no máximo n traduções para cada frase 
+x- uma palavra de uma sequência depende normalmente das n palavras anteriores 
+?- iremos considerar no máximo n construções gramaticais diferentes 
+?- uma frase depende normalmente das n frases anteriores  
+ 
+3. Qual das seguintes imagens ocupa mais espaço  
+?- uma imagem 100x100 onde cada pixel é representado por 1 byte  
+?- uma imagem binária 256x256  
+x- uma imagem 64x64 onde cada pixel é representado por um código RGB com 256 níveis em cada cor  
+?- uma imagem 128x128 onde cada pixel pode ter 32 níveis  
+?- uma imagem  32x32 onde cada pixel pode variar de 0 a 255  
+ 
