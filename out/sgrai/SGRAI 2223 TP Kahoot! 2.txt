@@ -1,0 +1,111 @@
+1. Um das diferenças entre MeshBasicMaterial e MeshLamberMaterial é que o segundo suporta...
+a. "shading" X
+b. transparência
+c. sombras
+d. shininess
+2. Num material com iluminação difusa é, basicamente, irrelevante a posição...
+a. do observador X
+b. da fonte de luz
+c. a cor do material
+d. a cor da luz
+3. Uma das vantagens de um pixel shader vs. um vertex shader é...
+a. podemos ter menos vértices X
+b. para os mesmos objetos vamos ter melhor performance
+c. podemos usar a GPU
+d. podemos usar cores diferentes por vértice
+4. Ao aumentar o valor roughness iremos ter uma superfície...
+a. baça X
+b. brilhante
+c. com um padrão característico
+d. com a textura mais clara
+5. Uma Textura Cube Mapping pode ser criada a partir de...
+a. 6 imagens JPEG X
+b. 2 imagens JPEG
+c. 4 imagens JPEG
+d. 8 imagens JPEG
+6. A técnica de reflexão por Environment Map tem problemas com objetos...
+a. que tenham reflexões deles próprios X
+b. que não sejam esféricos
+c. que tenham mais de 6 faces
+d. que não estejam perfeitamente centrados na cena
+7. Numa AmbientLight definimos, normalmente...
+a. a cor e intensidade X
+b. a cor e alcance
+c. a intensidade e posição
+d. a direção e cor
+8. O mapeamento UV é feito entre
+a. 0,0 e 1,1 X
+b. -1,-1 e 1,1
+c. 0 e 100
+d. pixeis da imagem original
+9. As coordenadas UV são definidas para...
+a. todos os vértices X
+b. todas as faces
+c. todas as arestas
+d. todos os objetos
+10. Para ler uma textura num roughnessMap podermos usar...
+a. TextureLoader X
+b. RougnessMapLoader
+c. MapLoader
+d. ImageLoader
+11. Numa textura a opção .wrapS é usada...
+a. na direção horizontal (U) X
+b. na direção vertical (V)
+c. nas duas direções (UV)
+d. não está relacionado com direção
+12. Numa textura usamos LinearFilter quando queremos...
+a. ter melhor qualidade X
+b. poupar recursos computacionais
+c. representar modelos wireframe
+d. filtrar os objectos que não têm linhas
+13. Quando definimos a cor de um objeto, a textura...
+a. fica igual
+b. é "modulada" pela cor X
+c. usar a cor como canal alpha
+d. é ignorada
+14. Uma vantagem de usar a biblioteca lil-gui é...
+a. simples associar características de objetos do JavaScript X
+b. fácil implementar formulários de entrada de dados
+c. permite controlos 3D
+d. usa elementos nativos do sistema operativo
+15. A solução RayCaster do Three.js permite implementar facilmente...
+a. picking X
+b. reflexões ray trace
+c. transmissão em tempo real
+d. efeitos de raios de luz realistas
+16. Ao usar Fog linear, tipicamente...
+a. é mais simples "controlar" o efeito X
+b. temos uma resposta mais realista
+c. podemos controlar a cor do efeito
+d. temos melhor performance
+17. Os efeitos Fog e FogExp2 aplicam-se a...
+a. tudo o que é renderizado X
+b. tudo o que é rederizado e o fundo
+c. apenas ao fundo
+d. tudo o que aparece no ecrã
+18. Tipicamente, a técnica de RenderTarget tem como resultado...
+a. uma textura X
+b. um enviroment map
+c. um objeto 3D
+d. um ficheiro
+19. No Three.js o Post-Processing tem por base um objeto...
+a. EffectComposer X
+b. WebGLRenderer
+c. EffectProcessor
+d. PassComposer
+20. No Post-Processing devemos usar primeiro...
+a. RenderPass X
+b. StartPass
+c. InitPass
+d. ClearPass
+21. Uma CubeCamera permite implementar facilmente...
+a. reflexões dinâmicas X
+b. múltiplos cubos de forma muito eficiente
+c. uma caixa com cubos dentro
+d. um sistema de física mecânica simples
+22. Um dos princípios-base do Ammo.js é que ...
+a. temos de criar equivalentes dos objetos Three.js no Ammo.js X
+b. o Ammo.js importa a cena 3D automaticamente
+c. não é possível interligar objetos com juntas (e.g. dobradiça)
+d. todos os objetos reagem à gravidade
+ 

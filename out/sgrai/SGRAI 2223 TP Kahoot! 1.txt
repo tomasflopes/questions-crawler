@@ -1,0 +1,101 @@
+1. Um objeto Mesh combina...
+a. Geometry + Material X
+b. Geometry + Camera
+c. Material + Scene
+d. Light + Scene
+2. Uma cena three.js é apresentada na página HTML num...
+a. Canvas X
+b. Textbox
+c. 3DBox
+d. Header
+3. Numa PerspectiveCamera o "Zoom" pode ser ajustado com...
+a. Ângulo X
+b. Largura
+c. Aspect Ratio
+d. zFar
+4. Quando usamos OrthographicCamera, os objetos mais afastados da câmara...
+a. Aparecem mais pequenos
+b. Aparecem maiores
+c. Aparecem do mesmo tamanho X
+d. Depende do material
+5. A posição por defeito da câmara é:
+a. 0, 0, 0 X
+b. 0, 0, 1
+c. 0, 1, 0
+d. 1, 0, 0
+6. O comando requestAnimationFrame regista uma função que vai ser chamada...
+a. uma vez, dentro de um intervalo de tempo adequado X
+b. periodicamente
+c. quando se clica no rato
+d. quando for movida a janela
+7. Um objeto BufferGeometry é otimizado para ser utilizado por...
+a. GPU X
+b. CPU
+c. RAM
+d. USB
+8. Um objeto BufferGeometry armazena...
+a. vértices
+b. normais
+c. UV
+d. todas as outras X
+9. Um objeto do tipo LineSegments resulta em...
+a. segmentos de recta unindo pares de pontos X
+b. segmentos de recta unindo uma sequência de pontos
+c. segmentos de recta tracejados
+d. uma única linha infinita passando por dois pontos
+10. Para desenhar um quadrado devo usar...
+a. PlaneGeometry X
+b. CubeGeometry
+c. SquareGeometry
+d. BoxGeometry
+11. Ao usar Faces/Linhas com índices temos menos...
+a. vértices X
+b. arestas
+c. materiais
+d. faces
+12. Por norma só são desenhadas as faces que aparecem com
+a. vértices em sentido anti-horário X
+b. vértices em sentido horário
+c. vértices em qualquer ordem
+d. vértices em número par
+13. Para que um objeto apareça rodado em torno do eixo dos Xs, devemos usar...
+a. Object3D.rotateX X
+b. Mesh.rotateX
+c. RotateX(Object3D)
+d. RotateX(Mesh)
+14. Uma DirectionalLight, por defeito, vai iluminar objetos
+a. em geral na cena X
+b. que estão "à frente" da luz
+c. que estão "atrás" da luz
+d. que incluem a luz
+15. Uma AmbientLight pode ser usada para evitar
+a. zonas 100% negras na imagem X
+b. zonas 100% brancas na imagem
+c. sombras esbatidas
+d. desfoque na imagem
+16. Um SpotLightHelper é útil para
+a. reconhecermos a área que a luz ilumina X
+b. melhorar a performance do sistema
+c. diminuir a memória necessária
+d. definir o material de uma determinada luz
+17. Em termos de sombras podemos definir ...
+a. quais os objetos que geram e recebem sombras X
+b. apenas os objetos que geram sombras
+c. apenas os objetos que recebem sombras
+d. nada relativamente aos objetos e sombras
+18. Ao usarmos sombras e uma PointLight vamos ter
+a. mais 6 renderizações X
+b. mais 1 renderização
+c. mais 4 renderizações
+d. mais 8 renderizações
+19. Ao definirmos um shadow.mapSize devemos usar
+a. o maior valor suportado pelo sistema
+b. o valor mais pequeno mas que nos dê a qualidade desejada X
+c. o menor valor suportado pelo sistema
+d. o valor por defeito do sistema
+20. A vantagem de usar o formato .gLTF (em vez de .OBJ) é que...
+a. temos os materiais e texturas numo ficheiro único X
+b. temos mais facilidade em adaptar as texturas
+c. temos ficheiros com dados 3D
+d. podemos usar o Blender
+ 

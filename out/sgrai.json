@@ -1,0 +1,422 @@
+[
+  {
+    "question": "Um objeto Mesh combina...",
+    "options": [
+      "Geometry + Material",
+      "Geometry + Camera",
+      "Material + Scene",
+      "Light + Scene"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Uma cena three.js é apresentada na página HTML num...",
+    "options": [
+      "Canvas",
+      "Textbox",
+      "3DBox",
+      "Header"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Numa PerspectiveCamera o \"Zoom\" pode ser ajustado com...",
+    "options": [
+      "Ângulo",
+      "Largura",
+      "Aspect Ratio",
+      "zFar"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Quando usamos OrthographicCamera, os objetos mais afastados da câmara...",
+    "options": [
+      "Aparecem mais pequenos",
+      "Aparecem maiores",
+      "Aparecem do mesmo tamanho",
+      "Depende do material"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "A posição por defeito da câmara é:",
+    "options": [
+      "0, 0, 0",
+      "0, 0, 1",
+      "0, 1, 0",
+      "1, 0, 0"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "O comando requestAnimationFrame regista uma função que vai ser chamada...",
+    "options": [
+      "uma vez, dentro de um intervalo de tempo adequado",
+      "periodicamente",
+      "quando se clica no rato",
+      "quando for movida a janela"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Um objeto BufferGeometry é otimizado para ser utilizado por...",
+    "options": [
+      "GPU",
+      "CPU",
+      "RAM",
+      "USB"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Um objeto BufferGeometry armazena...",
+    "options": [
+      "vértices",
+      "normais",
+      "UV",
+      "todas as outras"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Um objeto do tipo LineSegments resulta em...",
+    "options": [
+      "segmentos de recta unindo pares de pontos",
+      "segmentos de recta unindo uma sequência de pontos",
+      "segmentos de recta tracejados",
+      "uma única linha infinita passando por dois pontos"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Para desenhar um quadrado devo usar...",
+    "options": [
+      "PlaneGeometry",
+      "CubeGeometry",
+      "SquareGeometry",
+      "BoxGeometry"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Ao usar Faces/Linhas com índices temos menos...",
+    "options": [
+      "vértices",
+      "arestas",
+      "materiais",
+      "faces"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Por norma só são desenhadas as faces que aparecem com",
+    "options": [
+      "vértices em sentido anti-horário",
+      "vértices em sentido horário",
+      "vértices em qualquer ordem",
+      "vértices em número par"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Para que um objeto apareça rodado em torno do eixo dos Xs, devemos usar...",
+    "options": [
+      "Object3D.rotateX",
+      "Mesh.rotateX",
+      "RotateX(Object3D)",
+      "RotateX(Mesh)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Uma DirectionalLight, por defeito, vai iluminar objetos",
+    "options": [
+      "em geral na cena",
+      "que estão \"à frente\" da luz",
+      "que estão \"atrás\" da luz",
+      "que incluem a luz"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Uma AmbientLight pode ser usada para evitar",
+    "options": [
+      "zonas 100% negras na imagem",
+      "zonas 100% brancas na imagem",
+      "sombras esbatidas",
+      "desfoque na imagem"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Um SpotLightHelper é útil para",
+    "options": [
+      "reconhecermos a área que a luz ilumina",
+      "melhorar a performance do sistema",
+      "diminuir a memória necessária",
+      "definir o material de uma determinada luz"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Em termos de sombras podemos definir ...",
+    "options": [
+      "quais os objetos que geram e recebem sombras",
+      "apenas os objetos que geram sombras",
+      "apenas os objetos que recebem sombras",
+      "nada relativamente aos objetos e sombras"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Ao usarmos sombras e uma PointLight vamos ter",
+    "options": [
+      "mais 6 renderizações",
+      "mais 1 renderização",
+      "mais 4 renderizações",
+      "mais 8 renderizações"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Ao definirmos um shadow.mapSize devemos usar",
+    "options": [
+      "o maior valor suportado pelo sistema",
+      "o valor mais pequeno mas que nos dê a qualidade desejada",
+      "o menor valor suportado pelo sistema",
+      "o valor por defeito do sistema"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "A vantagem de usar o formato .gLTF (em vez de .OBJ) é que...",
+    "options": [
+      "temos os materiais e texturas numo ficheiro único",
+      "temos mais facilidade em adaptar as texturas",
+      "temos ficheiros com dados 3D",
+      "podemos usar o Blender"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Um das diferenças entre MeshBasicMaterial e MeshLamberMaterial é que o segundo suporta...",
+    "options": [
+      "\"shading\"",
+      "transparência",
+      "sombras",
+      "shininess"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Num material com iluminação difusa é, basicamente, irrelevante a posição...",
+    "options": [
+      "do observador",
+      "da fonte de luz",
+      "a cor do material",
+      "a cor da luz"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Uma das vantagens de um pixel shader vs. um vertex shader é...",
+    "options": [
+      "podemos ter menos vértices",
+      "para os mesmos objetos vamos ter melhor performance",
+      "podemos usar a GPU",
+      "podemos usar cores diferentes por vértice"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Ao aumentar o valor roughness iremos ter uma superfície...",
+    "options": [
+      "baça",
+      "brilhante",
+      "com um padrão característico",
+      "com a textura mais clara"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Uma Textura Cube Mapping pode ser criada a partir de...",
+    "options": [
+      "6 imagens JPEG",
+      "2 imagens JPEG",
+      "4 imagens JPEG",
+      "8 imagens JPEG"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "A técnica de reflexão por Environment Map tem problemas com objetos...",
+    "options": [
+      "que tenham reflexões deles próprios",
+      "que não sejam esféricos",
+      "que tenham mais de 6 faces",
+      "que não estejam perfeitamente centrados na cena"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Numa AmbientLight definimos, normalmente...",
+    "options": [
+      "a cor e intensidade",
+      "a cor e alcance",
+      "a intensidade e posição",
+      "a direção e cor"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "O mapeamento UV é feito entre",
+    "options": [
+      "0,0 e 1,1",
+      "-1,-1 e 1,1",
+      "0 e 100",
+      "pixeis da imagem original"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "As coordenadas UV são definidas para...",
+    "options": [
+      "todos os vértices",
+      "todas as faces",
+      "todas as arestas",
+      "todos os objetos"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Para ler uma textura num roughnessMap podermos usar...",
+    "options": [
+      "TextureLoader",
+      "RougnessMapLoader",
+      "MapLoader",
+      "ImageLoader"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Numa textura a opção .wrapS é usada...",
+    "options": [
+      "na direção horizontal (U)",
+      "na direção vertical (V)",
+      "nas duas direções (UV)",
+      "não está relacionado com direção"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Numa textura usamos LinearFilter quando queremos...",
+    "options": [
+      "ter melhor qualidade",
+      "poupar recursos computacionais",
+      "representar modelos wireframe",
+      "filtrar os objectos que não têm linhas"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Quando definimos a cor de um objeto, a textura...",
+    "options": [
+      "fica igual",
+      "é \"modulada\" pela cor",
+      "usar a cor como canal alpha",
+      "é ignorada"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Uma vantagem de usar a biblioteca lil-gui é...",
+    "options": [
+      "simples associar características de objetos do JavaScript",
+      "fácil implementar formulários de entrada de dados",
+      "permite controlos 3D",
+      "usa elementos nativos do sistema operativo"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "A solução RayCaster do Three.js permite implementar facilmente...",
+    "options": [
+      "picking",
+      "reflexões ray trace",
+      "transmissão em tempo real",
+      "efeitos de raios de luz realistas"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Ao usar Fog linear, tipicamente...",
+    "options": [
+      "é mais simples \"controlar\" o efeito",
+      "temos uma resposta mais realista",
+      "podemos controlar a cor do efeito",
+      "temos melhor performance"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Os efeitos Fog e FogExp2 aplicam-se a...",
+    "options": [
+      "tudo o que é renderizado",
+      "tudo o que é rederizado e o fundo",
+      "apenas ao fundo",
+      "tudo o que aparece no ecrã"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Tipicamente, a técnica de RenderTarget tem como resultado...",
+    "options": [
+      "uma textura",
+      "um enviroment map",
+      "um objeto 3D",
+      "um ficheiro"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No Three.js o Post-Processing tem por base um objeto...",
+    "options": [
+      "EffectComposer",
+      "WebGLRenderer",
+      "EffectProcessor",
+      "PassComposer"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No Post-Processing devemos usar primeiro...",
+    "options": [
+      "RenderPass",
+      "StartPass",
+      "InitPass",
+      "ClearPass"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Uma CubeCamera permite implementar facilmente...",
+    "options": [
+      "reflexões dinâmicas",
+      "múltiplos cubos de forma muito eficiente",
+      "uma caixa com cubos dentro",
+      "um sistema de física mecânica simples"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Um dos princípios-base do Ammo.js é que ...",
+    "options": [
+      "temos de criar equivalentes dos objetos Three.js no Ammo.js",
+      "o Ammo.js importa a cena 3D automaticamente",
+      "não é possível interligar objetos com juntas (e.gdobradiça)",
+      "todos os objetos reagem à gravidade"
+    ],
+    "correct_index": 0
+  }
+]
